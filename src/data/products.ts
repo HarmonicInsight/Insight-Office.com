@@ -68,9 +68,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Corporate presentations", "Sales pitch decks", "Training materials", "Report generation"],
-      ja: ["企業プレゼンテーション", "営業提案資料", "研修教材", "レポート生成"],
-      zh: ["企业演示", "销售提案", "培训材料", "报告生成"],
+      en: ["Client proposal deck automation", "Standardized deliverable templates", "Multi-client branding management", "Batch report generation for engagements"],
+      ja: ["クライアント提案資料の自動化", "納品物テンプレートの標準化", "マルチクライアントのブランド管理", "案件ごとのバッチレポート生成"],
+      zh: ["客户提案资料自动化", "交付物模板标准化", "多客户品牌管理", "项目批量报告生成"],
     },
   },
   {
@@ -117,9 +117,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Contract generation", "Report automation", "Compliance documents", "Business correspondence"],
-      ja: ["契約書生成", "レポート自動化", "コンプライアンス文書", "ビジネス文書"],
-      zh: ["合同生成", "报告自动化", "合规文档", "商业通信"],
+      en: ["Client contract automation", "Consulting deliverable generation", "Compliance document packages", "Multi-tenant document workflows"],
+      ja: ["クライアント契約書の自動化", "コンサルティング納品物の生成", "コンプライアンス文書パッケージ", "マルチテナント文書ワークフロー"],
+      zh: ["客户合同自动化", "咨询交付物生成", "合规文档包", "多租户文档工作流"],
     },
   },
   {
@@ -166,9 +166,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Financial modeling teams", "Data governance", "Regulatory reporting", "Multi-department budgets"],
-      ja: ["財務モデリングチーム", "データガバナンス", "規制報告", "部門横断予算管理"],
-      zh: ["财务建模团队", "数据治理", "监管报告", "跨部门预算"],
+      en: ["Client financial model governance", "Multi-stakeholder data management", "Regulatory reporting for client audits", "Cross-department budget consolidation projects"],
+      ja: ["クライアント財務モデルのガバナンス", "複数ステークホルダーのデータ管理", "クライアント監査向け規制報告", "部門横断予算統合プロジェクト"],
+      zh: ["客户财务模型治理", "多利益相关方数据管理", "客户审计监管报告", "跨部门预算整合项目"],
     },
   },
 
@@ -217,9 +217,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Presentation enhancement", "Content repurposing", "Training deck creation", "Executive briefings"],
-      ja: ["プレゼンテーション強化", "コンテンツ再利用", "研修資料作成", "エグゼクティブブリーフィング"],
-      zh: ["演示增强", "内容再利用", "培训资料创建", "高管简报"],
+      en: ["Client presentation quality enhancement", "Deliverable content repurposing across projects", "Client training material creation", "Executive steering committee briefings"],
+      ja: ["クライアント向けプレゼン品質の強化", "プロジェクト間の納品コンテンツ再活用", "クライアント研修資料の作成", "経営ステアリング委員会向け報告"],
+      zh: ["客户演示质量提升", "跨项目交付内容再利用", "客户培训资料创建", "经营指导委员会汇报"],
     },
   },
   {
@@ -266,9 +266,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Marketing asset creation", "E-learning narration", "Product visualization", "Social media content"],
-      ja: ["マーケティングアセット制作", "Eラーニングナレーション", "製品ビジュアライゼーション", "SNSコンテンツ"],
-      zh: ["营销素材创建", "电子学习旁白", "产品可视化", "社交媒体内容"],
+      en: ["Client marketing asset delivery", "E-learning content for client training programs", "Product/service visualization for client launches", "Client digital presence setup"],
+      ja: ["クライアント向けマーケティングアセット納品", "クライアント研修プログラム向けEラーニング制作", "クライアントの製品・サービスローンチのビジュアル制作", "クライアントのデジタルプレゼンス構築"],
+      zh: ["客户营销素材交付", "客户培训项目电子学习内容", "客户产品/服务发布可视化", "客户数字化品牌构建"],
     },
   },
   {
@@ -315,9 +315,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Training video production", "Marketing videos", "Product demos", "Internal communications"],
-      ja: ["研修動画制作", "マーケティング動画", "製品デモ", "社内コミュニケーション"],
-      zh: ["培训视频制作", "营销视频", "产品演示", "内部沟通"],
+      en: ["Client onboarding video production", "Client marketing video delivery", "Solution demo creation for prospects", "Client internal communication tools"],
+      ja: ["クライアント向けオンボーディング動画制作", "クライアントのマーケティング動画納品", "見込み客向けソリューションデモ制作", "クライアントの社内コミュニケーション支援"],
+      zh: ["客户入职视频制作", "客户营销视频交付", "潜在客户解决方案演示", "客户内部沟通工具"],
     },
   },
 
@@ -366,9 +366,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Desktop automation", "Data pipeline processing", "Report generation", "System administration"],
-      ja: ["デスクトップ自動化", "データパイプライン処理", "レポート生成", "システム管理"],
-      zh: ["桌面自动化", "数据管道处理", "报告生成", "系统管理"],
+      en: ["Client desktop workflow automation", "Data pipeline setup for client systems", "Automated reporting for client operations", "Client IT infrastructure management"],
+      ja: ["クライアントのデスクトップ業務自動化", "クライアントシステム向けデータパイプライン構築", "クライアント業務の自動レポーティング", "クライアントITインフラ管理"],
+      zh: ["客户桌面工作流自动化", "客户系统数据管道搭建", "客户运营自动报告", "客户IT基础设施管理"],
     },
   },
   {
@@ -415,9 +415,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Data entry automation", "Invoice processing", "Email workflow automation", "Legacy system integration"],
-      ja: ["データ入力自動化", "請求書処理", "メールワークフロー自動化", "レガシーシステム連携"],
-      zh: ["数据录入自动化", "发票处理", "邮件工作流自动化", "遗留系统集成"],
+      en: ["Client back-office process automation", "Invoice/AP automation for client finance teams", "Client email workflow optimization", "Legacy system migration and integration projects"],
+      ja: ["クライアントのバックオフィス業務自動化", "クライアント経理部門の請求書・AP自動化", "クライアントのメールワークフロー最適化", "レガシーシステム移行・統合プロジェクト"],
+      zh: ["客户后台业务流程自动化", "客户财务部门发票/AP自动化", "客户邮件工作流优化", "遗留系统迁移和集成项目"],
     },
   },
   {
@@ -464,9 +464,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Platform modernization", "RPA consolidation", "Vendor evaluation", "Digital transformation planning"],
-      ja: ["プラットフォーム近代化", "RPA統合", "ベンダー評価", "DX計画"],
-      zh: ["平台现代化", "RPA整合", "供应商评估", "数字化转型规划"],
+      en: ["Client platform modernization assessments", "RPA consolidation consulting", "Vendor evaluation for client procurement", "Client DX roadmap and planning engagements"],
+      ja: ["クライアントのプラットフォーム近代化アセスメント", "RPA統合コンサルティング", "クライアント調達向けベンダー評価", "クライアントのDXロードマップ策定支援"],
+      zh: ["客户平台现代化评估", "RPA整合咨询", "客户采购供应商评估", "客户DX路线图规划"],
     },
   },
 
@@ -515,9 +515,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Sales team management", "Revenue forecasting", "Customer intelligence", "Performance optimization"],
-      ja: ["営業チーム管理", "売上予測", "顧客インテリジェンス", "パフォーマンス最適化"],
-      zh: ["销售团队管理", "营收预测", "客户智能", "绩效优化"],
+      en: ["Client sales team optimization projects", "Revenue forecasting system implementation", "Customer intelligence platform delivery", "Sales performance consulting engagements"],
+      ja: ["クライアント営業チーム最適化プロジェクト", "売上予測システムの導入支援", "顧客インテリジェンス基盤の構築", "営業パフォーマンスコンサルティング"],
+      zh: ["客户销售团队优化项目", "营收预测系统实施", "客户智能平台交付", "销售绩效咨询"],
     },
   },
   {
@@ -564,9 +564,9 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Enterprise recruitment", "Campus hiring", "Executive search", "Diversity hiring programs"],
-      ja: ["企業採用", "新卒採用", "エグゼクティブサーチ", "ダイバーシティ採用"],
-      zh: ["企业招聘", "校园招聘", "高管搜索", "多元化招聘"],
+      en: ["Client HR transformation projects", "Large-scale recruitment process consulting", "Executive search firm digitalization", "DE&I hiring program implementation"],
+      ja: ["クライアントの人事変革プロジェクト", "大規模採用プロセスコンサルティング", "エグゼクティブサーチ企業のDX化", "DE&I採用プログラムの導入支援"],
+      zh: ["客户HR转型项目", "大规模招聘流程咨询", "高管搜索公司数字化", "DE&I招聘项目实施"],
     },
   },
 ];
