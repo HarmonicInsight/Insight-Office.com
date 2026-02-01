@@ -75,12 +75,12 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
   ja: {
     hero: {
       title: "HARMONIC insight パートナープログラム",
-      subtitle: "初期投資ゼロ・在庫リスクなしで、Office自動化ソフトウェアの販売パートナーとして安定した収益を得られます。",
+      subtitle: "初期投資ゼロ・在庫リスクなしで、コンサルティング向けAIツールの販売パートナーとして安定した収益を得られます。",
     },
     highlights: {
       investment: { value: "¥0", label: "初期投資" },
       discount: { value: "20〜40%", label: "仕入れ割引" },
-      products: { value: "6製品", label: "取扱製品数" },
+      products: { value: "9製品", label: "取扱製品数" },
       quota: { value: "¥0", label: "初年度ノルマ" },
     },
     tiers: {
@@ -131,16 +131,19 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     },
     products: {
       title: "取扱製品ラインナップ",
-      subtitle: "6つのOffice自動化製品を取り扱いいただけます",
+      subtitle: "9つのコンサルティング向けAIツールを取り扱いいただけます",
       annual: "年間サブスクリプション",
       freeTrial: "無料トライアルあり",
       items: [
-        { name: "InsightSlide", price: "¥49,800/年" },
-        { name: "InsightSlide Pro", price: "¥98,000/年" },
         { name: "InsightPy", price: "¥69,800/年" },
+        { name: "InsightBot", price: "¥98,000/年" },
+        { name: "InsightNoCodeAnalyzer", price: "¥128,000/年" },
         { name: "InsightOfficeSheet", price: "¥59,800/年" },
-        { name: "InsightOfficeDoc", price: "¥59,800/年" },
-        { name: "InsightOfficeSlide", price: "¥148,000/年" },
+        { name: "SalesInsight", price: "¥98,000/年" },
+        { name: "InsightSlide", price: "¥49,800/年" },
+        { name: "InterviewInsight", price: "¥98,000/年" },
+        { name: "InsightMovie", price: "¥128,000/年" },
+        { name: "InsightImageGen", price: "¥79,800/年" },
       ],
     },
     commission: {
@@ -205,12 +208,12 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
   en: {
     hero: {
       title: "HARMONIC insight Partner Program",
-      subtitle: "Earn stable revenue as a sales partner for Office automation software — with zero upfront investment and no inventory risk.",
+      subtitle: "Earn stable revenue as a sales partner for AI-powered consulting tools — with zero upfront investment and no inventory risk.",
     },
     highlights: {
       investment: { value: "¥0", label: "Initial Investment" },
       discount: { value: "20–40%", label: "Wholesale Discount" },
-      products: { value: "6", label: "Products" },
+      products: { value: "9", label: "Products" },
       quota: { value: "¥0", label: "First-Year Quota" },
     },
     tiers: {
@@ -261,16 +264,19 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     },
     products: {
       title: "Product Lineup",
-      subtitle: "Resell 6 Office automation products",
+      subtitle: "Resell 9 AI-powered consulting tools",
       annual: "Annual subscription",
       freeTrial: "Free trial available",
       items: [
-        { name: "InsightSlide", price: "¥49,800/yr" },
-        { name: "InsightSlide Pro", price: "¥98,000/yr" },
         { name: "InsightPy", price: "¥69,800/yr" },
+        { name: "InsightBot", price: "¥98,000/yr" },
+        { name: "InsightNoCodeAnalyzer", price: "¥128,000/yr" },
         { name: "InsightOfficeSheet", price: "¥59,800/yr" },
-        { name: "InsightOfficeDoc", price: "¥59,800/yr" },
-        { name: "InsightOfficeSlide", price: "¥148,000/yr" },
+        { name: "SalesInsight", price: "¥98,000/yr" },
+        { name: "InsightSlide", price: "¥49,800/yr" },
+        { name: "InterviewInsight", price: "¥98,000/yr" },
+        { name: "InsightMovie", price: "¥128,000/yr" },
+        { name: "InsightImageGen", price: "¥79,800/yr" },
       ],
     },
     commission: {
@@ -335,12 +341,12 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
   zh: {
     hero: {
       title: "HARMONIC insight 合作伙伴计划",
-      subtitle: "零初始投资、零库存风险，成为Office自动化软件的销售合作伙伴，获取稳定收入。",
+      subtitle: "零初始投资、零库存风险，成为咨询AI工具的销售合作伙伴，获取稳定收入。",
     },
     highlights: {
       investment: { value: "¥0", label: "初始投资" },
       discount: { value: "20–40%", label: "批发折扣" },
-      products: { value: "6款", label: "产品数量" },
+      products: { value: "9款", label: "产品数量" },
       quota: { value: "¥0", label: "首年配额" },
     },
     tiers: {
@@ -391,16 +397,19 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     },
     products: {
       title: "产品阵容",
-      subtitle: "可代理销售6款Office自动化产品",
+      subtitle: "可代理销售9款咨询AI工具",
       annual: "年度订阅",
       freeTrial: "提供免费试用",
       items: [
-        { name: "InsightSlide", price: "¥49,800/年" },
-        { name: "InsightSlide Pro", price: "¥98,000/年" },
         { name: "InsightPy", price: "¥69,800/年" },
+        { name: "InsightBot", price: "¥98,000/年" },
+        { name: "InsightNoCodeAnalyzer", price: "¥128,000/年" },
         { name: "InsightOfficeSheet", price: "¥59,800/年" },
-        { name: "InsightOfficeDoc", price: "¥59,800/年" },
-        { name: "InsightOfficeSlide", price: "¥148,000/年" },
+        { name: "SalesInsight", price: "¥98,000/年" },
+        { name: "InsightSlide", price: "¥49,800/年" },
+        { name: "InterviewInsight", price: "¥98,000/年" },
+        { name: "InsightMovie", price: "¥128,000/年" },
+        { name: "InsightImageGen", price: "¥79,800/年" },
       ],
     },
     commission: {
