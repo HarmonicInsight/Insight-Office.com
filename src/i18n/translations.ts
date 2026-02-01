@@ -128,7 +128,7 @@ export const translations: Record<Locale, TranslationSet> = {
       getStarted: "お問い合わせ",
     },
     hero: {
-      title: "コンサルタントが作った、コンサルタントのためのAIツール群",
+      title: "コンサルタントが作った、コンサルタントのためのツール群",
       subtitle:
         "会計パッケージや顧客システムの企画・設計・開発の実績から生まれたHARMONIC insight — 業務調査の効率化、要件定義の品質向上、提案金額シミュレーション、ユーザー教育まで、案件の全フェーズをカバーします。",
       cta: "パートナー相談を申し込む",
