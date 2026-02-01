@@ -14,6 +14,7 @@ type TranslationSet = {
     home: string;
     products: string;
     solutions: string;
+    partners: string;
     pricing: string;
     contact: string;
     getStarted: string;
@@ -66,6 +67,7 @@ export const translations: Record<Locale, TranslationSet> = {
       home: "Home",
       products: "Products",
       solutions: "Solutions",
+      partners: "Partners",
       pricing: "Pricing",
       contact: "Contact",
       getStarted: "Get Started",
@@ -120,6 +122,7 @@ export const translations: Record<Locale, TranslationSet> = {
       home: "ホーム",
       products: "製品",
       solutions: "ソリューション",
+      partners: "パートナー",
       pricing: "料金",
       contact: "お問い合わせ",
       getStarted: "今すぐ始める",
@@ -174,6 +177,7 @@ export const translations: Record<Locale, TranslationSet> = {
       home: "首页",
       products: "产品",
       solutions: "解决方案",
+      partners: "合作伙伴",
       pricing: "价格",
       contact: "联系我们",
       getStarted: "立即开始",

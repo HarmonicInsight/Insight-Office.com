@@ -37,6 +37,12 @@ export default function Header({ locale }: { locale: Locale }) {
               {t.nav.products}
             </Link>
             <Link
+              href={`/${locale}/partners`}
+              className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
+            >
+              {t.nav.partners}
+            </Link>
+            <Link
               href={`/${locale}#features`}
               className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
             >
@@ -118,6 +124,12 @@ export default function Header({ locale }: { locale: Locale }) {
                 className="text-sm font-medium text-gray-600 hover:text-primary-600"
               >
                 {t.nav.products}
+              </Link>
+              <Link
+                href={`/${locale}/partners`}
+                className="text-sm font-medium text-gray-600 hover:text-primary-600"
+              >
+                {t.nav.partners}
               </Link>
               <Link
                 href={`/${locale}#features`}

@@ -45,6 +45,14 @@ export default function Footer({ locale }: { locale: Locale }) {
                   {t.footer.blog}
                 </span>
               </li>
+              <li>
+                <Link
+                  href={`/${locale}/partners`}
+                  className="text-sm hover:text-primary-50 transition-colors"
+                >
+                  {t.nav.partners}
+                </Link>
+              </li>
             </ul>
           </div>
 
