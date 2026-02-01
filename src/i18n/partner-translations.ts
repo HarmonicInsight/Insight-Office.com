@@ -219,7 +219,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     products: {
       title: "取扱製品ラインナップ",
       subtitle: "8つのコンサルティング向けツールを取り扱いいただけます",
-      annual: "年間サブスクリプション",
+      annual: "1ユーザー 年間サブスクリプション",
       freeTrial: "無料トライアルあり",
       items: [
         { name: "InsightBot", price: "¥98,000/年" },
@@ -351,7 +351,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     products: {
       title: "Product Lineup",
       subtitle: "Resell 8 consulting tools",
-      annual: "Annual subscription",
+      annual: "Per user / Annual subscription",
       freeTrial: "Free trial available",
       items: [
         { name: "InsightBot", price: "¥98,000/yr" },
@@ -483,7 +483,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     products: {
       title: "产品阵容",
       subtitle: "可代理销售8款咨询工具",
-      annual: "年度订阅",
+      annual: "每用户 年度订阅",
       freeTrial: "提供免费试用",
       items: [
         { name: "InsightBot", price: "¥98,000/年" },
