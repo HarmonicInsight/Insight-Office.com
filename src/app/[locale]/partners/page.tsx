@@ -1,5 +1,6 @@
 import { locales, type Locale } from "@/i18n/translations";
-import { partnerTranslations } from "@/i18n/partner-translations";
+import { partnerTranslations, competitorData, competitorLabels } from "@/i18n/partner-translations";
+import CompetitorDialog from "@/components/CompetitorDialog";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -140,25 +141,37 @@ export default async function PartnersPage({
             <p className="text-gray-600">{t.products.subtitle}</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {t.products.items.map((product) => (
-              <div
-                key={product.name}
-                className="bg-white rounded-xl border border-ivory-200 p-6 hover:shadow-md transition-shadow"
-              >
-                <h3 className="font-bold text-gray-900 mb-1">
-                  {product.name}
-                </h3>
-                <p className="text-primary-600 font-semibold mb-2">
-                  {product.price}
-                </p>
-                <div className="flex items-center gap-4 text-xs text-gray-500">
-                  <span>{t.products.annual}</span>
-                  <span className="text-green-600 font-medium">
-                    {t.products.freeTrial}
-                  </span>
+            {t.products.items.map((product) => {
+              const cInfo = competitorData[product.name];
+              return (
+                <div
+                  key={product.name}
+                  className="bg-white rounded-xl border border-ivory-200 p-6 hover:shadow-md transition-shadow"
+                >
+                  <div className="flex items-start justify-between gap-2 mb-1">
+                    <h3 className="font-bold text-gray-900">
+                      {product.name}
+                    </h3>
+                    {cInfo && (
+                      <CompetitorDialog
+                        productName={product.name}
+                        info={cInfo}
+                        labels={competitorLabels[locale]}
+                      />
+                    )}
+                  </div>
+                  <p className="text-primary-600 font-semibold mb-2">
+                    {product.price}
+                  </p>
+                  <div className="flex items-center gap-4 text-xs text-gray-500">
+                    <span>{t.products.annual}</span>
+                    <span className="text-green-600 font-medium">
+                      {t.products.freeTrial}
+                    </span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

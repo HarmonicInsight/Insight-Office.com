@@ -1,5 +1,92 @@
 import type { Locale } from "./translations";
 
+export type CompetitorEntry = {
+  product: string;
+  vendor: string;
+  license: string;
+  price: string;
+};
+
+export type CompetitorInfo = {
+  hasCompetitors: boolean;
+  competitors: CompetitorEntry[];
+};
+
+export const competitorLabels: Record<Locale, {
+  buttonLabel: string;
+  dialogTitle: string;
+  productHeader: string;
+  vendorHeader: string;
+  licenseHeader: string;
+  priceHeader: string;
+  noSimilar: string;
+  close: string;
+}> = {
+  ja: {
+    buttonLabel: "同業他社製品例",
+    dialogTitle: "同業他社製品との比較",
+    productHeader: "製品名",
+    vendorHeader: "製造元",
+    licenseHeader: "ライセンス体系",
+    priceHeader: "参考価格",
+    noSimilar: "類似商品なし — HARMONIC insightオリジナル製品です",
+    close: "閉じる",
+  },
+  en: {
+    buttonLabel: "Competitor Examples",
+    dialogTitle: "Competitor Product Comparison",
+    productHeader: "Product",
+    vendorHeader: "Vendor",
+    licenseHeader: "License Model",
+    priceHeader: "Reference Price",
+    noSimilar: "No similar products — HARMONIC insight original",
+    close: "Close",
+  },
+  zh: {
+    buttonLabel: "同类竞品参考",
+    dialogTitle: "同类竞品对比",
+    productHeader: "产品名称",
+    vendorHeader: "厂商",
+    licenseHeader: "许可模式",
+    priceHeader: "参考价格",
+    noSimilar: "无同类产品 — HARMONIC insight原创产品",
+    close: "关闭",
+  },
+};
+
+export const competitorData: Record<string, CompetitorInfo> = {
+  InsightBot: {
+    hasCompetitors: true,
+    competitors: [
+      {
+        product: "UiPath Platform",
+        vendor: "UiPath Inc.",
+        license: "SaaS / Per-user subscription",
+        price: "$420/month〜 (Pro)",
+      },
+      {
+        product: "WinActor",
+        vendor: "NTT DATA / NTT-AT",
+        license: "Node-lock / Annual subscription",
+        price: "¥908,000/year〜 (Full)",
+      },
+      {
+        product: "BizRobo! mini",
+        vendor: "RPA Technologies",
+        license: "Client / Annual subscription",
+        price: "¥900,000/year〜",
+      },
+    ],
+  },
+  InsightNoCodeAnalyzer: { hasCompetitors: false, competitors: [] },
+  InsightPy: { hasCompetitors: false, competitors: [] },
+  InsightOfficeSheet: { hasCompetitors: false, competitors: [] },
+  InsightSlide: { hasCompetitors: false, competitors: [] },
+  InterviewInsight: { hasCompetitors: false, competitors: [] },
+  InsightMovie: { hasCompetitors: false, competitors: [] },
+  InsightImageGen: { hasCompetitors: false, competitors: [] },
+};
+
 type PartnerTier = {
   name: string;
   discount: string;
