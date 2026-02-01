@@ -26,6 +26,7 @@ type TranslationSet = {
     version: string;
     releaseDate: string;
     download: string;
+    comingSoon: string;
     systemReq: string;
     systemReqItems: string[];
     notes: string;
@@ -91,6 +92,7 @@ export const translations: Record<Locale, TranslationSet> = {
       version: "Version",
       releaseDate: "Release Date",
       download: "Download",
+      comingSoon: "Coming Soon",
       systemReq: "System Requirements",
       systemReqItems: [
         "Windows 10 / 11 (64-bit)",
@@ -166,6 +168,7 @@ export const translations: Record<Locale, TranslationSet> = {
       version: "バージョン",
       releaseDate: "リリース日",
       download: "ダウンロード",
+      comingSoon: "開発中",
       systemReq: "システム要件",
       systemReqItems: [
         "Windows 10 / 11（64ビット）",
@@ -241,6 +244,7 @@ export const translations: Record<Locale, TranslationSet> = {
       version: "版本",
       releaseDate: "发布日期",
       download: "下载",
+      comingSoon: "即将推出",
       systemReq: "系统要求",
       systemReqItems: [
         "Windows 10 / 11（64位）",

@@ -7,6 +7,20 @@ export function generateStaticParams() {
 
 const categoryOrder: ProductCategory[] = ["rpa", "consulting", "content"];
 
+const GITHUB_RELEASES_BASE =
+  "https://github.com/HarmonicInsight/releases/releases/tag";
+
+const releaseMap: Record<string, { tag: string; version: string }> = {
+  INBT: { tag: "INBT-v1.0.0", version: "1.0.0" },
+  INCA: { tag: "INCA-v1.0.0", version: "1.0.0" },
+  INPY: { tag: "INPY-v1.0.0", version: "1.0.0" },
+  HMSH: { tag: "IOSH-v1.0.0", version: "1.0.0" },
+  INSS: { tag: "INSS-v1.0.0", version: "1.0.0" },
+  IVIN: { tag: "", version: "" },
+  INMV: { tag: "INMV-v1.0.0", version: "1.0.0" },
+  INIG: { tag: "INIG-v1.0.0", version: "1.0.0" },
+};
+
 export default async function DownloadsPage({
   params,
 }: {
@@ -41,65 +55,112 @@ export default async function DownloadsPage({
                 {categoryNames[cat][locale]}
               </h2>
               <div className="space-y-4">
-                {catProducts.map((product) => (
-                  <div
-                    key={product.slug}
-                    className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 bg-white rounded-xl border border-ivory-200 hover:border-primary-200 transition-colors"
-                  >
-                    <div className="flex items-center gap-4">
-                      <div
-                        className={`w-12 h-12 rounded-lg bg-gradient-to-br ${product.color} flex items-center justify-center flex-shrink-0`}
-                      >
-                        <svg
-                          className="w-6 h-6 text-white"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={1.5}
+                {catProducts.map((product) => {
+                  const release = releaseMap[product.code];
+                  const isAvailable = release && release.tag !== "";
+                  const downloadUrl = isAvailable
+                    ? `${GITHUB_RELEASES_BASE}/${release.tag}`
+                    : undefined;
+
+                  return (
+                    <div
+                      key={product.slug}
+                      className={`flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 rounded-xl border transition-colors ${
+                        isAvailable
+                          ? "bg-white border-ivory-200 hover:border-primary-200"
+                          : "bg-gray-50 border-gray-200"
+                      }`}
+                    >
+                      <div className="flex items-center gap-4">
+                        <div
+                          className={`w-12 h-12 rounded-lg bg-gradient-to-br ${
+                            isAvailable ? product.color : "from-gray-300 to-gray-400"
+                          } flex items-center justify-center flex-shrink-0`}
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d={product.icon}
-                          />
-                        </svg>
+                          <svg
+                            className="w-6 h-6 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={1.5}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d={product.icon}
+                            />
+                          </svg>
+                        </div>
+                        <div>
+                          <h3
+                            className={`text-lg font-semibold ${
+                              isAvailable ? "text-gray-900" : "text-gray-400"
+                            }`}
+                          >
+                            {product.name[locale]}
+                          </h3>
+                          <p
+                            className={`text-sm ${
+                              isAvailable ? "text-gray-500" : "text-gray-400"
+                            }`}
+                          >
+                            {product.tagline[locale]}
+                          </p>
+                        </div>
                       </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-900">
-                          {product.name[locale]}
-                        </h3>
-                        <p className="text-sm text-gray-500">
-                          {product.tagline[locale]}
-                        </p>
+                      <div className="flex items-center gap-4 md:gap-6 flex-shrink-0">
+                        {isAvailable ? (
+                          <>
+                            <div className="text-sm text-gray-500">
+                              <span className="font-medium text-gray-700">
+                                {t.downloads.version}
+                              </span>{" "}
+                              {release.version}
+                            </div>
+                            <a
+                              href={downloadUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-500 text-white font-medium text-sm hover:bg-primary-600 transition-colors"
+                            >
+                              <svg
+                                className="w-4 h-4"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                                />
+                              </svg>
+                              {t.downloads.download}
+                            </a>
+                          </>
+                        ) : (
+                          <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gray-200 text-gray-400 font-medium text-sm cursor-not-allowed">
+                            <svg
+                              className="w-4 h-4"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                              />
+                            </svg>
+                            {t.downloads.comingSoon}
+                          </span>
+                        )}
                       </div>
                     </div>
-                    <div className="flex items-center gap-4 md:gap-6 flex-shrink-0">
-                      <div className="text-sm text-gray-500">
-                        <span className="font-medium text-gray-700">{t.downloads.version}</span>{" "}
-                        1.0.0
-                      </div>
-                      <a
-                        href="#"
-                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary-500 text-white font-medium text-sm hover:bg-primary-600 transition-colors"
-                      >
-                        <svg
-                          className="w-4 h-4"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                          />
-                        </svg>
-                        {t.downloads.download}
-                      </a>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           );
