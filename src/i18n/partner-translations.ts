@@ -96,9 +96,10 @@ type PartnerTier = {
   referral: string;
 };
 
-type PartnerProduct = {
-  name: string;
-  price: string;
+type PricingCategory = {
+  category: string;
+  products: string[];
+  priceRange: string;
 };
 
 type PartnerTranslations = {
@@ -121,9 +122,13 @@ type PartnerTranslations = {
   products: {
     title: string;
     subtitle: string;
-    annual: string;
-    freeTrial: string;
-    items: PartnerProduct[];
+    licenseNote: string;
+    consulting: string;
+    consultingPrice: string;
+    supportLabel: string;
+    supportPrice: string;
+    categories: PricingCategory[];
+    note: string;
   };
   commission: {
     title: string;
@@ -217,20 +222,20 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
       ],
     },
     products: {
-      title: "取扱製品ラインナップ",
-      subtitle: "8つのコンサルティング向けツールを取り扱いいただけます",
-      annual: "1ユーザー 年間サブスクリプション",
-      freeTrial: "無料トライアルあり",
-      items: [
-        { name: "InsightBot", price: "¥98,000/年" },
-        { name: "InsightNoCodeAnalyzer", price: "¥128,000/年" },
-        { name: "InsightPy", price: "¥69,800/年" },
-        { name: "InsightOfficeSheet", price: "¥59,800/年" },
-        { name: "InsightSlide", price: "¥49,800/年" },
-        { name: "InterviewInsight", price: "¥98,000/年" },
-        { name: "InsightMovie", price: "¥128,000/年" },
-        { name: "InsightImageGen", price: "¥79,800/年" },
+      title: "価格体系",
+      subtitle: "製品単体販売の場合は各レンジの上限目安、コンサルティング支援とセットの場合はご相談に応じて柔軟に対応いたします",
+      licenseNote: "ライセンス費用：要相談",
+      consulting: "導入前コンサルティング支援＋教育",
+      consultingPrice: "1日20万円〜",
+      supportLabel: "保守サポート",
+      supportPrice: "20〜100万円/年",
+      categories: [
+        { category: "自動化・RPA", products: ["InsightBot"], priceRange: "80〜150万円/年" },
+        { category: "調査・要件定義支援", products: ["InsightNoCodeAnalyzer", "InsightPy", "InterviewInsight"], priceRange: "50〜120万円/年" },
+        { category: "スライド／資料効率化", products: ["InsightOfficeSheet", "InsightSlide"], priceRange: "40〜90万円/年" },
+        { category: "コンテンツ生成", products: ["InsightMovie", "InsightImageGen"], priceRange: "30〜80万円/年" },
       ],
+      note: "※ 上記はすべて年間ライセンスの参考価格帯です。導入規模・ご利用形態に応じてお見積りいたします。",
     },
     commission: {
       title: "収益モデル",
@@ -349,20 +354,20 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
       ],
     },
     products: {
-      title: "Product Lineup",
-      subtitle: "Resell 8 consulting tools",
-      annual: "Per user / Annual subscription",
-      freeTrial: "Free trial available",
-      items: [
-        { name: "InsightBot", price: "¥98,000/yr" },
-        { name: "InsightNoCodeAnalyzer", price: "¥128,000/yr" },
-        { name: "InsightPy", price: "¥69,800/yr" },
-        { name: "InsightOfficeSheet", price: "¥59,800/yr" },
-        { name: "InsightSlide", price: "¥49,800/yr" },
-        { name: "InterviewInsight", price: "¥98,000/yr" },
-        { name: "InsightMovie", price: "¥128,000/yr" },
-        { name: "InsightImageGen", price: "¥79,800/yr" },
+      title: "Pricing Structure",
+      subtitle: "Product-only sales are priced at the upper end of each range. Bundled with consulting engagement, pricing is flexible.",
+      licenseNote: "License fee: Contact us",
+      consulting: "Pre-deployment consulting & training",
+      consultingPrice: "From ¥200,000/day",
+      supportLabel: "Maintenance & Support",
+      supportPrice: "¥200K–1M/year",
+      categories: [
+        { category: "Automation & RPA", products: ["InsightBot"], priceRange: "¥800K–1.5M/year" },
+        { category: "Survey & Requirements", products: ["InsightNoCodeAnalyzer", "InsightPy", "InterviewInsight"], priceRange: "¥500K–1.2M/year" },
+        { category: "Slides & Documentation", products: ["InsightOfficeSheet", "InsightSlide"], priceRange: "¥400K–900K/year" },
+        { category: "Content Generation", products: ["InsightMovie", "InsightImageGen"], priceRange: "¥300K–800K/year" },
       ],
+      note: "All prices are annual license reference ranges. Final quotes are based on deployment scale and usage requirements.",
     },
     commission: {
       title: "Revenue Model",
@@ -481,20 +486,20 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
       ],
     },
     products: {
-      title: "产品阵容",
-      subtitle: "可代理销售8款咨询工具",
-      annual: "每用户 年度订阅",
-      freeTrial: "提供免费试用",
-      items: [
-        { name: "InsightBot", price: "¥98,000/年" },
-        { name: "InsightNoCodeAnalyzer", price: "¥128,000/年" },
-        { name: "InsightPy", price: "¥69,800/年" },
-        { name: "InsightOfficeSheet", price: "¥59,800/年" },
-        { name: "InsightSlide", price: "¥49,800/年" },
-        { name: "InterviewInsight", price: "¥98,000/年" },
-        { name: "InsightMovie", price: "¥128,000/年" },
-        { name: "InsightImageGen", price: "¥79,800/年" },
+      title: "价格体系",
+      subtitle: "单独购买产品时按各区间上限定价，配合咨询服务可灵活调整",
+      licenseNote: "许可费用：请咨询",
+      consulting: "导入前咨询支持及培训",
+      consultingPrice: "每日20万日元起",
+      supportLabel: "维护支持",
+      supportPrice: "20〜100万日元/年",
+      categories: [
+        { category: "自动化・RPA", products: ["InsightBot"], priceRange: "80〜150万日元/年" },
+        { category: "调研・需求定义支持", products: ["InsightNoCodeAnalyzer", "InsightPy", "InterviewInsight"], priceRange: "50〜120万日元/年" },
+        { category: "幻灯片／文档效率化", products: ["InsightOfficeSheet", "InsightSlide"], priceRange: "40〜90万日元/年" },
+        { category: "内容生成", products: ["InsightMovie", "InsightImageGen"], priceRange: "30〜80万日元/年" },
       ],
+      note: "以上均为年度许可参考价格区间。最终报价根据部署规模和使用需求确定。",
     },
     commission: {
       title: "收益模式",
