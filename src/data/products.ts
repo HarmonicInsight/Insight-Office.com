@@ -43,36 +43,36 @@ export const products: Product[] = [
     category: "rpa",
     name: { en: "InsightBot", ja: "InsightBot", zh: "InsightBot" },
     tagline: {
-      en: "AI-Powered Business Optimization RPA",
-      ja: "AIを活用した業務最適化RPA製品",
-      zh: "AI驱动的业务优化RPA产品",
+      en: "AI Editor-Powered Business Optimization RPA",
+      ja: "AIエディタ搭載 — 業務最適化RPA製品",
+      zh: "搭载AI编辑器 — 业务优化RPA产品",
     },
     description: {
-      en: "Turn AI-generated Python scripts into production bots and visually orchestrate them into automated workflows. From bot creation to visual job design, InsightBot streamlines business process automation delivery.",
-      ja: "AIで作成したPythonをボット化し、開発したボットをビジュアルにJOB化して業務を自動化。ボット作成からビジュアルなJOB設計まで、業務プロセス自動化のデリバリーを効率化します。",
-      zh: "将AI生成的Python脚本转化为生产机器人，并通过可视化编排实现业务流程自动化。从机器人创建到可视化JOB设计，全面简化业务流程自动化交付。",
+      en: "Built-in AI Editor automatically generates bot scripts from natural language instructions. Turn the generated Python into production bots and visually orchestrate them into automated workflows. From AI-driven bot creation to visual job design, InsightBot streamlines business process automation delivery.",
+      ja: "搭載のAIエディタがボットのスクリプトを自動生成。生成したPythonをボット化し、開発したボットをビジュアルにJOB化して業務を自動化。AIによるボット作成からビジュアルなJOB設計まで、業務プロセス自動化のデリバリーを効率化します。",
+      zh: "内置AI编辑器从自然语言指令自动生成机器人脚本。将生成的Python转化为生产机器人，并通过可视化编排实现业务流程自动化。从AI驱动的机器人创建到可视化JOB设计，全面简化业务流程自动化交付。",
     },
     features: {
       en: [
+        "AI Editor — generate bot scripts from natural language instructions",
         "Python-to-bot conversion",
         "Visual job orchestration designer",
-        "AI-assisted bot creation",
         "Web and desktop automation",
         "Scheduled and triggered execution",
         "Centralized bot management",
       ],
       ja: [
+        "AIエディタ — 自然言語の指示からボットスクリプトを自動生成",
         "Pythonからボットへの変換",
         "ビジュアルJOBオーケストレーション設計",
-        "AI支援ボット作成",
         "Web・デスクトップ自動化",
         "スケジュール・トリガー実行",
         "集中ボット管理",
       ],
       zh: [
+        "AI编辑器 — 从自然语言指令自动生成机器人脚本",
         "Python转机器人",
         "可视化JOB编排设计",
-        "AI辅助机器人创建",
         "Web和桌面自动化",
         "定时和触发执行",
         "集中式机器人管理",
@@ -80,22 +80,22 @@ export const products: Product[] = [
     },
     useCases: {
       en: [
+        "Auto-generate bots with AI Editor — no coding required",
         "Convert AI-generated Python into production bots",
         "Visual job design for business process automation",
         "Client back-office workflow automation delivery",
-        "Managed RPA service as recurring revenue",
       ],
       ja: [
+        "AIエディタでボットを自動生成 — コーディング不要",
         "AIで作成したPythonを本番ボットに変換",
         "業務プロセス自動化のビジュアルJOB設計",
         "クライアントのバックオフィス業務自動化の納品",
-        "継続収益としてのマネージドRPAサービス",
       ],
       zh: [
+        "用AI编辑器自动生成机器人 — 无需编码",
         "将AI生成的Python转化为生产机器人",
         "业务流程自动化的可视化JOB设计",
         "客户后台业务流程自动化交付",
-        "作为经常性收入的托管RPA服务",
       ],
     },
   },
@@ -243,17 +243,18 @@ export const products: Product[] = [
     category: "consulting",
     name: { en: "InsightOfficeSheet", ja: "InsightOfficeSheet", zh: "InsightOfficeSheet" },
     tagline: {
-      en: "Excel-Based Management Metrics, Budget Tracking & Planning Simulation",
-      ja: "経営数値管理・予実管理・計画シミュレーション",
-      zh: "经营数值管理・预实管理・计划模拟",
+      en: "AI Assistant-Powered Management Metrics, Budget Tracking & Planning Simulation on Excel",
+      ja: "AIアシスタント搭載 — 経営数値管理・予実管理・計画シミュレーション",
+      zh: "搭载AI助手 — 经营数值管理・预实管理・计划模拟",
     },
     description: {
-      en: "Open your existing Excel files with InsightOfficeSheet to unlock version control, cell-level change history, a built-in bulletin board, and AI chat — all on top of your familiar Excel workflow. No cloud environment required: simply place the file on a shared server and multiple people can collaborate on a single file, tracking who changed what and when as they work.",
-      ja: "今お使いのExcelファイルをこのツールで開くだけで、バージョン管理、セル単位の変更履歴管理、掲示板機能、AIチャットが実現できます。クラウドのような環境も不要で、共有サーバーに置いておけば1つのファイルを複数の人とコラボレーションし、誰がいつ何を変更したかを確認しながら作業を進められます。",
-      zh: "只需用InsightOfficeSheet打开您现有的Excel文件，即可实现版本控制、单元格级别的变更历史管理、公告板功能和AI聊天。无需云环境，只需将文件放在共享服务器上，多人即可协作编辑同一文件，并随时确认谁在何时更改了什么。",
+      en: "Open your existing Excel files with InsightOfficeSheet to unlock version control, cell-level change history, a built-in bulletin board, and AI chat — all on top of your familiar Excel workflow. The AI assistant reviews and corrects values and formulas, ensuring accuracy across complex financial models. No cloud environment required: simply place the file on a shared server and multiple people can collaborate on a single file, tracking who changed what and when as they work.",
+      ja: "今お使いのExcelファイルをこのツールで開くだけで、バージョン管理、セル単位の変更履歴管理、掲示板機能、AIチャットが実現できます。搭載のAIアシスタントが数値や計算式をチェック・修正し、複雑な財務モデルの正確性を確保します。クラウドのような環境も不要で、共有サーバーに置いておけば1つのファイルを複数の人とコラボレーションし、誰がいつ何を変更したかを確認しながら作業を進められます。",
+      zh: "只需用InsightOfficeSheet打开您现有的Excel文件，即可实现版本控制、单元格级别的变更历史管理、公告板功能和AI聊天。AI助手审查并修正数值和计算公式，确保复杂财务模型的准确性。无需云环境，只需将文件放在共享服务器上，多人即可协作编辑同一文件，并随时确认谁在何时更改了什么。",
     },
     features: {
       en: [
+        "AI assistant — review and correct values and formulas",
         "Version control for Excel files",
         "Cell-level change history tracking",
         "Built-in bulletin board for team communication",
@@ -262,6 +263,7 @@ export const products: Product[] = [
         "Full audit trail — who changed what and when",
       ],
       ja: [
+        "AIアシスタント — 数値・計算式のチェックと修正",
         "Excelファイルのバージョン管理",
         "セル単位の変更履歴管理",
         "掲示板機能によるチームコミュニケーション",
@@ -270,6 +272,7 @@ export const products: Product[] = [
         "誰がいつ何を変更したかの完全な監査証跡",
       ],
       zh: [
+        "AI助手 — 数值与计算公式审查及修正",
         "Excel文件版本控制",
         "单元格级别的变更历史管理",
         "内置公告板团队沟通功能",
@@ -280,18 +283,21 @@ export const products: Product[] = [
     },
     useCases: {
       en: [
+        "AI-assisted formula validation in financial models",
         "Management metrics tracking and budget vs. actual reporting",
         "Planning simulation and scenario analysis on Excel",
         "Multi-person Excel collaboration on shared server",
         "Cell-level change review for financial models and proposals",
       ],
       ja: [
+        "AIによる財務モデルの計算式検証・修正",
         "経営数値管理・予実管理レポーティング",
         "Excelでの計画シミュレーション・シナリオ分析",
         "共有サーバー上での複数人によるExcelコラボレーション",
         "財務モデル・提案書のセル単位の変更レビュー",
       ],
       zh: [
+        "AI辅助财务模型的公式验证与修正",
         "经营数值管理与预实管理报告",
         "Excel上的计划模拟与场景分析",
         "共享服务器上多人Excel协作",
@@ -307,17 +313,18 @@ export const products: Product[] = [
     category: "consulting",
     name: { en: "InsightSlide", ja: "InsightSlide", zh: "InsightSlide" },
     tagline: {
-      en: "PowerPoint Text Extraction & Excel-Based Review Tool",
-      ja: "PowerPointテキスト抽出・Excel編集レビューツール",
-      zh: "PowerPoint文本提取与Excel编辑审阅工具",
+      en: "AI Assistant-Powered PowerPoint Text Extraction & Review Tool",
+      ja: "AIアシスタント搭載 — PowerPointテキスト抽出・レビューツール",
+      zh: "搭载AI助手 — PowerPoint文本提取与审阅工具",
     },
     description: {
-      en: "Extract all text from PowerPoint slides and export it to a screen view or Excel for efficient editing. Reviewing hundreds of PowerPoint pages is extremely inefficient — by exporting to Excel, you can easily check the overall structure, catch typos, and review content at scale. Speech notes can also be registered from Excel, making presentation preparation much smoother. Additionally, by translating the exported Excel into other languages and re-importing, multilingual translation of presentation materials becomes remarkably easy.",
-      ja: "PowerPointのテキストを全て抽出し、画面上もしくはExcelに落として編集できるツールです。何百ページものPowerPointのレビューは非常に作業効率が悪いため、Excelに出力することで全体の骨子確認や誤字脱字のチェックが格段に容易になります。スピーチノートもExcelから登録できるため、プレゼンテーションの準備も楽になります。さらに、Excelに落としたテキストを多言語に翻訳して取り込むことで、資料の多言語翻訳もとても簡単に行えます。",
-      zh: "提取PowerPoint中的所有文本，导出到屏幕视图或Excel进行高效编辑。审阅数百页PowerPoint效率极低，导出到Excel后可以轻松检查整体结构、发现错别字并大规模审阅内容。还可以从Excel注册演讲备注，使演示准备更加顺畅。此外，将导出的Excel翻译成其他语言后重新导入，即可轻松实现演示资料的多语言翻译。",
+      en: "Extract all text from PowerPoint slides and export it to a screen view or Excel for efficient editing. The built-in AI assistant reviews and corrects presentation content — checking logical consistency, data accuracy, and messaging clarity. Reviewing hundreds of PowerPoint pages is extremely inefficient — by exporting to Excel, you can easily check the overall structure, catch typos, and review content at scale. Speech notes can also be registered from Excel, and multilingual translation of presentation materials becomes remarkably easy via Excel export/import.",
+      ja: "PowerPointのテキストを全て抽出し、画面上もしくはExcelに落として編集できるツールです。搭載のAIアシスタントがプレゼンテーションの内容をチェック・修正し、論理的整合性やデータの正確性、メッセージの明確さを確保します。何百ページものPowerPointのレビューは非常に作業効率が悪いため、Excelに出力することで全体の骨子確認や誤字脱字のチェックが格段に容易になります。スピーチノートもExcelから登録でき、Excelに落としたテキストを多言語に翻訳して取り込むことで、資料の多言語翻訳もとても簡単に行えます。",
+      zh: "提取PowerPoint中的所有文本，导出到屏幕视图或Excel进行高效编辑。内置AI助手审查并修正演示内容，检查逻辑一致性、数据准确性和信息表达的清晰度。审阅数百页PowerPoint效率极低，导出到Excel后可以轻松检查整体结构、发现错别字并大规模审阅内容。还可以从Excel注册演讲备注，将导出的Excel翻译成其他语言后重新导入即可轻松实现多语言翻译。",
     },
     features: {
       en: [
+        "AI assistant — review and correct presentation content",
         "Full text extraction from PowerPoint",
         "Export to Excel for bulk editing",
         "On-screen text review and editing",
@@ -326,6 +333,7 @@ export const products: Product[] = [
         "Multilingual translation via Excel export/import",
       ],
       ja: [
+        "AIアシスタント — プレゼン内容のチェック・修正",
         "PowerPointからの全テキスト抽出",
         "Excelへのエクスポートで一括編集",
         "画面上でのテキストレビュー・編集",
@@ -334,6 +342,7 @@ export const products: Product[] = [
         "Excel経由の多言語翻訳・取り込み",
       ],
       zh: [
+        "AI助手 — 演示内容审查与修正",
         "PowerPoint全文本提取",
         "导出到Excel进行批量编辑",
         "屏幕上文本审阅与编辑",
@@ -344,18 +353,21 @@ export const products: Product[] = [
     },
     useCases: {
       en: [
+        "AI-powered presentation quality review before client delivery",
         "Efficient review of large PowerPoint decks (100+ pages)",
         "Bulk typo and terminology checking via Excel export",
         "Presentation preparation with speech notes from Excel",
         "Multilingual presentation translation via Excel workflow",
       ],
       ja: [
+        "クライアント納品前のAIによるプレゼン品質チェック",
         "大量PowerPoint資料（100ページ超）の効率的レビュー",
         "Excelエクスポートによる誤字脱字・用語の一括チェック",
         "Excelからのスピーチノート登録でプレゼン準備の効率化",
         "Excel経由のプレゼン資料多言語翻訳",
       ],
       zh: [
+        "客户交付前AI驱动的演示质量审查",
         "大量PowerPoint资料（100页以上）的高效审阅",
         "通过Excel导出进行错别字和术语批量检查",
         "从Excel注册演讲备注高效准备演示",
