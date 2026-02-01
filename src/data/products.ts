@@ -113,7 +113,7 @@ export const products: Product[] = [
     },
     description: {
       en: "Automate the migration of clients' existing RPA and low-code environments to other platforms. From complexity analysis and effort estimation of original logic, to migration strategy proposals and automated process conversion — end-to-end migration support.",
-      ja: "クライアント既存のRPA・ローコード環境の他プラットフォームへの移行を自動化。元ロジックの複雑性分析による見積もり、移行方針提案から、プロセスの自動変換作業まで対応します。",
+      ja: "AIが各ローコードプラットフォームの仕組を解析、元ロジックの複雑性分析による見積もり、移行方針提案から、プロセスの自動変換作業まで対応します。",
       zh: "自动化客户现有RPA和低代码环境向其他平台的迁移。从原始逻辑的复杂性分析与估算、迁移方针提案，到流程的自动转换作业，提供端到端迁移支持。",
     },
     features: {
@@ -319,7 +319,7 @@ export const products: Product[] = [
     },
     description: {
       en: "Extract all text from PowerPoint slides and export it to a screen view or Excel for efficient editing. The built-in AI assistant reviews and corrects presentation content — checking logical consistency, data accuracy, and messaging clarity. Reviewing hundreds of PowerPoint pages is extremely inefficient — by exporting to Excel, you can easily check the overall structure, catch typos, and review content at scale. Speech notes can also be registered from Excel, and multilingual translation of presentation materials becomes remarkably easy via Excel export/import.",
-      ja: "PowerPointのテキストを全て抽出し、画面上もしくはExcelに落として編集できるツールです。搭載のAIアシスタントがプレゼンテーションの内容をチェック・修正し、論理的整合性やデータの正確性、メッセージの明確さを確保します。何百ページものPowerPointのレビューは非常に作業効率が悪いため、Excelに出力することで全体の骨子確認や誤字脱字のチェックが格段に容易になります。スピーチノートもExcelから登録でき、Excelに落としたテキストを多言語に翻訳して取り込むことで、資料の多言語翻訳もとても簡単に行えます。",
+      ja: "PowerPointのテキストを全て抽出し、編集できるツールです。搭載のAIアシスタントによる内容チェック・修正は、間違いなく提案時の作業効率を爆上げします。何百ページものPowerPointのレビューもExcelに出力することで全体の骨子確認や誤字脱字のチェックが格段に容易になります。スピーチノートもExcelから登録でき、Excelに落としたテキストを多言語に翻訳して取り込むことで、資料の多言語翻訳もとても簡単に行えます。",
       zh: "提取PowerPoint中的所有文本，导出到屏幕视图或Excel进行高效编辑。内置AI助手审查并修正演示内容，检查逻辑一致性、数据准确性和信息表达的清晰度。审阅数百页PowerPoint效率极低，导出到Excel后可以轻松检查整体结构、发现错别字并大规模审阅内容。还可以从Excel注册演讲备注，将导出的Excel翻译成其他语言后重新导入即可轻松实现多语言翻译。",
     },
     features: {
