@@ -130,6 +130,20 @@ type PartnerTranslations = {
     categories: PricingCategory[];
     note: string;
   };
+  roi: {
+    title: string;
+    subtitle: string;
+    withoutLabel: string;
+    withLabel: string;
+    savingsLabel: string;
+    qualityNote: string;
+    scenarios: {
+      title: string;
+      without: string;
+      withTool: string;
+      savings: string;
+    }[];
+  };
   commission: {
     title: string;
     subtitle: string;
@@ -236,6 +250,40 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
         { category: "コンテンツ生成", products: ["InsightMovie", "InsightImageGen"], priceRange: "30〜80万円/年" },
       ],
       note: "※ 上記はすべて年間ライセンスの参考価格帯です。導入規模・ご利用形態に応じてお見積りいたします。",
+    },
+    roi: {
+      title: "導入効果の試算",
+      subtitle: "コンサルタント・SEを投入した場合のコストと比較 — ツール導入による削減効果と品質向上を同時に実現",
+      withoutLabel: "従来（人手のみ）",
+      withLabel: "ツール導入後",
+      savingsLabel: "削減効果",
+      qualityNote: "※ コスト削減に加え、AIによるチェック・自動化で成果物の品質も向上します",
+      scenarios: [
+        {
+          title: "業務調査・要件定義",
+          without: "コンサルタント3名 × 20日 = 1,200万円",
+          withTool: "2名 × 12日 + ツール = 約600万円",
+          savings: "約50%削減",
+        },
+        {
+          title: "RPA導入・マイグレーション",
+          without: "SE 2名 × 30日 = 1,200万円",
+          withTool: "1名 × 15日 + ツール = 約450万円",
+          savings: "約60%削減",
+        },
+        {
+          title: "提案資料・ドキュメント作成",
+          without: "コンサルタント2名 × 10日 = 400万円",
+          withTool: "1名 × 5日 + ツール = 約190万円",
+          savings: "約50%削減",
+        },
+        {
+          title: "経営シミュレーション・予実管理",
+          without: "アナリスト2名 × 15日 = 600万円",
+          withTool: "1名 × 8日 + ツール = 約250万円",
+          savings: "約60%削減",
+        },
+      ],
     },
     commission: {
       title: "収益モデル",
@@ -369,6 +417,40 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
       ],
       note: "All prices are annual license reference ranges. Final quotes are based on deployment scale and usage requirements.",
     },
+    roi: {
+      title: "ROI Estimation",
+      subtitle: "Compare the cost of deploying consultants and engineers manually vs. with HARMONIC insight tools — achieve cost reduction and quality improvement simultaneously",
+      withoutLabel: "Traditional (Manual Only)",
+      withLabel: "With Tools",
+      savingsLabel: "Savings",
+      qualityNote: "In addition to cost savings, AI-powered checks and automation also improve deliverable quality",
+      scenarios: [
+        {
+          title: "Business Survey & Requirements",
+          without: "3 consultants × 20 days = ¥12M",
+          withTool: "2 consultants × 12 days + tools = ~¥6M",
+          savings: "~50% reduction",
+        },
+        {
+          title: "RPA Deployment & Migration",
+          without: "2 engineers × 30 days = ¥12M",
+          withTool: "1 engineer × 15 days + tools = ~¥4.5M",
+          savings: "~60% reduction",
+        },
+        {
+          title: "Proposals & Documentation",
+          without: "2 consultants × 10 days = ¥4M",
+          withTool: "1 consultant × 5 days + tools = ~¥1.9M",
+          savings: "~50% reduction",
+        },
+        {
+          title: "Management Simulation & Budgeting",
+          without: "2 analysts × 15 days = ¥6M",
+          withTool: "1 analyst × 8 days + tools = ~¥2.5M",
+          savings: "~60% reduction",
+        },
+      ],
+    },
     commission: {
       title: "Revenue Model",
       subtitle: "Your profit is the difference between wholesale and retail pricing",
@@ -500,6 +582,40 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
         { category: "内容生成", products: ["InsightMovie", "InsightImageGen"], priceRange: "30〜80万日元/年" },
       ],
       note: "以上均为年度许可参考价格区间。最终报价根据部署规模和使用需求确定。",
+    },
+    roi: {
+      title: "导入效果试算",
+      subtitle: "与纯人工投入顾问和工程师的成本对比 — 工具导入同时实现成本削减和品质提升",
+      withoutLabel: "传统方式（纯人工）",
+      withLabel: "导入工具后",
+      savingsLabel: "削减效果",
+      qualityNote: "※ 除成本削减外，AI驱动的审查与自动化还能提升交付物品质",
+      scenarios: [
+        {
+          title: "业务调研・需求定义",
+          without: "顾问3人 × 20天 = 1,200万日元",
+          withTool: "2人 × 12天 + 工具 = 约600万日元",
+          savings: "约50%削减",
+        },
+        {
+          title: "RPA导入・迁移",
+          without: "工程师2人 × 30天 = 1,200万日元",
+          withTool: "1人 × 15天 + 工具 = 约450万日元",
+          savings: "约60%削减",
+        },
+        {
+          title: "提案资料・文档制作",
+          without: "顾问2人 × 10天 = 400万日元",
+          withTool: "1人 × 5天 + 工具 = 约190万日元",
+          savings: "约50%削减",
+        },
+        {
+          title: "经营模拟・预实管理",
+          without: "分析师2人 × 15天 = 600万日元",
+          withTool: "1人 × 8天 + 工具 = 约250万日元",
+          savings: "约60%削减",
+        },
+      ],
     },
     commission: {
       title: "收益模式",

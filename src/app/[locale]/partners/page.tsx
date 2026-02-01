@@ -192,8 +192,60 @@ export default async function PartnersPage({
         </div>
       </section>
 
-      {/* Commission Table */}
+      {/* ROI Estimation */}
       <section className="py-16 bg-ivory-100">
+        <div className="section-container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
+              {t.roi.title}
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">{t.roi.subtitle}</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            {t.roi.scenarios.map((scenario) => (
+              <div
+                key={scenario.title}
+                className="bg-white rounded-xl border border-ivory-200 p-6 hover:shadow-md transition-shadow"
+              >
+                <h3 className="font-bold text-gray-900 text-lg mb-4">{scenario.title}</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center mt-0.5">
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </span>
+                    <div>
+                      <div className="text-xs text-gray-500 mb-0.5">{t.roi.withoutLabel}</div>
+                      <div className="text-sm text-gray-700">{scenario.without}</div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center mt-0.5">
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
+                    <div>
+                      <div className="text-xs text-gray-500 mb-0.5">{t.roi.withLabel}</div>
+                      <div className="text-sm text-gray-700">{scenario.withTool}</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-4 pt-3 border-t border-ivory-200">
+                  <span className="text-lg font-bold text-primary-600">{scenario.savings}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-sm text-gray-500 text-center">{t.roi.qualityNote}</p>
+        </div>
+      </section>
+
+      {/* Commission Table */}
+      <section className="py-16">
         <div className="section-container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">

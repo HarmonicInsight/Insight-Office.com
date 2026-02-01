@@ -127,7 +127,7 @@ export const translations: Record<Locale, TranslationSet> = {
     features: {
       title: "Why Consultants & SIers Choose HARMONIC insight",
       subtitle:
-        "Built from decades of accounting system development and IT consulting experience — tools that solve real problems at every engagement phase",
+        "Estimate the effort for your next business improvement or system development project with your current team — junior members, offshore members, and all. Then estimate how much our tools can streamline that work. Those who get it, get it.",
     },
     cta: {
       title: "Accelerate Your Consulting Engagements with HARMONIC insight",
@@ -203,7 +203,7 @@ export const translations: Record<Locale, TranslationSet> = {
     features: {
       title: "コンサルタント・SIerがHARMONIC insightを選ぶ理由",
       subtitle:
-        "会計システムや顧客システムの企画・設計・開発の豊富な実績から生まれた、案件の全フェーズで使える実践的ツール群",
+        "ジュニアメンバ、オフショアメンバ等、今のメンバで業務改善・システム開発案件の工数を試算してください。次に、私のツールでどこまで作業が効率化できるか試算してみてください。違いが分かる人には分かるはずです。",
     },
     cta: {
       title: "HARMONIC insightで貴社の案件デリバリーを加速しませんか",
@@ -277,7 +277,7 @@ export const translations: Record<Locale, TranslationSet> = {
     },
     features: {
       title: "咨询师和SI企业选择HARMONIC insight的理由",
-      subtitle: "源自会计系统和客户系统企划、设计、开发的丰富实战经验，覆盖项目全阶段的实用工具",
+      subtitle: "请用您现有的团队成员——初级成员、离岸成员等——估算一下业务改善或系统开发项目的工时。然后再估算一下使用我们的工具能提效多少。懂的人自然会懂。",
     },
     cta: {
       title: "用HARMONIC insight加速贵司的咨询项目交付",
