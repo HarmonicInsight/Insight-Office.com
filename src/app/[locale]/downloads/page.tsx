@@ -15,6 +15,7 @@ const releaseMap: Record<string, { tag: string; file: string; version: string }>
   INCA: { tag: "INCA-v1.0.0", file: "InsightNoCodeAnalyzer-v1.0.0-win-x64.zip", version: "1.0.0" },
   INPY: { tag: "INPY-v1.0.0", file: "InsightPy-v1.0.0-win-x64.zip", version: "1.0.0" },
   HMSH: { tag: "IOSH-v1.0.0", file: "InsightOfficeSheet-v1.0.0-win-x64.zip", version: "1.0.0" },
+  HMDC: { tag: "", file: "", version: "" },
   INSS: { tag: "INSS-v1.0.0", file: "InsightSlide-v1.0.0-win-x64.zip", version: "1.0.0" },
   IVIN: { tag: "", file: "", version: "" },
   INMV: { tag: "INMV-v1.0.0", file: "InsightMovie-v1.0.0-win-x64.zip", version: "1.0.0" },
