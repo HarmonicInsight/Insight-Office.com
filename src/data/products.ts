@@ -306,9 +306,9 @@ export const products: Product[] = [
       zh: "PowerPoint文本提取与Excel编辑审阅工具",
     },
     description: {
-      en: "Extract all text from PowerPoint slides and export it to a screen view or Excel for efficient editing. Reviewing hundreds of PowerPoint pages is extremely inefficient — by exporting to Excel, you can easily check the overall structure, catch typos, and review content at scale. Speech notes can also be registered from Excel, making presentation preparation much smoother.",
-      ja: "PowerPointのテキストを全て抽出し、画面上もしくはExcelに落として編集できるツールです。何百ページものPowerPointのレビューは非常に作業効率が悪いため、Excelに出力することで全体の骨子確認や誤字脱字のチェックが格段に容易になります。スピーチノートもExcelから登録できるため、プレゼンテーションの準備も楽になります。",
-      zh: "提取PowerPoint中的所有文本，导出到屏幕视图或Excel进行高效编辑。审阅数百页PowerPoint效率极低，导出到Excel后可以轻松检查整体结构、发现错别字并大规模审阅内容。还可以从Excel注册演讲备注，使演示准备更加顺畅。",
+      en: "Extract all text from PowerPoint slides and export it to a screen view or Excel for efficient editing. Reviewing hundreds of PowerPoint pages is extremely inefficient — by exporting to Excel, you can easily check the overall structure, catch typos, and review content at scale. Speech notes can also be registered from Excel, making presentation preparation much smoother. Additionally, by translating the exported Excel into other languages and re-importing, multilingual translation of presentation materials becomes remarkably easy.",
+      ja: "PowerPointのテキストを全て抽出し、画面上もしくはExcelに落として編集できるツールです。何百ページものPowerPointのレビューは非常に作業効率が悪いため、Excelに出力することで全体の骨子確認や誤字脱字のチェックが格段に容易になります。スピーチノートもExcelから登録できるため、プレゼンテーションの準備も楽になります。さらに、Excelに落としたテキストを多言語に翻訳して取り込むことで、資料の多言語翻訳もとても簡単に行えます。",
+      zh: "提取PowerPoint中的所有文本，导出到屏幕视图或Excel进行高效编辑。审阅数百页PowerPoint效率极低，导出到Excel后可以轻松检查整体结构、发现错别字并大规模审阅内容。还可以从Excel注册演讲备注，使演示准备更加顺畅。此外，将导出的Excel翻译成其他语言后重新导入，即可轻松实现演示资料的多语言翻译。",
     },
     features: {
       en: [
@@ -317,7 +317,7 @@ export const products: Product[] = [
         "On-screen text review and editing",
         "Typo and content structure checking",
         "Speech notes registration from Excel",
-        "Batch processing of large decks",
+        "Multilingual translation via Excel export/import",
       ],
       ja: [
         "PowerPointからの全テキスト抽出",
@@ -325,7 +325,7 @@ export const products: Product[] = [
         "画面上でのテキストレビュー・編集",
         "誤字脱字・構成チェック",
         "Excelからのスピーチノート登録",
-        "大量ページのバッチ処理対応",
+        "Excel経由の多言語翻訳・取り込み",
       ],
       zh: [
         "PowerPoint全文本提取",
@@ -333,7 +333,7 @@ export const products: Product[] = [
         "屏幕上文本审阅与编辑",
         "错别字和内容结构检查",
         "从Excel注册演讲备注",
-        "大量页面批处理支持",
+        "通过Excel导出导入实现多语言翻译",
       ],
     },
     useCases: {
@@ -341,19 +341,19 @@ export const products: Product[] = [
         "Efficient review of large PowerPoint decks (100+ pages)",
         "Bulk typo and terminology checking via Excel export",
         "Presentation preparation with speech notes from Excel",
-        "Content structure review across entire slide decks",
+        "Multilingual presentation translation via Excel workflow",
       ],
       ja: [
         "大量PowerPoint資料（100ページ超）の効率的レビュー",
         "Excelエクスポートによる誤字脱字・用語の一括チェック",
         "Excelからのスピーチノート登録でプレゼン準備の効率化",
-        "スライドデッキ全体のコンテンツ構成レビュー",
+        "Excel経由のプレゼン資料多言語翻訳",
       ],
       zh: [
         "大量PowerPoint资料（100页以上）的高效审阅",
         "通过Excel导出进行错别字和术语批量检查",
         "从Excel注册演讲备注高效准备演示",
-        "幻灯片全套内容结构审阅",
+        "通过Excel工作流实现演示资料多语言翻译",
       ],
     },
   },
