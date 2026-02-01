@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { locales, translations, type Locale } from "@/i18n/translations";
 import { products } from "@/data/products";
@@ -90,23 +91,15 @@ export default async function ProductDetailPage({
             </div>
           </div>
 
-          {/* Placeholder illustration area */}
+          {/* Product screenshot */}
           <div className={`rounded-2xl bg-gradient-to-br ${product.color} p-1`}>
-            <div className="bg-white rounded-xl p-8">
-              <div className="aspect-video bg-gray-50 rounded-lg flex items-center justify-center">
-                <svg
-                  className="w-24 h-24 text-gray-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={0.5}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d={product.icon}
-                  />
-                </svg>
+            <div className="bg-white rounded-xl p-4">
+              <div className="aspect-video bg-gray-50 rounded-lg overflow-hidden">
+                <img
+                  src={`/images/products/${product.slug}.png`}
+                  alt={product.name[locale]}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

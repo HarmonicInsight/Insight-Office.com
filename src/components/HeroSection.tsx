@@ -30,24 +30,6 @@ export default function HeroSection({ locale }: { locale: Locale }) {
               {t.hero.ctaSecondary}
             </Link>
           </div>
-          <p className="mt-6 text-sm text-gray-500">{t.hero.trustedBy}</p>
-        </div>
-
-        {/* Stats */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            { value: "11", label: t.stats.enterprises },
-            { value: "5", label: t.stats.countries },
-            { value: "99.9%", label: t.stats.uptime },
-            { value: "24/7", label: t.stats.support },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary-600">
-                {stat.value}
-              </div>
-              <div className="mt-1 text-sm text-gray-500">{stat.label}</div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

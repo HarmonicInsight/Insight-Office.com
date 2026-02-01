@@ -23,7 +23,6 @@ type TranslationSet = {
     subtitle: string;
     cta: string;
     ctaSecondary: string;
-    trustedBy: string;
   };
   products: {
     title: string;
@@ -34,12 +33,6 @@ type TranslationSet = {
     keyFeatures: string;
     useCases: string;
     backToProducts: string;
-  };
-  stats: {
-    enterprises: string;
-    countries: string;
-    uptime: string;
-    support: string;
   };
   features: {
     title: string;
@@ -83,7 +76,6 @@ export const translations: Record<Locale, TranslationSet> = {
         "From document automation to AI creative tools and intelligent RPA — Harmonic Insight's comprehensive suite empowers every business professional.",
       cta: "Start Free Trial",
       ctaSecondary: "Request Demo",
-      trustedBy: "Trusted by enterprises across Japan and worldwide",
     },
     products: {
       title: "Our Products",
@@ -95,12 +87,6 @@ export const translations: Record<Locale, TranslationSet> = {
       keyFeatures: "Key Features",
       useCases: "Use Cases",
       backToProducts: "Back to Products",
-    },
-    stats: {
-      enterprises: "Products",
-      countries: "Pricing Tiers",
-      uptime: "Uptime",
-      support: "Support",
     },
     features: {
       title: "Why Choose Harmonic Insight?",
@@ -144,7 +130,6 @@ export const translations: Record<Locale, TranslationSet> = {
         "ドキュメント自動化からAIクリエイティブツール、インテリジェントRPAまで — Harmonic Insightの包括的なスイートがビジネスを加速します。",
       cta: "無料トライアル開始",
       ctaSecondary: "デモを依頼",
-      trustedBy: "日本国内および世界中の企業に信頼されています",
     },
     products: {
       title: "製品ラインナップ",
@@ -156,12 +141,6 @@ export const translations: Record<Locale, TranslationSet> = {
       keyFeatures: "主な機能",
       useCases: "ユースケース",
       backToProducts: "製品一覧に戻る",
-    },
-    stats: {
-      enterprises: "製品数",
-      countries: "料金プラン",
-      uptime: "稼働率",
-      support: "サポート",
     },
     features: {
       title: "Harmonic Insightが選ばれる理由",
@@ -205,7 +184,6 @@ export const translations: Record<Locale, TranslationSet> = {
         "从文档自动化到AI创意工具和智能RPA — Harmonic Insight的全面套件为每位商务专业人士赋能。",
       cta: "开始免费试用",
       ctaSecondary: "请求演示",
-      trustedBy: "日本及全球企业的信赖之选",
     },
     products: {
       title: "我们的产品",
@@ -216,12 +194,6 @@ export const translations: Record<Locale, TranslationSet> = {
       keyFeatures: "核心功能",
       useCases: "使用场景",
       backToProducts: "返回产品列表",
-    },
-    stats: {
-      enterprises: "产品数量",
-      countries: "定价方案",
-      uptime: "运行时间",
-      support: "技术支持",
     },
     features: {
       title: "为什么选择Harmonic Insight？",
