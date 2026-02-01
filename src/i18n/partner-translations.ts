@@ -75,7 +75,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
   ja: {
     hero: {
       title: "HARMONIC insight パートナープログラム",
-      subtitle: "初期投資ゼロ・在庫リスクなしで、コンサルティング向けAIツールの販売パートナーとして安定した収益を得られます。",
+      subtitle: "初期投資ゼロ・在庫リスクなしで、業務改善・コンサルティングツールの販売パートナーとして安定した収益を得られます。",
     },
     highlights: {
       investment: { value: "¥0", label: "初期投資" },
