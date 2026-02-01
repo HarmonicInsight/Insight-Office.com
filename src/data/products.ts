@@ -16,14 +16,30 @@ export type Product = {
 };
 
 export const categoryNames: Record<ProductCategory, Record<Locale, string>> = {
-  office: { en: "Office Suite", ja: "オフィススイート", zh: "办公套件" },
-  ai: { en: "AI & Creative", ja: "AI・クリエイティブ", zh: "AI与创意" },
-  rpa: { en: "Automation & RPA", ja: "自動化・RPA", zh: "自动化与RPA" },
-  sales: { en: "Business Intelligence", ja: "ビジネスインテリジェンス", zh: "商业智能" },
+  office: {
+    en: "Strategy & Proposal Toolkit",
+    ja: "戦略策定・提案ツール",
+    zh: "战略制定与提案工具",
+  },
+  ai: {
+    en: "Business Analysis & Requirements",
+    ja: "業務調査・要件定義",
+    zh: "业务调研与需求定义",
+  },
+  rpa: {
+    en: "Automation & Delivery",
+    ja: "自動化・デリバリー",
+    zh: "自动化与交付",
+  },
+  sales: {
+    en: "Client Engagement & Intelligence",
+    ja: "クライアント支援・インテリジェンス",
+    zh: "客户支持与智能分析",
+  },
 };
 
 export const products: Product[] = [
-  // === Office Suite ===
+  // === Strategy & Proposal Toolkit ===
   {
     slug: "harmonic-slide",
     code: "HMSL",
@@ -32,14 +48,14 @@ export const products: Product[] = [
     category: "office",
     name: { en: "HarmonicSlide", ja: "HarmonicSlide", zh: "HarmonicSlide" },
     tagline: {
-      en: "PowerPoint Presentation Automation",
-      ja: "PowerPointプレゼンテーション自動化",
-      zh: "PowerPoint演示文稿自动化",
+      en: "Proposal & Deliverable Deck Automation",
+      ja: "提案書・納品資料のデック自動化",
+      zh: "提案与交付资料自动化",
     },
     description: {
-      en: "Automate PowerPoint presentation creation and management. Generate slides from templates, apply consistent branding, and streamline your presentation workflow with intelligent automation.",
-      ja: "PowerPointプレゼンテーションの作成と管理を自動化。テンプレートからスライドを生成し、一貫したブランディングを適用し、インテリジェントな自動化でプレゼンテーションワークフローを効率化します。",
-      zh: "自动化PowerPoint演示文稿的创建和管理。从模板生成幻灯片，应用一致的品牌标识，通过智能自动化简化演示工作流程。",
+      en: "Automate the creation of proposal decks, deliverable presentations, and client-facing materials. Generate consistent, branded slides from templates so you can focus on strategy instead of formatting.",
+      ja: "提案書、納品プレゼン、クライアント向け資料の作成を自動化。テンプレートから一貫性のあるブランド統一スライドを生成し、フォーマット作業ではなく戦略立案に集中できます。",
+      zh: "自动化提案资料、交付演示文稿和面向客户材料的创建。从模板生成一致的品牌化幻灯片，让您专注于战略而非排版。",
     },
     features: {
       en: [
@@ -68,9 +84,24 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Client proposal deck automation", "Standardized deliverable templates", "Multi-client branding management", "Batch report generation for engagements"],
-      ja: ["クライアント提案資料の自動化", "納品物テンプレートの標準化", "マルチクライアントのブランド管理", "案件ごとのバッチレポート生成"],
-      zh: ["客户提案资料自动化", "交付物模板标准化", "多客户品牌管理", "项目批量报告生成"],
+      en: [
+        "Proposal deck mass-production for multiple RFPs",
+        "Standardized deliverable templates across projects",
+        "Executive presentation auto-generation from data",
+        "Consistent branding across client engagements",
+      ],
+      ja: [
+        "複数RFP向け提案書の大量作成",
+        "プロジェクト横断の納品物テンプレート標準化",
+        "データからのエグゼクティブ向けプレゼン自動生成",
+        "案件横断でのブランド統一",
+      ],
+      zh: [
+        "多RFP提案资料批量制作",
+        "跨项目交付物模板标准化",
+        "从数据自动生成高管演示",
+        "跨项目品牌统一",
+      ],
     },
   },
   {
@@ -81,14 +112,14 @@ export const products: Product[] = [
     category: "office",
     name: { en: "HarmonicDoc", ja: "HarmonicDoc", zh: "HarmonicDoc" },
     tagline: {
-      en: "Word Document Operations & Automation",
-      ja: "Word文書操作と自動化",
-      zh: "Word文档操作与自动化",
+      en: "Requirements & Deliverable Document Automation",
+      ja: "要件定義書・納品ドキュメント自動化",
+      zh: "需求定义与交付文档自动化",
     },
     description: {
-      en: "Streamline Word document operations with intelligent automation. Generate, edit, and transform documents at scale with template processing, mail merge, and advanced formatting capabilities.",
-      ja: "インテリジェントな自動化でWord文書操作を効率化。テンプレート処理、差し込み印刷、高度な書式設定機能を使用して、文書の生成、編集、変換を大規模に実行します。",
-      zh: "通过智能自动化简化Word文档操作。使用模板处理、邮件合并和高级格式化功能大规模生成、编辑和转换文档。",
+      en: "Streamline the creation of requirements documents, RFP responses, and consulting deliverables. Template-driven document generation with mail merge lets you produce high-quality deliverables at scale.",
+      ja: "要件定義書、RFP回答書、コンサルティング納品物の作成を効率化。テンプレート駆動のドキュメント生成と差し込み処理で、高品質な納品物を大量に生産できます。",
+      zh: "简化需求文档、RFP回复和咨询交付物的创建。模板驱动的文档生成和邮件合并功能，让您大规模生产高质量交付物。",
     },
     features: {
       en: [
@@ -117,9 +148,24 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Client contract automation", "Consulting deliverable generation", "Compliance document packages", "Multi-tenant document workflows"],
-      ja: ["クライアント契約書の自動化", "コンサルティング納品物の生成", "コンプライアンス文書パッケージ", "マルチテナント文書ワークフロー"],
-      zh: ["客户合同自动化", "咨询交付物生成", "合规文档包", "多租户文档工作流"],
+      en: [
+        "Requirements definition document generation",
+        "RFP response automation",
+        "Consulting deliverable standardization",
+        "Contract and SLA document production",
+      ],
+      ja: [
+        "要件定義書の自動生成",
+        "RFP回答書の作成自動化",
+        "コンサルティング納品物の標準化",
+        "契約書・SLAドキュメントの作成",
+      ],
+      zh: [
+        "需求定义文档自动生成",
+        "RFP回复自动化",
+        "咨询交付物标准化",
+        "合同与SLA文档制作",
+      ],
     },
   },
   {
@@ -130,14 +176,14 @@ export const products: Product[] = [
     category: "office",
     name: { en: "HarmonicSheet", ja: "HarmonicSheet", zh: "HarmonicSheet" },
     tagline: {
-      en: "Excel Version Control & Team Collaboration",
-      ja: "Excelバージョン管理とチームコラボレーション",
-      zh: "Excel版本控制与团队协作",
+      en: "Proposal Pricing & Strategy Simulation on Excel",
+      ja: "提案金額シミュレーション・経営戦略策定Excel基盤",
+      zh: "提案报价模拟与经营战略制定Excel平台",
     },
     description: {
-      en: "Bring Git-like version control to Excel spreadsheets. Track changes, manage versions, resolve conflicts, and enable seamless team collaboration on spreadsheet data with full audit trails.",
-      ja: "ExcelスプレッドシートにGitのようなバージョン管理を導入。変更の追跡、バージョン管理、競合の解決を行い、完全な監査証跡を備えたスプレッドシートデータのシームレスなチームコラボレーションを実現します。",
-      zh: "为Excel电子表格带来类似Git的版本控制。跟踪更改、管理版本、解决冲突，并通过完整的审计跟踪实现无缝的团队协作。",
+      en: "Version-controlled Excel for pricing simulations, cost estimations, and strategic planning. Track changes across proposal iterations, manage multi-stakeholder reviews, and maintain audit trails for client-facing financial models.",
+      ja: "金額シミュレーション、コスト見積、戦略策定のためのバージョン管理付きExcel基盤。提案の反復ごとの変更を追跡し、複数ステークホルダーのレビューを管理し、クライアント向け財務モデルの監査証跡を維持します。",
+      zh: "用于报价模拟、成本估算和战略规划的版本控制Excel平台。跟踪提案迭代中的变更，管理多利益相关方审核，维护面向客户的财务模型审计跟踪。",
     },
     features: {
       en: [
@@ -166,13 +212,28 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Client financial model governance", "Multi-stakeholder data management", "Regulatory reporting for client audits", "Cross-department budget consolidation projects"],
-      ja: ["クライアント財務モデルのガバナンス", "複数ステークホルダーのデータ管理", "クライアント監査向け規制報告", "部門横断予算統合プロジェクト"],
-      zh: ["客户财务模型治理", "多利益相关方数据管理", "客户审计监管报告", "跨部门预算整合项目"],
+      en: [
+        "Proposal pricing and cost simulation",
+        "Client management strategy financial modeling",
+        "Multi-scenario ROI analysis for client presentations",
+        "Version-controlled budget planning across engagements",
+      ],
+      ja: [
+        "提案金額・コストシミュレーション",
+        "クライアント経営戦略の財務モデリング",
+        "クライアント提案向けマルチシナリオROI分析",
+        "案件横断のバージョン管理付き予算策定",
+      ],
+      zh: [
+        "提案报价与成本模拟",
+        "客户经营战略财务建模",
+        "面向客户演示的多场景ROI分析",
+        "跨项目版本控制预算规划",
+      ],
     },
   },
 
-  // === AI & Creative ===
+  // === Business Analysis & Requirements ===
   {
     slug: "insight-slide",
     code: "INSS",
@@ -181,21 +242,21 @@ export const products: Product[] = [
     category: "ai",
     name: { en: "InsightSlide", ja: "InsightSlide", zh: "InsightSlide" },
     tagline: {
-      en: "PowerPoint Content Extraction & AI Enhancement",
-      ja: "PowerPointコンテンツ抽出とAI強化",
-      zh: "PowerPoint内容提取与AI增强",
+      en: "AI-Powered Business Analysis from Client Presentations",
+      ja: "クライアント資料からのAI業務分析",
+      zh: "从客户资料进行AI业务分析",
     },
     description: {
-      en: "Extract, analyze, and enhance PowerPoint content with AI. Automatically extract text, images, and structure from presentations, then enhance them with AI-powered suggestions, auto-generation, and speech coaching.",
-      ja: "AIでPowerPointコンテンツを抽出、分析、強化。プレゼンテーションからテキスト、画像、構造を自動抽出し、AIによる提案、自動生成、スピーチコーチングで強化します。",
-      zh: "使用AI提取、分析和增强PowerPoint内容。自动从演示文稿中提取文本、图像和结构，然后通过AI建议、自动生成和演讲指导进行增强。",
+      en: "Extract and analyze content from client's existing PowerPoint materials to accelerate business research and requirements definition. AI automatically identifies business processes, pain points, and improvement opportunities from presentation decks.",
+      ja: "クライアントの既存PowerPoint資料からコンテンツを抽出・分析し、業務調査と要件定義を加速。AIがプレゼン資料から業務プロセス、課題、改善機会を自動的に識別します。",
+      zh: "从客户现有PowerPoint资料中提取和分析内容，加速业务调研和需求定义。AI自动从演示资料中识别业务流程、痛点和改善机会。",
     },
     features: {
       en: [
         "AI-powered content extraction",
         "Slide structure analysis",
         "Auto-generation from outlines",
-        "Speech coaching and rehearsal",
+        "Business process identification",
         "Design suggestion engine",
         "Batch processing support",
       ],
@@ -203,7 +264,7 @@ export const products: Product[] = [
         "AI搭載コンテンツ抽出",
         "スライド構造分析",
         "アウトラインからの自動生成",
-        "スピーチコーチングとリハーサル",
+        "業務プロセスの自動識別",
         "デザイン提案エンジン",
         "バッチ処理対応",
       ],
@@ -211,15 +272,30 @@ export const products: Product[] = [
         "AI驱动的内容提取",
         "幻灯片结构分析",
         "从大纲自动生成",
-        "演讲指导和排练",
+        "业务流程自动识别",
         "设计建议引擎",
         "批处理支持",
       ],
     },
     useCases: {
-      en: ["Client presentation quality enhancement", "Deliverable content repurposing across projects", "Client training material creation", "Executive steering committee briefings"],
-      ja: ["クライアント向けプレゼン品質の強化", "プロジェクト間の納品コンテンツ再活用", "クライアント研修資料の作成", "経営ステアリング委員会向け報告"],
-      zh: ["客户演示质量提升", "跨项目交付内容再利用", "客户培训资料创建", "经营指导委员会汇报"],
+      en: [
+        "Rapid business survey from client's existing materials",
+        "Requirements definition acceleration via AI analysis",
+        "As-Is process mapping from client decks",
+        "Gap analysis between current and target state",
+      ],
+      ja: [
+        "クライアント既存資料からの迅速な業務調査",
+        "AI分析による要件定義の加速",
+        "クライアント資料からのAs-Isプロセスマッピング",
+        "現状とあるべき姿のギャップ分析",
+      ],
+      zh: [
+        "从客户现有资料快速进行业务调研",
+        "通过AI分析加速需求定义",
+        "从客户资料进行现状流程映射",
+        "现状与目标状态差距分析",
+      ],
     },
   },
   {
@@ -230,14 +306,14 @@ export const products: Product[] = [
     category: "ai",
     name: { en: "InsightImageGen", ja: "InsightImageGen", zh: "InsightImageGen" },
     tagline: {
-      en: "AI Image & Audio Generation",
-      ja: "AI画像・音声生成",
-      zh: "AI图像与音频生成",
+      en: "AI Visual & Voice Generation for Deliverables",
+      ja: "納品物向けAIビジュアル・音声生成",
+      zh: "面向交付物的AI视觉与语音生成",
     },
     description: {
-      en: "Generate high-quality images and audio with AI. Powered by Stable Diffusion and VOICEVOX, create stunning visuals and natural-sounding voiceovers for your enterprise content with an intuitive interface.",
-      ja: "AIで高品質な画像と音声を生成。Stable DiffusionとVOICEVOXを活用し、直感的なインターフェースでエンタープライズコンテンツ向けの美しいビジュアルと自然な音声を作成します。",
-      zh: "使用AI生成高质量图像和音频。基于Stable Diffusion和VOICEVOX，通过直观界面为企业内容创建精美视觉效果和自然语音。",
+      en: "Generate diagrams, illustrations, and voiceovers for consulting deliverables with AI. Produce professional visuals for requirements documents, architecture diagrams for proposals, and narration for client training materials.",
+      ja: "AIでコンサルティング納品物向けの図解、イラスト、ナレーションを生成。要件定義書のビジュアル、提案書のアーキテクチャ図、クライアント研修資料のナレーションをプロ品質で制作します。",
+      zh: "使用AI为咨询交付物生成图表、插图和旁白。为需求文档制作专业视觉效果，为提案制作架构图，为客户培训资料制作旁白。",
     },
     features: {
       en: [
@@ -266,9 +342,24 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Client marketing asset delivery", "E-learning content for client training programs", "Product/service visualization for client launches", "Client digital presence setup"],
-      ja: ["クライアント向けマーケティングアセット納品", "クライアント研修プログラム向けEラーニング制作", "クライアントの製品・サービスローンチのビジュアル制作", "クライアントのデジタルプレゼンス構築"],
-      zh: ["客户营销素材交付", "客户培训项目电子学习内容", "客户产品/服务发布可视化", "客户数字化品牌构建"],
+      en: [
+        "Architecture diagrams for proposals and deliverables",
+        "Narration for client training and e-learning programs",
+        "Visual assets for requirements documentation",
+        "Concept illustrations for To-Be design presentations",
+      ],
+      ja: [
+        "提案書・納品物向けアーキテクチャ図の生成",
+        "クライアント研修・Eラーニング向けナレーション制作",
+        "要件定義書向けビジュアルアセット制作",
+        "To-Be設計プレゼン向けコンセプトイラスト制作",
+      ],
+      zh: [
+        "提案与交付物架构图生成",
+        "客户培训和电子学习旁白制作",
+        "需求文档视觉素材制作",
+        "目标设计演示概念插图制作",
+      ],
     },
   },
   {
@@ -279,14 +370,14 @@ export const products: Product[] = [
     category: "ai",
     name: { en: "InsightMovie", ja: "InsightMovie", zh: "InsightMovie" },
     tagline: {
-      en: "AI Video Creation from Any Content",
-      ja: "あらゆるコンテンツからAI動画作成",
-      zh: "从任意内容创建AI视频",
+      en: "AI Video for Requirements Clarity & User Education",
+      ja: "要件定義の質向上・ユーザー教育のためのAI動画",
+      zh: "提升需求定义质量与用户教育的AI视频",
     },
     description: {
-      en: "Transform images, text, and PowerPoint presentations into professional videos with AI. Automated editing, transitions, voiceover, and music generation for rapid video content production.",
-      ja: "画像、テキスト、PowerPointプレゼンテーションをAIでプロフェッショナルな動画に変換。自動編集、トランジション、ナレーション、音楽生成で迅速な動画コンテンツ制作を実現します。",
-      zh: "使用AI将图像、文本和PowerPoint演示转化为专业视频。自动编辑、转场、旁白和音乐生成，实现快速视频内容制作。",
+      en: "Transform requirements definitions and business processes into clear, visual video content. Improve stakeholder alignment with video walkthroughs of To-Be designs, and create user training videos from system documentation automatically.",
+      ja: "要件定義や業務プロセスを明確でわかりやすい動画コンテンツに変換。To-Be設計の動画ウォークスルーでステークホルダーの合意形成を促進し、システムドキュメントからユーザー向け研修動画を自動作成します。",
+      zh: "将需求定义和业务流程转化为清晰直观的视频内容。通过目标设计视频演示促进利益相关方共识，从系统文档自动创建用户培训视频。",
     },
     features: {
       en: [
@@ -315,13 +406,28 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Client onboarding video production", "Client marketing video delivery", "Solution demo creation for prospects", "Client internal communication tools"],
-      ja: ["クライアント向けオンボーディング動画制作", "クライアントのマーケティング動画納品", "見込み客向けソリューションデモ制作", "クライアントの社内コミュニケーション支援"],
-      zh: ["客户入职视频制作", "客户营销视频交付", "潜在客户解决方案演示", "客户内部沟通工具"],
+      en: [
+        "To-Be design walkthroughs for stakeholder buy-in",
+        "User training video from system requirements docs",
+        "Business process visualization for requirements review",
+        "Change management communication videos",
+      ],
+      ja: [
+        "ステークホルダー合意形成のためのTo-Be設計ウォークスルー",
+        "システム要件定義書からのユーザー研修動画作成",
+        "要件レビュー向け業務プロセスの可視化動画",
+        "チェンジマネジメント向けコミュニケーション動画",
+      ],
+      zh: [
+        "面向利益相关方共识的目标设计演示",
+        "从系统需求文档创建用户培训视频",
+        "需求评审用业务流程可视化视频",
+        "变革管理沟通视频",
+      ],
     },
   },
 
-  // === Automation & RPA ===
+  // === Automation & Delivery ===
   {
     slug: "insight-py",
     code: "INPY",
@@ -330,14 +436,14 @@ export const products: Product[] = [
     category: "rpa",
     name: { en: "InsightPy", ja: "InsightPy", zh: "InsightPy" },
     tagline: {
-      en: "Python Execution for Windows Automation",
-      ja: "Windows自動化のためのPython実行環境",
-      zh: "面向Windows自动化的Python执行环境",
+      en: "Python Automation for Business Survey & Data Collection",
+      ja: "業務調査・データ収集のためのPython自動化",
+      zh: "面向业务调研与数据收集的Python自动化",
     },
     description: {
-      en: "A specialized Python execution environment designed for Windows automation. Run Python scripts seamlessly on Windows with built-in support for office automation, data processing, and system integration tasks.",
-      ja: "Windows自動化に特化したPython実行環境。オフィス自動化、データ処理、システム統合タスクの組み込みサポートにより、Windows上でPythonスクリプトをシームレスに実行できます。",
-      zh: "专为Windows自动化设计的Python执行环境。内置支持办公自动化、数据处理和系统集成任务，在Windows上无缝运行Python脚本。",
+      en: "A Python execution environment purpose-built for consultants. Automate data collection during business surveys, run analysis scripts on client systems, and build quick automation prototypes during requirements definition phases.",
+      ja: "コンサルタント向けに特化したPython実行環境。業務調査時のデータ収集を自動化し、クライアントシステム上で分析スクリプトを実行し、要件定義フェーズでの自動化プロトタイプを迅速に構築します。",
+      zh: "专为咨询师打造的Python执行环境。自动化业务调研中的数据收集，在客户系统上运行分析脚本，在需求定义阶段快速构建自动化原型。",
     },
     features: {
       en: [
@@ -366,9 +472,24 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Client desktop workflow automation", "Data pipeline setup for client systems", "Automated reporting for client operations", "Client IT infrastructure management"],
-      ja: ["クライアントのデスクトップ業務自動化", "クライアントシステム向けデータパイプライン構築", "クライアント業務の自動レポーティング", "クライアントITインフラ管理"],
-      zh: ["客户桌面工作流自动化", "客户系统数据管道搭建", "客户运营自动报告", "客户IT基础设施管理"],
+      en: [
+        "Automated data collection during business surveys",
+        "Client system analysis and data extraction",
+        "Quick automation prototyping in requirements phase",
+        "Bulk data processing for As-Is analysis",
+      ],
+      ja: [
+        "業務調査時のデータ収集自動化",
+        "クライアントシステムの分析とデータ抽出",
+        "要件定義フェーズでの自動化プロトタイピング",
+        "As-Is分析向け大量データ処理",
+      ],
+      zh: [
+        "业务调研中的数据收集自动化",
+        "客户系统分析与数据提取",
+        "需求定义阶段的快速自动化原型",
+        "现状分析批量数据处理",
+      ],
     },
   },
   {
@@ -379,14 +500,14 @@ export const products: Product[] = [
     category: "rpa",
     name: { en: "InsightBot", ja: "InsightBot", zh: "InsightBot" },
     tagline: {
-      en: "Python-Based RPA Automation Bot",
-      ja: "PythonベースのRPA自動化ボット",
-      zh: "基于Python的RPA自动化机器人",
+      en: "RPA Delivery for Client Process Automation",
+      ja: "クライアント業務自動化のRPAデリバリー",
+      zh: "面向客户流程自动化的RPA交付",
     },
     description: {
-      en: "Build and deploy intelligent RPA bots with Python. Automate repetitive business processes with a visual designer, AI-assisted workflow creation, and robust error handling for enterprise reliability.",
-      ja: "Pythonでインテリジェントな RPAボットを構築・展開。ビジュアルデザイナー、AI支援ワークフロー作成、エンタープライズの信頼性のための堅牢なエラーハンドリングで、反復的なビジネスプロセスを自動化します。",
-      zh: "使用Python构建和部署智能RPA机器人。通过可视化设计器、AI辅助工作流创建和健壮的错误处理，自动化重复性业务流程，确保企业级可靠性。",
+      en: "Build and deliver RPA solutions to your clients. Design automation workflows visually, deploy bots for repetitive client processes, and provide ongoing managed automation services as a recurring revenue stream.",
+      ja: "クライアントにRPAソリューションを構築・納品。ビジュアルにワークフローを設計し、クライアントの反復業務にボットを展開し、継続収益としてマネージド自動化サービスを提供します。",
+      zh: "为客户构建和交付RPA解决方案。可视化设计自动化工作流，为客户重复性业务部署机器人，并提供持续的托管自动化服务作为经常性收入来源。",
     },
     features: {
       en: [
@@ -415,9 +536,24 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Client back-office process automation", "Invoice/AP automation for client finance teams", "Client email workflow optimization", "Legacy system migration and integration projects"],
-      ja: ["クライアントのバックオフィス業務自動化", "クライアント経理部門の請求書・AP自動化", "クライアントのメールワークフロー最適化", "レガシーシステム移行・統合プロジェクト"],
-      zh: ["客户后台业务流程自动化", "客户财务部门发票/AP自动化", "客户邮件工作流优化", "遗留系统迁移和集成项目"],
+      en: [
+        "Client back-office process automation delivery",
+        "Managed RPA service as recurring revenue",
+        "PoC automation during requirements definition",
+        "Legacy system data migration bots",
+      ],
+      ja: [
+        "クライアントのバックオフィス業務自動化の納品",
+        "継続収益としてのマネージドRPAサービス",
+        "要件定義中のPoC自動化",
+        "レガシーシステムのデータ移行ボット構築",
+      ],
+      zh: [
+        "客户后台业务流程自动化交付",
+        "作为经常性收入的托管RPA服务",
+        "需求定义中的PoC自动化",
+        "遗留系统数据迁移机器人",
+      ],
     },
   },
   {
@@ -428,14 +564,14 @@ export const products: Product[] = [
     category: "rpa",
     name: { en: "InsightNoCodeAnalyzer", ja: "InsightNoCodeAnalyzer", zh: "InsightNoCodeAnalyzer" },
     tagline: {
-      en: "RPA & Low-Code Migration Assessment",
-      ja: "RPA・ローコードプラットフォーム移行評価",
-      zh: "RPA与低代码平台迁移评估",
+      en: "RPA & Low-Code Migration Assessment Tool",
+      ja: "RPA・ローコード移行アセスメントツール",
+      zh: "RPA与低代码迁移评估工具",
     },
     description: {
-      en: "Assess and plan migrations from RPA and low-code platforms. Analyze existing automation workflows, identify optimization opportunities, and generate detailed migration roadmaps with effort estimates.",
-      ja: "RPAおよびローコードプラットフォームからの移行を評価・計画。既存の自動化ワークフローを分析し、最適化の機会を特定し、工数見積もり付きの詳細な移行ロードマップを生成します。",
-      zh: "评估和规划RPA及低代码平台的迁移。分析现有自动化工作流，识别优化机会，并生成带有工作量估算的详细迁移路线图。",
+      en: "Assess clients' existing RPA and low-code environments to plan migration strategies. Automatically analyze workflow complexity, estimate migration effort, and generate actionable roadmaps — the essential tool for platform modernization consulting.",
+      ja: "クライアント既存のRPA・ローコード環境を評価し移行戦略を策定。ワークフローの複雑性を自動分析し、移行工数を見積もり、実行可能なロードマップを生成 — プラットフォーム近代化コンサルティングの必須ツールです。",
+      zh: "评估客户现有RPA和低代码环境以规划迁移策略。自动分析工作流复杂性，估算迁移工作量，生成可执行路线图 — 平台现代化咨询的必备工具。",
     },
     features: {
       en: [
@@ -464,13 +600,28 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Client platform modernization assessments", "RPA consolidation consulting", "Vendor evaluation for client procurement", "Client DX roadmap and planning engagements"],
-      ja: ["クライアントのプラットフォーム近代化アセスメント", "RPA統合コンサルティング", "クライアント調達向けベンダー評価", "クライアントのDXロードマップ策定支援"],
-      zh: ["客户平台现代化评估", "RPA整合咨询", "客户采购供应商评估", "客户DX路线图规划"],
+      en: [
+        "Client RPA platform modernization assessment",
+        "Migration effort estimation for client budgeting",
+        "Vendor comparison analysis for client procurement",
+        "DX roadmap generation for executive presentations",
+      ],
+      ja: [
+        "クライアントRPAプラットフォーム近代化アセスメント",
+        "クライアント予算策定向け移行工数見積もり",
+        "クライアント調達向けベンダー比較分析",
+        "エグゼクティブ向けDXロードマップ生成",
+      ],
+      zh: [
+        "客户RPA平台现代化评估",
+        "客户预算编制的迁移工作量估算",
+        "客户采购的供应商比较分析",
+        "面向高管的DX路线图生成",
+      ],
     },
   },
 
-  // === Business Intelligence ===
+  // === Client Engagement & Intelligence ===
   {
     slug: "sales-insight",
     code: "SLIN",
@@ -479,14 +630,14 @@ export const products: Product[] = [
     category: "sales",
     name: { en: "SalesInsight", ja: "SalesInsight", zh: "SalesInsight" },
     tagline: {
-      en: "AI-Powered Sales Support & Real-Time Analysis",
-      ja: "AI搭載営業支援とリアルタイム分析",
-      zh: "AI驱动的销售支持与实时分析",
+      en: "Proposal Pricing Intelligence & Pipeline Analytics",
+      ja: "提案金額インテリジェンスとパイプライン分析",
+      zh: "提案报价智能与项目管道分析",
     },
     description: {
-      en: "Empower your sales team with real-time AI analysis and CRM integration. Get intelligent lead scoring, conversation insights, deal predictions, and automated reporting to close more deals faster.",
-      ja: "リアルタイムAI分析とCRM統合で営業チームを強化。インテリジェントなリードスコアリング、会話インサイト、商談予測、自動レポーティングで、より多くの商談をより速くクロージングします。",
-      zh: "通过实时AI分析和CRM集成赋能销售团队。智能线索评分、对话洞察、交易预测和自动报告，助您更快达成更多交易。",
+      en: "AI-powered analytics for your own consulting pipeline and proposal pricing. Optimize your pricing strategy with historical deal analysis, predict engagement success, and manage your consulting revenue forecasts with real-time intelligence.",
+      ja: "自社のコンサルティングパイプラインと提案金額のAI分析。過去の商談分析で料金戦略を最適化し、案件の成約予測を行い、リアルタイムインテリジェンスでコンサル売上予測を管理します。",
+      zh: "面向自身咨询项目管道和提案报价的AI分析。通过历史交易分析优化定价策略，预测项目成功率，用实时智能管理咨询收入预测。",
     },
     features: {
       en: [
@@ -515,9 +666,24 @@ export const products: Product[] = [
       ],
     },
     useCases: {
-      en: ["Client sales team optimization projects", "Revenue forecasting system implementation", "Customer intelligence platform delivery", "Sales performance consulting engagements"],
-      ja: ["クライアント営業チーム最適化プロジェクト", "売上予測システムの導入支援", "顧客インテリジェンス基盤の構築", "営業パフォーマンスコンサルティング"],
-      zh: ["客户销售团队优化项目", "营收预测系统实施", "客户智能平台交付", "销售绩效咨询"],
+      en: [
+        "Proposal pricing optimization from historical data",
+        "Consulting pipeline and revenue forecasting",
+        "Win/loss analysis for proposal strategy improvement",
+        "Client engagement health monitoring",
+      ],
+      ja: [
+        "過去データに基づく提案金額の最適化",
+        "コンサルティングパイプラインと売上予測",
+        "提案戦略改善のための受注・失注分析",
+        "クライアントエンゲージメントの健全性モニタリング",
+      ],
+      zh: [
+        "基于历史数据的提案报价优化",
+        "咨询项目管道与营收预测",
+        "改善提案策略的中标/落标分析",
+        "客户项目健康度监控",
+      ],
     },
   },
   {
@@ -528,45 +694,60 @@ export const products: Product[] = [
     category: "sales",
     name: { en: "InterviewInsight", ja: "InterviewInsight", zh: "InterviewInsight" },
     tagline: {
-      en: "AI-Powered Recruitment Interview Support",
-      ja: "AI搭載採用面接支援",
-      zh: "AI驱动的招聘面试支持",
+      en: "AI Stakeholder Interview & Business Survey Support",
+      ja: "AIステークホルダーヒアリング・業務調査支援",
+      zh: "AI利益相关方访谈与业务调研支持",
     },
     description: {
-      en: "Transform your hiring process with objective, AI-powered interview evaluation. Structured interview frameworks, real-time assessment guidance, bias detection, and comprehensive candidate scoring for fair and effective recruitment.",
-      ja: "客観的なAI搭載面接評価で採用プロセスを変革。構造化面接フレームワーク、リアルタイム評価ガイダンス、バイアス検出、包括的な候補者スコアリングで、公平で効果的な採用を実現します。",
-      zh: "通过客观的AI面试评估变革招聘流程。结构化面试框架、实时评估指导、偏见检测和全面的候选人评分，实现公平高效的招聘。",
+      en: "AI-powered support for stakeholder interviews and business surveys during requirements definition. Structure your interview frameworks, get real-time guidance during hearings, and automatically extract insights and action items from interview sessions.",
+      ja: "要件定義時のステークホルダーヒアリングと業務調査をAIで支援。インタビューフレームワークを構造化し、ヒアリング中にリアルタイムのガイダンスを受け、インタビューセッションからインサイトとアクションアイテムを自動抽出します。",
+      zh: "AI支持需求定义阶段的利益相关方访谈和业务调研。构建访谈框架，在访谈中获得实时指导，自动从访谈会议中提取洞察和行动项。",
     },
     features: {
       en: [
         "Structured interview frameworks",
         "Real-time evaluation guidance",
         "AI bias detection and alerts",
-        "Candidate scoring and ranking",
+        "Insight extraction and scoring",
         "Interview analytics dashboard",
         "ATS integration support",
       ],
       ja: [
-        "構造化面接フレームワーク",
+        "構造化インタビューフレームワーク",
         "リアルタイム評価ガイダンス",
         "AIバイアス検出とアラート",
-        "候補者スコアリングとランキング",
-        "面接分析ダッシュボード",
+        "インサイト抽出とスコアリング",
+        "インタビュー分析ダッシュボード",
         "ATS統合サポート",
       ],
       zh: [
-        "结构化面试框架",
+        "结构化访谈框架",
         "实时评估指导",
         "AI偏见检测和警报",
-        "候选人评分和排名",
-        "面试分析仪表板",
+        "洞察提取与评分",
+        "访谈分析仪表板",
         "ATS集成支持",
       ],
     },
     useCases: {
-      en: ["Client HR transformation projects", "Large-scale recruitment process consulting", "Executive search firm digitalization", "DE&I hiring program implementation"],
-      ja: ["クライアントの人事変革プロジェクト", "大規模採用プロセスコンサルティング", "エグゼクティブサーチ企業のDX化", "DE&I採用プログラムの導入支援"],
-      zh: ["客户HR转型项目", "大规模招聘流程咨询", "高管搜索公司数字化", "DE&I招聘项目实施"],
+      en: [
+        "Stakeholder interview structuring and insight extraction",
+        "Business survey automation during As-Is analysis",
+        "Requirements hearing support with AI guidance",
+        "Cross-department interview consistency management",
+      ],
+      ja: [
+        "ステークホルダーインタビューの構造化とインサイト抽出",
+        "As-Is分析時の業務調査自動化",
+        "AIガイダンスによる要件ヒアリング支援",
+        "部門横断インタビューの一貫性管理",
+      ],
+      zh: [
+        "利益相关方访谈结构化与洞察提取",
+        "现状分析中的业务调研自动化",
+        "AI指导的需求访谈支持",
+        "跨部门访谈一致性管理",
+      ],
     },
   },
 ];

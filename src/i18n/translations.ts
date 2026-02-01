@@ -73,16 +73,16 @@ export const translations: Record<Locale, TranslationSet> = {
       getStarted: "Contact Us",
     },
     hero: {
-      title: "Strengthen Your Clients' DX with AI-Powered Office Tools",
+      title: "Built by Consultants, for Consultants — AI Tools for Every Phase of Your Engagement",
       subtitle:
-        "Enhance your SI/consulting proposals with HARMONIC insight's suite — document automation, AI creative tools, and intelligent RPA that deliver measurable ROI to your clients.",
+        "Born from real-world experience in accounting systems, customer platforms, and IT consulting — HARMONIC insight delivers purpose-built tools for business surveys, requirements definition, proposal pricing, and user education.",
       cta: "Request Partner Consultation",
       ctaSecondary: "View Products",
     },
     products: {
       title: "Solution Lineup",
       subtitle:
-        "11 products across office automation, AI creation, RPA, and BI — ready to embed in your client proposals",
+        "11 tools covering every consulting phase — from business surveys and requirements definition to proposal pricing and client delivery",
       viewAll: "View All Solutions",
       learnMore: "Learn More",
       features: "Features",
@@ -91,14 +91,14 @@ export const translations: Record<Locale, TranslationSet> = {
       backToProducts: "Back to Solutions",
     },
     features: {
-      title: "Why SIers and Consultants Choose HARMONIC insight",
+      title: "Why Consultants & SIers Choose HARMONIC insight",
       subtitle:
-        "Proven tools that enhance your delivery capabilities and create recurring revenue opportunities",
+        "Built from decades of accounting system development and IT consulting experience — tools that solve real problems at every engagement phase",
     },
     cta: {
-      title: "Add HARMONIC insight to Your Solution Portfolio",
+      title: "Accelerate Your Consulting Engagements with HARMONIC insight",
       subtitle:
-        "Join our partner network and deliver proven Office automation solutions to your clients. Dedicated SI/consultant support included.",
+        "Purpose-built by consultants who've delivered accounting systems, customer platforms, and enterprise solutions. Join our partner network to transform your delivery.",
       button: "Request Partner Consultation",
       noCreditCard: "No commitment required",
     },
@@ -128,16 +128,16 @@ export const translations: Record<Locale, TranslationSet> = {
       getStarted: "お問い合わせ",
     },
     hero: {
-      title: "貴社の提案力を強化する、AI搭載オフィス自動化ソリューション",
+      title: "コンサルタントが作った、コンサルタントのためのAIツール群",
       subtitle:
-        "ドキュメント自動化、AIクリエイティブツール、インテリジェントRPA — クライアントのDX推進に確かなROIをもたらすHARMONIC insightの製品群を、貴社のソリューションに組み込めます。",
+        "会計パッケージや顧客システムの企画・設計・開発の実績から生まれたHARMONIC insight — 業務調査、要件定義、提案金額シミュレーション、ユーザー教育まで、案件の全フェーズをカバーします。",
       cta: "パートナー相談を申し込む",
       ctaSecondary: "製品を見る",
     },
     products: {
       title: "ソリューションラインナップ",
       subtitle:
-        "オフィス自動化、AIクリエーション、RPA、BIを網羅する11製品 — クライアント提案にすぐ組み込み可能",
+        "業務調査から要件定義、提案金額策定、クライアント納品まで — コンサルティングの全フェーズをカバーする11ツール",
       viewAll: "すべてのソリューションを見る",
       learnMore: "詳しく見る",
       features: "機能",
@@ -146,14 +146,14 @@ export const translations: Record<Locale, TranslationSet> = {
       backToProducts: "ソリューション一覧に戻る",
     },
     features: {
-      title: "SIer・コンサルティング企業がHARMONIC insightを選ぶ理由",
+      title: "コンサルタント・SIerがHARMONIC insightを選ぶ理由",
       subtitle:
-        "貴社のデリバリー力を強化し、継続的な収益機会を生み出す実績あるツール群",
+        "会計システムや顧客システムの企画・設計・開発の豊富な実績から生まれた、案件の全フェーズで使える実践的ツール群",
     },
     cta: {
-      title: "HARMONIC insightを貴社のソリューションに加えませんか",
+      title: "HARMONIC insightで貴社の案件デリバリーを加速しませんか",
       subtitle:
-        "パートナーネットワークに参加し、実績あるオフィス自動化ソリューションをクライアントに提供しましょう。SI・コンサル専任サポート付き。",
+        "会計パッケージ、顧客システム、エンタープライズソリューションの開発実績を持つコンサルタントが作ったツール群。パートナーネットワークに参加して、貴社のデリバリーを変革しましょう。",
       button: "パートナー相談を申し込む",
       noCreditCard: "お気軽にご相談ください",
     },
@@ -183,15 +183,15 @@ export const translations: Record<Locale, TranslationSet> = {
       getStarted: "联系我们",
     },
     hero: {
-      title: "用AI办公自动化工具增强贵司的客户提案能力",
+      title: "咨询师打造，为咨询师而生的AI工具套件",
       subtitle:
-        "将HARMONIC insight的文档自动化、AI创意工具和智能RPA融入贵司的SI/咨询方案，为客户数字化转型带来可量化的投资回报。",
+        "源自会计系统和客户平台的企划、设计、开发实战经验 — HARMONIC insight覆盖业务调研、需求定义、提案报价模拟到用户教育的全项目周期。",
       cta: "申请合作伙伴咨询",
       ctaSecondary: "查看产品",
     },
     products: {
       title: "解决方案阵容",
-      subtitle: "涵盖办公自动化、AI创作、RPA和BI的11款产品 — 可直接嵌入客户提案",
+      subtitle: "从业务调研、需求定义到提案报价和客户交付 — 覆盖咨询全阶段的11款工具",
       viewAll: "查看所有解决方案",
       learnMore: "了解更多",
       features: "功能",
@@ -200,13 +200,13 @@ export const translations: Record<Locale, TranslationSet> = {
       backToProducts: "返回解决方案列表",
     },
     features: {
-      title: "SI企业和咨询公司选择HARMONIC insight的理由",
-      subtitle: "提升贵司交付能力并创造持续性收入机会的成熟工具",
+      title: "咨询师和SI企业选择HARMONIC insight的理由",
+      subtitle: "源自会计系统和客户系统企划、设计、开发的丰富实战经验，覆盖项目全阶段的实用工具",
     },
     cta: {
-      title: "将HARMONIC insight加入贵司的解决方案组合",
+      title: "用HARMONIC insight加速贵司的咨询项目交付",
       subtitle:
-        "加入我们的合作伙伴网络，为客户提供成熟的办公自动化解决方案。提供SI/咨询专属支持。",
+        "由具有会计系统、客户平台和企业解决方案开发经验的咨询师打造。加入合作伙伴网络，变革贵司的项目交付。",
       button: "申请合作伙伴咨询",
       noCreditCard: "无需承诺",
     },
