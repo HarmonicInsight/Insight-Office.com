@@ -18,7 +18,7 @@ export default function Header({ locale }: { locale: Locale }) {
               <span className="text-white font-bold text-sm">HI</span>
             </div>
             <span className="font-bold text-xl text-gray-900">
-              Harmonic<span className="text-primary-600">Insight</span>
+              <span className="tracking-wide">HARMONIC</span> <span className="text-primary-600 font-normal">insight</span>
             </span>
           </Link>
 

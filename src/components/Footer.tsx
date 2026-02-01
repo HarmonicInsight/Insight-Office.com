@@ -89,7 +89,7 @@ export default function Footer({ locale }: { locale: Locale }) {
             <div className="w-6 h-6 rounded bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
               <span className="text-white font-bold text-xs">HI</span>
             </div>
-            <span className="font-semibold text-primary-100">Harmonic Insight</span>
+            <span className="font-semibold text-primary-100"><span className="tracking-wide">HARMONIC</span> <span className="font-normal">insight</span></span>
           </div>
           <p className="text-sm text-primary-300">
             &copy; {new Date().getFullYear()} {t.footer.copyright}

@@ -73,7 +73,7 @@ export const translations: Record<Locale, TranslationSet> = {
     hero: {
       title: "Unlock Business Potential with AI-Powered Office Tools",
       subtitle:
-        "From document automation to AI creative tools and intelligent RPA — Harmonic Insight's comprehensive suite empowers every business professional.",
+        "From document automation to AI creative tools and intelligent RPA — HARMONIC insight's comprehensive suite empowers every business professional.",
       cta: "Start Free Trial",
       ctaSecondary: "Request Demo",
     },
@@ -89,14 +89,14 @@ export const translations: Record<Locale, TranslationSet> = {
       backToProducts: "Back to Products",
     },
     features: {
-      title: "Why Choose Harmonic Insight?",
+      title: "Why Choose HARMONIC insight?",
       subtitle:
         "Professional intelligence — a sophisticated yet approachable partner for business professionals",
     },
     cta: {
       title: "Ready to Transform Your Business?",
       subtitle:
-        "Start with a free trial and discover how Harmonic Insight's tools can accelerate your workflows.",
+        "Start with a free trial and discover how HARMONIC insight's tools can accelerate your workflows.",
       button: "Start Free Trial",
       noCreditCard: "No credit card required",
     },
@@ -112,7 +112,7 @@ export const translations: Record<Locale, TranslationSet> = {
       support: "Support",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
-      copyright: "Harmonic Insight Inc. All rights reserved.",
+      copyright: "HARMONIC insight Inc. All rights reserved.",
     },
   },
   ja: {
@@ -127,7 +127,7 @@ export const translations: Record<Locale, TranslationSet> = {
     hero: {
       title: "AIの力で、すべてのビジネスパーソンの可能性を解き放つ",
       subtitle:
-        "ドキュメント自動化からAIクリエイティブツール、インテリジェントRPAまで — Harmonic Insightの包括的なスイートがビジネスを加速します。",
+        "ドキュメント自動化からAIクリエイティブツール、インテリジェントRPAまで — HARMONIC insightの包括的なスイートがビジネスを加速します。",
       cta: "無料トライアル開始",
       ctaSecondary: "デモを依頼",
     },
@@ -143,14 +143,14 @@ export const translations: Record<Locale, TranslationSet> = {
       backToProducts: "製品一覧に戻る",
     },
     features: {
-      title: "Harmonic Insightが選ばれる理由",
+      title: "HARMONIC insightが選ばれる理由",
       subtitle:
         "洗練されたプロフェッショナルインテリジェンス — ビジネスパーソンに寄り添う信頼のパートナー",
     },
     cta: {
       title: "ビジネスの変革を始めませんか？",
       subtitle:
-        "無料トライアルから始めて、Harmonic Insightのツールがワークフローをどう加速させるかをお確かめください。",
+        "無料トライアルから始めて、HARMONIC insightのツールがワークフローをどう加速させるかをお確かめください。",
       button: "無料トライアル開始",
       noCreditCard: "クレジットカード不要",
     },
@@ -166,7 +166,7 @@ export const translations: Record<Locale, TranslationSet> = {
       support: "サポート",
       privacy: "プライバシーポリシー",
       terms: "利用規約",
-      copyright: "Harmonic Insight Inc. All rights reserved.",
+      copyright: "HARMONIC insight Inc. All rights reserved.",
     },
   },
   zh: {
@@ -181,7 +181,7 @@ export const translations: Record<Locale, TranslationSet> = {
     hero: {
       title: "用AI释放每一位商务人士的无限潜能",
       subtitle:
-        "从文档自动化到AI创意工具和智能RPA — Harmonic Insight的全面套件为每位商务专业人士赋能。",
+        "从文档自动化到AI创意工具和智能RPA — HARMONIC insight的全面套件为每位商务专业人士赋能。",
       cta: "开始免费试用",
       ctaSecondary: "请求演示",
     },
@@ -196,13 +196,13 @@ export const translations: Record<Locale, TranslationSet> = {
       backToProducts: "返回产品列表",
     },
     features: {
-      title: "为什么选择Harmonic Insight？",
+      title: "为什么选择HARMONIC insight？",
       subtitle: "专业智能 — 精致而平易近人的商务专业人士伙伴",
     },
     cta: {
       title: "准备好转型您的业务了吗？",
       subtitle:
-        "从免费试用开始，了解Harmonic Insight的工具如何加速您的工作流程。",
+        "从免费试用开始，了解HARMONIC insight的工具如何加速您的工作流程。",
       button: "开始免费试用",
       noCreditCard: "无需信用卡",
     },
@@ -218,7 +218,7 @@ export const translations: Record<Locale, TranslationSet> = {
       support: "支持",
       privacy: "隐私政策",
       terms: "服务条款",
-      copyright: "Harmonic Insight Inc. 保留所有权利。",
+      copyright: "HARMONIC insight Inc. 保留所有权利。",
     },
   },
 };
