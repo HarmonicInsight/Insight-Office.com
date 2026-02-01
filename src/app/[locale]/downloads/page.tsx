@@ -7,18 +7,18 @@ export function generateStaticParams() {
 
 const categoryOrder: ProductCategory[] = ["rpa", "consulting", "content"];
 
-const GITHUB_RELEASES_BASE =
-  "https://github.com/HarmonicInsight/releases/releases/tag";
+const GITHUB_DL_BASE =
+  "https://github.com/HarmonicInsight/releases/releases/download";
 
-const releaseMap: Record<string, { tag: string; version: string }> = {
-  INBT: { tag: "INBT-v1.0.0", version: "1.0.0" },
-  INCA: { tag: "INCA-v1.0.0", version: "1.0.0" },
-  INPY: { tag: "INPY-v1.0.0", version: "1.0.0" },
-  HMSH: { tag: "IOSH-v1.0.0", version: "1.0.0" },
-  INSS: { tag: "INSS-v1.0.0", version: "1.0.0" },
-  IVIN: { tag: "", version: "" },
-  INMV: { tag: "INMV-v1.0.0", version: "1.0.0" },
-  INIG: { tag: "INIG-v1.0.0", version: "1.0.0" },
+const releaseMap: Record<string, { tag: string; file: string; version: string }> = {
+  INBT: { tag: "INBT-v1.0.0", file: "InsightBotRPA_Setup_1.0.0.exe", version: "1.0.0" },
+  INCA: { tag: "INCA-v1.0.0", file: "InsightNoCodeAnalyzer-v1.0.0-win-x64.zip", version: "1.0.0" },
+  INPY: { tag: "INPY-v1.0.0", file: "InsightPy-v1.0.0-win-x64.zip", version: "1.0.0" },
+  HMSH: { tag: "IOSH-v1.0.0", file: "InsightOfficeSheet-v1.0.0-win-x64.zip", version: "1.0.0" },
+  INSS: { tag: "INSS-v1.0.0", file: "InsightSlide-v1.0.0-win-x64.zip", version: "1.0.0" },
+  IVIN: { tag: "", file: "", version: "" },
+  INMV: { tag: "INMV-v1.0.0", file: "InsightMovie-v1.0.0-win-x64.zip", version: "1.0.0" },
+  INIG: { tag: "INIG-v1.0.0", file: "InsightImageGen-v1.0.0-win-x64.zip", version: "1.0.0" },
 };
 
 export default async function DownloadsPage({
@@ -59,7 +59,7 @@ export default async function DownloadsPage({
                   const release = releaseMap[product.code];
                   const isAvailable = release && release.tag !== "";
                   const downloadUrl = isAvailable
-                    ? `${GITHUB_RELEASES_BASE}/${release.tag}`
+                    ? `${GITHUB_DL_BASE}/${release.tag}/${release.file}`
                     : undefined;
 
                   return (
