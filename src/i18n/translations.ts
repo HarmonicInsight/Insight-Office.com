@@ -78,17 +78,17 @@ export const translations: Record<Locale, TranslationSet> = {
       getStarted: "Get Started",
     },
     hero: {
-      title: "Build Smarter Enterprise Solutions with Insight Office",
+      title: "Unlock Business Potential with AI-Powered Office Tools",
       subtitle:
-        "Accelerate development with our comprehensive suite of enterprise tools — from AI-powered learning platforms to intelligent automation and cross-platform integrations.",
+        "From document automation to AI creative tools and intelligent RPA — Harmonic Insight's comprehensive suite empowers every business professional.",
       cta: "Start Free Trial",
       ctaSecondary: "Request Demo",
-      trustedBy: "Trusted by enterprises worldwide",
+      trustedBy: "Trusted by enterprises across Japan and worldwide",
     },
     products: {
       title: "Our Products",
       subtitle:
-        "A comprehensive suite of enterprise tools designed to accelerate your digital transformation",
+        "11 desktop and mobile applications spanning office automation, AI creation, RPA, and business intelligence",
       viewAll: "View All Products",
       learnMore: "Learn More",
       features: "Features",
@@ -97,20 +97,20 @@ export const translations: Record<Locale, TranslationSet> = {
       backToProducts: "Back to Products",
     },
     stats: {
-      enterprises: "Enterprises",
-      countries: "Countries",
+      enterprises: "Products",
+      countries: "Pricing Tiers",
       uptime: "Uptime",
       support: "Support",
     },
     features: {
-      title: "Why Choose Insight Office?",
+      title: "Why Choose Harmonic Insight?",
       subtitle:
-        "Enterprise-grade tools with the simplicity your team deserves",
+        "Professional intelligence — a sophisticated yet approachable partner for business professionals",
     },
     cta: {
       title: "Ready to Transform Your Business?",
       subtitle:
-        "Join thousands of enterprises already using Insight Office to build better software, faster.",
+        "Start with a free trial and discover how Harmonic Insight's tools can accelerate your workflows.",
       button: "Start Free Trial",
       noCreditCard: "No credit card required",
     },
@@ -126,7 +126,7 @@ export const translations: Record<Locale, TranslationSet> = {
       support: "Support",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
-      copyright: "Insight Office. All rights reserved.",
+      copyright: "Harmonic Insight Inc. All rights reserved.",
     },
   },
   ja: {
@@ -139,17 +139,17 @@ export const translations: Record<Locale, TranslationSet> = {
       getStarted: "今すぐ始める",
     },
     hero: {
-      title: "Insight Officeで、よりスマートなエンタープライズソリューションを構築",
+      title: "AIの力で、すべてのビジネスパーソンの可能性を解き放つ",
       subtitle:
-        "AI搭載の学習プラットフォームからインテリジェントな自動化、クロスプラットフォーム統合まで — 包括的なエンタープライズツールで開発を加速させます。",
+        "ドキュメント自動化からAIクリエイティブツール、インテリジェントRPAまで — Harmonic Insightの包括的なスイートがビジネスを加速します。",
       cta: "無料トライアル開始",
       ctaSecondary: "デモを依頼",
-      trustedBy: "世界中の企業に信頼されています",
+      trustedBy: "日本国内および世界中の企業に信頼されています",
     },
     products: {
       title: "製品ラインナップ",
       subtitle:
-        "デジタルトランスフォーメーションを加速させるために設計された、包括的なエンタープライズツール群",
+        "オフィス自動化、AIクリエーション、RPA、ビジネスインテリジェンスを網羅する11のデスクトップ・モバイルアプリケーション",
       viewAll: "すべての製品を見る",
       learnMore: "詳しく見る",
       features: "機能",
@@ -158,20 +158,20 @@ export const translations: Record<Locale, TranslationSet> = {
       backToProducts: "製品一覧に戻る",
     },
     stats: {
-      enterprises: "導入企業",
-      countries: "対応国",
+      enterprises: "製品数",
+      countries: "料金プラン",
       uptime: "稼働率",
       support: "サポート",
     },
     features: {
-      title: "Insight Officeが選ばれる理由",
+      title: "Harmonic Insightが選ばれる理由",
       subtitle:
-        "チームが求めるシンプルさを備えたエンタープライズグレードのツール",
+        "洗練されたプロフェッショナルインテリジェンス — ビジネスパーソンに寄り添う信頼のパートナー",
     },
     cta: {
       title: "ビジネスの変革を始めませんか？",
       subtitle:
-        "すでに数千の企業がInsight Officeを使用して、より良いソフトウェアをより速く構築しています。",
+        "無料トライアルから始めて、Harmonic Insightのツールがワークフローをどう加速させるかをお確かめください。",
       button: "無料トライアル開始",
       noCreditCard: "クレジットカード不要",
     },
@@ -187,7 +187,7 @@ export const translations: Record<Locale, TranslationSet> = {
       support: "サポート",
       privacy: "プライバシーポリシー",
       terms: "利用規約",
-      copyright: "Insight Office. All rights reserved.",
+      copyright: "Harmonic Insight Inc. All rights reserved.",
     },
   },
   zh: {
@@ -200,16 +200,16 @@ export const translations: Record<Locale, TranslationSet> = {
       getStarted: "立即开始",
     },
     hero: {
-      title: "使用Insight Office构建更智能的企业解决方案",
+      title: "用AI释放每一位商务人士的无限潜能",
       subtitle:
-        "从AI驱动的学习平台到智能自动化和跨平台集成 — 利用我们全面的企业工具套件加速开发。",
+        "从文档自动化到AI创意工具和智能RPA — Harmonic Insight的全面套件为每位商务专业人士赋能。",
       cta: "开始免费试用",
       ctaSecondary: "请求演示",
-      trustedBy: "全球企业的信赖之选",
+      trustedBy: "日本及全球企业的信赖之选",
     },
     products: {
       title: "我们的产品",
-      subtitle: "专为加速数字化转型而设计的全面企业工具套件",
+      subtitle: "涵盖办公自动化、AI创作、RPA和商业智能的11款桌面和移动应用",
       viewAll: "查看所有产品",
       learnMore: "了解更多",
       features: "功能",
@@ -218,19 +218,19 @@ export const translations: Record<Locale, TranslationSet> = {
       backToProducts: "返回产品列表",
     },
     stats: {
-      enterprises: "企业客户",
-      countries: "覆盖国家",
+      enterprises: "产品数量",
+      countries: "定价方案",
       uptime: "运行时间",
       support: "技术支持",
     },
     features: {
-      title: "为什么选择Insight Office？",
-      subtitle: "具备团队所需简洁性的企业级工具",
+      title: "为什么选择Harmonic Insight？",
+      subtitle: "专业智能 — 精致而平易近人的商务专业人士伙伴",
     },
     cta: {
       title: "准备好转型您的业务了吗？",
       subtitle:
-        "加入数千家已经在使用Insight Office构建更好、更快软件的企业。",
+        "从免费试用开始，了解Harmonic Insight的工具如何加速您的工作流程。",
       button: "开始免费试用",
       noCreditCard: "无需信用卡",
     },
@@ -246,7 +246,7 @@ export const translations: Record<Locale, TranslationSet> = {
       support: "支持",
       privacy: "隐私政策",
       terms: "服务条款",
-      copyright: "Insight Office. 保留所有权利。",
+      copyright: "Harmonic Insight Inc. 保留所有权利。",
     },
   },
 };

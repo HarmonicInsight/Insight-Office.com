@@ -7,9 +7,9 @@ export default function HeroSection({ locale }: { locale: Locale }) {
   return (
     <section className="relative pt-32 pb-20 overflow-hidden">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-accent-50" />
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-primary-200/30 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-accent-200/30 to-transparent rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-ivory-50 to-ivory-100" />
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-primary-200/20 to-transparent rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-primary-100/20 to-transparent rounded-full blur-3xl" />
 
       <div className="section-container relative">
         <div className="max-w-4xl mx-auto text-center">
@@ -36,8 +36,8 @@ export default function HeroSection({ locale }: { locale: Locale }) {
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { value: "500+", label: t.stats.enterprises },
-            { value: "40+", label: t.stats.countries },
+            { value: "11", label: t.stats.enterprises },
+            { value: "5", label: t.stats.countries },
             { value: "99.9%", label: t.stats.uptime },
             { value: "24/7", label: t.stats.support },
           ].map((stat) => (

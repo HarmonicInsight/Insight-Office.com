@@ -104,7 +104,7 @@ export default function FeaturesSection({ locale }: { locale: Locale }) {
   const featureList = features[locale];
 
   return (
-    <section id="features" className="py-20 bg-gray-50">
+    <section id="features" className="py-20 bg-ivory-100">
       <div className="section-container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

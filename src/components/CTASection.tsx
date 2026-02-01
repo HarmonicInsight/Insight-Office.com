@@ -6,7 +6,7 @@ export default function CTASection({ locale }: { locale: Locale }) {
   return (
     <section id="cta" className="py-20">
       <div className="section-container">
-        <div className="relative rounded-3xl bg-gradient-to-br from-primary-600 to-primary-800 overflow-hidden">
+        <div className="relative rounded-3xl bg-gradient-to-br from-primary-700 to-primary-900 overflow-hidden">
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
