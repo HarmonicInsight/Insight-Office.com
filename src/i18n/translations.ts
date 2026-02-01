@@ -75,14 +75,14 @@ export const translations: Record<Locale, TranslationSet> = {
     hero: {
       title: "Built by Consultants, for Consultants — AI Tools for Every Phase of Your Engagement",
       subtitle:
-        "Born from real-world experience in accounting systems, customer platforms, and IT consulting — HARMONIC insight delivers purpose-built tools for business surveys, requirements definition, proposal pricing, and user education.",
+        "Born from real-world experience in accounting systems, customer platforms, and IT consulting — HARMONIC insight delivers purpose-built tools for business surveys, requirements definition quality, proposal pricing simulation, and user education.",
       cta: "Request Partner Consultation",
       ctaSecondary: "View Products",
     },
     products: {
       title: "Solution Lineup",
       subtitle:
-        "11 tools covering every consulting phase — from business surveys and requirements definition to proposal pricing and client delivery",
+        "11 tools covering every consulting phase — from business surveys and requirements quality to proposal pricing and user education",
       viewAll: "View All Solutions",
       learnMore: "Learn More",
       features: "Features",
@@ -130,14 +130,14 @@ export const translations: Record<Locale, TranslationSet> = {
     hero: {
       title: "コンサルタントが作った、コンサルタントのためのAIツール群",
       subtitle:
-        "会計パッケージや顧客システムの企画・設計・開発の実績から生まれたHARMONIC insight — 業務調査、要件定義、提案金額シミュレーション、ユーザー教育まで、案件の全フェーズをカバーします。",
+        "会計パッケージや顧客システムの企画・設計・開発の実績から生まれたHARMONIC insight — 業務調査の効率化、要件定義の品質向上、提案金額シミュレーション、ユーザー教育まで、案件の全フェーズをカバーします。",
       cta: "パートナー相談を申し込む",
       ctaSecondary: "製品を見る",
     },
     products: {
       title: "ソリューションラインナップ",
       subtitle:
-        "業務調査から要件定義、提案金額策定、クライアント納品まで — コンサルティングの全フェーズをカバーする11ツール",
+        "業務調査の効率化から要件定義の品質向上、提案金額シミュレーション、ユーザー教育まで — コンサルティングの全フェーズをカバーする11ツール",
       viewAll: "すべてのソリューションを見る",
       learnMore: "詳しく見る",
       features: "機能",
@@ -185,13 +185,13 @@ export const translations: Record<Locale, TranslationSet> = {
     hero: {
       title: "咨询师打造，为咨询师而生的AI工具套件",
       subtitle:
-        "源自会计系统和客户平台的企划、设计、开发实战经验 — HARMONIC insight覆盖业务调研、需求定义、提案报价模拟到用户教育的全项目周期。",
+        "源自会计系统和客户平台的企划、设计、开发实战经验 — HARMONIC insight覆盖业务调研效率化、需求定义质量提升、提案报价模拟到用户教育的全项目周期。",
       cta: "申请合作伙伴咨询",
       ctaSecondary: "查看产品",
     },
     products: {
       title: "解决方案阵容",
-      subtitle: "从业务调研、需求定义到提案报价和客户交付 — 覆盖咨询全阶段的11款工具",
+      subtitle: "从业务调研效率化、需求定义质量提升到提案报价模拟和用户教育 — 覆盖咨询全阶段的11款工具",
       viewAll: "查看所有解决方案",
       learnMore: "了解更多",
       features: "功能",
