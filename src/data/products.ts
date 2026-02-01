@@ -41,12 +41,12 @@ export const categoryNames: Record<ProductCategory, Record<Locale, string>> = {
 export const products: Product[] = [
   // === Strategy & Proposal Toolkit ===
   {
-    slug: "harmonic-slide",
+    slug: "insight-office-slide",
     code: "HMSL",
     icon: "M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z",
     color: "from-amber-500 to-amber-700",
     category: "office",
-    name: { en: "HarmonicSlide", ja: "HarmonicSlide", zh: "HarmonicSlide" },
+    name: { en: "InsightOfficeSlide", ja: "InsightOfficeSlide", zh: "InsightOfficeSlide" },
     tagline: {
       en: "AI-Powered Presentation Review & Quality Enhancement",
       ja: "AIによるプレゼンテーションレビュー・品質向上",
@@ -105,12 +105,12 @@ export const products: Product[] = [
     },
   },
   {
-    slug: "harmonic-doc",
+    slug: "insight-office-doc",
     code: "HMDC",
     icon: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z",
     color: "from-blue-500 to-blue-700",
     category: "office",
-    name: { en: "HarmonicDoc", ja: "HarmonicDoc", zh: "HarmonicDoc" },
+    name: { en: "InsightOfficeDoc", ja: "InsightOfficeDoc", zh: "InsightOfficeDoc" },
     tagline: {
       en: "AI Document Review & Deliverable Quality Assurance",
       ja: "AIドキュメントレビュー・納品物品質保証",
@@ -169,12 +169,12 @@ export const products: Product[] = [
     },
   },
   {
-    slug: "harmonic-sheet",
+    slug: "insight-office-sheet",
     code: "HMSH",
     icon: "M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z",
     color: "from-green-500 to-green-700",
     category: "office",
-    name: { en: "HarmonicSheet", ja: "HarmonicSheet", zh: "HarmonicSheet" },
+    name: { en: "InsightOfficeSheet", ja: "InsightOfficeSheet", zh: "InsightOfficeSheet" },
     tagline: {
       en: "Proposal Pricing & Strategy Simulation on Excel",
       ja: "提案金額シミュレーション・経営戦略策定Excel基盤",
