@@ -3,7 +3,7 @@ import { translations, type Locale } from "@/i18n/translations";
 import { products, categoryNames, type ProductCategory } from "@/data/products";
 import ProductCard from "./ProductCard";
 
-const categoryOrder: ProductCategory[] = ["rpa", "proposal", "research", "content"];
+const categoryOrder: ProductCategory[] = ["rpa", "consulting", "content"];
 
 export default function ProductsSection({ locale }: { locale: Locale }) {
   const t = translations[locale];

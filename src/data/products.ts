@@ -1,6 +1,6 @@
 import type { Locale } from "@/i18n/translations";
 
-export type ProductCategory = "rpa" | "proposal" | "research" | "content";
+export type ProductCategory = "rpa" | "consulting" | "content";
 
 export type Product = {
   slug: string;
@@ -21,15 +21,10 @@ export const categoryNames: Record<ProductCategory, Record<Locale, string>> = {
     ja: "自動化・デリバリー",
     zh: "自动化与交付",
   },
-  proposal: {
-    en: "Proposal & Strategy Simulation",
-    ja: "提案・経営シミュレーション",
-    zh: "提案与经营模拟",
-  },
-  research: {
-    en: "Business Analysis & Requirements",
-    ja: "業務調査・要件定義",
-    zh: "业务调研与需求定义",
+  consulting: {
+    en: "Business Analysis, Requirements, Proposal & Strategy Simulation",
+    ja: "業務調査・要件定義・提案・経営シミュレーション",
+    zh: "业务调研・需求定义・提案・经营模拟",
   },
   content: {
     en: "Content Creation",
@@ -233,13 +228,13 @@ export const products: Product[] = [
     },
   },
 
-  // === 2. Proposal & Strategy Simulation ===
+  // === 2. Business Analysis, Requirements, Proposal & Strategy Simulation ===
   {
     slug: "insight-office-sheet",
     code: "HMSH",
     icon: "M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z",
     color: "from-green-500 to-green-700",
-    category: "proposal",
+    category: "consulting",
     name: { en: "InsightOfficeSheet", ja: "InsightOfficeSheet", zh: "InsightOfficeSheet" },
     tagline: {
       en: "Proposal Pricing & Strategy Simulation on Excel",
@@ -299,77 +294,11 @@ export const products: Product[] = [
     },
   },
   {
-    slug: "sales-insight",
-    code: "SLIN",
-    icon: "M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z",
-    color: "from-primary-400 to-primary-700",
-    category: "proposal",
-    name: { en: "SalesInsight", ja: "SalesInsight", zh: "SalesInsight" },
-    tagline: {
-      en: "Proposal Pricing Intelligence & Pipeline Analytics",
-      ja: "提案金額インテリジェンスとパイプライン分析",
-      zh: "提案报价智能与项目管道分析",
-    },
-    description: {
-      en: "AI-powered analytics for your own consulting pipeline and proposal pricing. Optimize your pricing strategy with historical deal analysis, predict engagement success, and manage your consulting revenue forecasts with real-time intelligence.",
-      ja: "自社のコンサルティングパイプラインと提案金額のAI分析。過去の商談分析で料金戦略を最適化し、案件の成約予測を行い、リアルタイムインテリジェンスでコンサル売上予測を管理します。",
-      zh: "面向自身咨询项目管道和提案报价的AI分析。通过历史交易分析优化定价策略，预测项目成功率，用实时智能管理咨询收入预测。",
-    },
-    features: {
-      en: [
-        "Real-time sales analytics",
-        "AI lead scoring and prediction",
-        "CRM integration (Salesforce, HubSpot)",
-        "Conversation intelligence",
-        "Automated deal reporting",
-        "Pipeline health monitoring",
-      ],
-      ja: [
-        "リアルタイム営業分析",
-        "AIリードスコアリングと予測",
-        "CRM統合（Salesforce、HubSpot）",
-        "会話インテリジェンス",
-        "自動商談レポーティング",
-        "パイプライン健全性モニタリング",
-      ],
-      zh: [
-        "实时销售分析",
-        "AI线索评分与预测",
-        "CRM集成（Salesforce、HubSpot）",
-        "对话智能",
-        "自动交易报告",
-        "管道健康监控",
-      ],
-    },
-    useCases: {
-      en: [
-        "Proposal pricing optimization from historical data",
-        "Consulting pipeline and revenue forecasting",
-        "Win/loss analysis for proposal strategy improvement",
-        "Client engagement health monitoring",
-      ],
-      ja: [
-        "過去データに基づく提案金額の最適化",
-        "コンサルティングパイプラインと売上予測",
-        "提案戦略改善のための受注・失注分析",
-        "クライアントエンゲージメントの健全性モニタリング",
-      ],
-      zh: [
-        "基于历史数据的提案报价优化",
-        "咨询项目管道与营收预测",
-        "改善提案策略的中标/落标分析",
-        "客户项目健康度监控",
-      ],
-    },
-  },
-
-  // === 3. Business Analysis & Requirements ===
-  {
     slug: "insight-slide",
     code: "INSS",
     icon: "M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122",
     color: "from-orange-400 to-amber-600",
-    category: "research",
+    category: "consulting",
     name: { en: "InsightSlide", ja: "InsightSlide", zh: "InsightSlide" },
     tagline: {
       en: "AI-Powered Business Analysis from Client Presentations",
@@ -433,7 +362,7 @@ export const products: Product[] = [
     code: "IVIN",
     icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
     color: "from-teal-500 to-cyan-600",
-    category: "research",
+    category: "consulting",
     name: { en: "InterviewInsight", ja: "InterviewInsight", zh: "InterviewInsight" },
     tagline: {
       en: "AI Stakeholder Interview & Business Survey Support",
@@ -493,7 +422,7 @@ export const products: Product[] = [
     },
   },
 
-  // === 4. Content Creation ===
+  // === 3. Content Creation ===
   {
     slug: "insight-movie",
     code: "INMV",

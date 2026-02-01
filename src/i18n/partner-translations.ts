@@ -80,7 +80,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     highlights: {
       investment: { value: "¥0", label: "初期投資" },
       discount: { value: "20〜40%", label: "仕入れ割引" },
-      products: { value: "9製品", label: "取扱製品数" },
+      products: { value: "8製品", label: "取扱製品数" },
       quota: { value: "¥0", label: "初年度ノルマ" },
     },
     tiers: {
@@ -131,15 +131,14 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     },
     products: {
       title: "取扱製品ラインナップ",
-      subtitle: "9つのコンサルティング向けAIツールを取り扱いいただけます",
+      subtitle: "8つのコンサルティング向けツールを取り扱いいただけます",
       annual: "年間サブスクリプション",
       freeTrial: "無料トライアルあり",
       items: [
-        { name: "InsightPy", price: "¥69,800/年" },
         { name: "InsightBot", price: "¥98,000/年" },
         { name: "InsightNoCodeAnalyzer", price: "¥128,000/年" },
+        { name: "InsightPy", price: "¥69,800/年" },
         { name: "InsightOfficeSheet", price: "¥59,800/年" },
-        { name: "SalesInsight", price: "¥98,000/年" },
         { name: "InsightSlide", price: "¥49,800/年" },
         { name: "InterviewInsight", price: "¥98,000/年" },
         { name: "InsightMovie", price: "¥128,000/年" },
@@ -213,7 +212,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     highlights: {
       investment: { value: "¥0", label: "Initial Investment" },
       discount: { value: "20–40%", label: "Wholesale Discount" },
-      products: { value: "9", label: "Products" },
+      products: { value: "8", label: "Products" },
       quota: { value: "¥0", label: "First-Year Quota" },
     },
     tiers: {
@@ -264,15 +263,14 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     },
     products: {
       title: "Product Lineup",
-      subtitle: "Resell 9 AI-powered consulting tools",
+      subtitle: "Resell 8 consulting tools",
       annual: "Annual subscription",
       freeTrial: "Free trial available",
       items: [
-        { name: "InsightPy", price: "¥69,800/yr" },
         { name: "InsightBot", price: "¥98,000/yr" },
         { name: "InsightNoCodeAnalyzer", price: "¥128,000/yr" },
+        { name: "InsightPy", price: "¥69,800/yr" },
         { name: "InsightOfficeSheet", price: "¥59,800/yr" },
-        { name: "SalesInsight", price: "¥98,000/yr" },
         { name: "InsightSlide", price: "¥49,800/yr" },
         { name: "InterviewInsight", price: "¥98,000/yr" },
         { name: "InsightMovie", price: "¥128,000/yr" },
@@ -346,7 +344,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     highlights: {
       investment: { value: "¥0", label: "初始投资" },
       discount: { value: "20–40%", label: "批发折扣" },
-      products: { value: "9款", label: "产品数量" },
+      products: { value: "8款", label: "产品数量" },
       quota: { value: "¥0", label: "首年配额" },
     },
     tiers: {
@@ -397,15 +395,14 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     },
     products: {
       title: "产品阵容",
-      subtitle: "可代理销售9款咨询AI工具",
+      subtitle: "可代理销售8款咨询工具",
       annual: "年度订阅",
       freeTrial: "提供免费试用",
       items: [
-        { name: "InsightPy", price: "¥69,800/年" },
         { name: "InsightBot", price: "¥98,000/年" },
         { name: "InsightNoCodeAnalyzer", price: "¥128,000/年" },
+        { name: "InsightPy", price: "¥69,800/年" },
         { name: "InsightOfficeSheet", price: "¥59,800/年" },
-        { name: "SalesInsight", price: "¥98,000/年" },
         { name: "InsightSlide", price: "¥49,800/年" },
         { name: "InterviewInsight", price: "¥98,000/年" },
         { name: "InsightMovie", price: "¥128,000/年" },

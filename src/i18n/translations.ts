@@ -82,7 +82,7 @@ export const translations: Record<Locale, TranslationSet> = {
     products: {
       title: "Solution Lineup",
       subtitle:
-        "9 tools covering every consulting phase — from automation and delivery to proposal pricing, business analysis, and content creation",
+        "8 tools covering every consulting phase — from automation and delivery to business analysis, requirements, proposals, strategy simulation, and content creation",
       viewAll: "View All Solutions",
       learnMore: "Learn More",
       features: "Features",
@@ -137,7 +137,7 @@ export const translations: Record<Locale, TranslationSet> = {
     products: {
       title: "ソリューションラインナップ",
       subtitle:
-        "自動化・デリバリーから提案シミュレーション、業務調査・要件定義、コンテンツ作成まで — コンサルティングの全フェーズをカバーする9ツール",
+        "自動化・デリバリーから業務調査・要件定義・提案・経営シミュレーション、コンテンツ作成まで — コンサルティングの全フェーズをカバーする8ツール",
       viewAll: "すべてのソリューションを見る",
       learnMore: "詳しく見る",
       features: "機能",
@@ -191,7 +191,7 @@ export const translations: Record<Locale, TranslationSet> = {
     },
     products: {
       title: "解决方案阵容",
-      subtitle: "从自动化交付、提案模拟到业务调研、需求定义和内容创作 — 覆盖咨询全阶段的9款工具",
+      subtitle: "从自动化交付到业务调研、需求定义、提案、经营模拟和内容创作 — 覆盖咨询全阶段的8款工具",
       viewAll: "查看所有解决方案",
       learnMore: "了解更多",
       features: "功能",

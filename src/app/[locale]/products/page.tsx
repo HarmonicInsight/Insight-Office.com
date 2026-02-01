@@ -6,7 +6,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const categoryOrder: ProductCategory[] = ["rpa", "proposal", "research", "content"];
+const categoryOrder: ProductCategory[] = ["rpa", "consulting", "content"];
 
 export default async function ProductsPage({
   params,
