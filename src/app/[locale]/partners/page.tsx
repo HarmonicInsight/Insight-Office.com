@@ -131,48 +131,64 @@ export default async function PartnersPage({
         </div>
       </section>
 
-      {/* Product Lineup */}
+      {/* Pricing Structure */}
       <section className="py-16">
         <div className="section-container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-3">
               {t.products.title}
             </h2>
-            <p className="text-gray-600">{t.products.subtitle}</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">{t.products.subtitle}</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {t.products.items.map((product) => {
-              const cInfo = competitorData[product.name];
-              return (
-                <div
-                  key={product.name}
-                  className="bg-white rounded-xl border border-ivory-200 p-6 hover:shadow-md transition-shadow"
-                >
-                  <div className="flex items-start justify-between gap-2 mb-1">
-                    <h3 className="font-bold text-gray-900">
-                      {product.name}
-                    </h3>
-                    {cInfo && (
-                      <CompetitorDialog
-                        productName={product.name}
-                        info={cInfo}
-                        labels={competitorLabels[locale]}
-                      />
-                    )}
-                  </div>
-                  <p className="text-primary-600 font-semibold mb-2">
-                    {product.price}
-                  </p>
-                  <div className="flex items-center gap-4 text-xs text-gray-500">
-                    <span>{t.products.annual}</span>
-                    <span className="text-green-600 font-medium">
-                      {t.products.freeTrial}
-                    </span>
-                  </div>
+
+          {/* License note banner */}
+          <div className="bg-primary-50 border border-primary-200 rounded-xl p-5 text-center mb-8">
+            <span className="text-lg font-bold text-primary-700">{t.products.licenseNote}</span>
+          </div>
+
+          {/* Consulting & Support row */}
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white rounded-xl border border-ivory-200 p-6">
+              <h3 className="font-bold text-gray-900 mb-1">{t.products.consulting}</h3>
+              <p className="text-xl font-semibold text-primary-600">{t.products.consultingPrice}</p>
+            </div>
+            <div className="bg-white rounded-xl border border-ivory-200 p-6">
+              <h3 className="font-bold text-gray-900 mb-1">{t.products.supportLabel}</h3>
+              <p className="text-xl font-semibold text-primary-600">{t.products.supportPrice}</p>
+            </div>
+          </div>
+
+          {/* Category pricing cards */}
+          <div className="grid md:grid-cols-2 gap-6 mb-6">
+            {t.products.categories.map((cat) => (
+              <div
+                key={cat.category}
+                className="bg-white rounded-xl border border-ivory-200 p-6 hover:shadow-md transition-shadow"
+              >
+                <h3 className="font-bold text-gray-900 mb-2">{cat.category}</h3>
+                <p className="text-xl font-semibold text-primary-600 mb-3">{cat.priceRange}</p>
+                <div className="flex flex-wrap gap-2">
+                  {cat.products.map((name) => {
+                    const cInfo = competitorData[name];
+                    return (
+                      <span key={name} className="inline-flex items-center gap-1 text-xs bg-ivory-100 text-gray-700 px-3 py-1.5 rounded-full">
+                        {name}
+                        {cInfo && (
+                          <CompetitorDialog
+                            productName={name}
+                            info={cInfo}
+                            labels={competitorLabels[locale]}
+                          />
+                        )}
+                      </span>
+                    );
+                  })}
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
+
+          <p className="text-sm text-gray-500 text-center">{t.products.note}</p>
         </div>
       </section>
 
