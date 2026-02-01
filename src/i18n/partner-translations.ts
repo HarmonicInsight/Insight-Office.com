@@ -186,7 +186,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     highlights: {
       investment: { value: "¥0", label: "初期投資" },
       discount: { value: "20〜40%", label: "仕入れ割引" },
-      products: { value: "8製品", label: "取扱製品数" },
+      products: { value: "9製品", label: "取扱製品数" },
       quota: { value: "¥0", label: "初年度ノルマ" },
     },
     tiers: {
@@ -246,7 +246,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
       categories: [
         { category: "自動化・RPA", products: ["InsightBot"], priceRange: "80〜150万円/年" },
         { category: "調査・要件定義支援", products: ["InsightNoCodeAnalyzer", "InsightPy", "InterviewInsight"], priceRange: "50〜120万円/年" },
-        { category: "スライド／資料効率化", products: ["InsightOfficeSheet", "InsightSlide"], priceRange: "40〜90万円/年" },
+        { category: "スライド／資料効率化", products: ["InsightOfficeSheet", "InsightOfficeDoc", "InsightSlide"], priceRange: "40〜90万円/年" },
         { category: "コンテンツ生成", products: ["InsightMovie", "InsightImageGen"], priceRange: "30〜80万円/年" },
       ],
       note: "※ 上記はすべて年間ライセンスの参考価格帯です。導入規模・ご利用形態に応じてお見積りいたします。",
@@ -352,7 +352,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     highlights: {
       investment: { value: "¥0", label: "Initial Investment" },
       discount: { value: "20–40%", label: "Wholesale Discount" },
-      products: { value: "8", label: "Products" },
+      products: { value: "9", label: "Products" },
       quota: { value: "¥0", label: "First-Year Quota" },
     },
     tiers: {
@@ -412,7 +412,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
       categories: [
         { category: "Automation & RPA", products: ["InsightBot"], priceRange: "¥800K–1.5M/year" },
         { category: "Survey & Requirements", products: ["InsightNoCodeAnalyzer", "InsightPy", "InterviewInsight"], priceRange: "¥500K–1.2M/year" },
-        { category: "Slides & Documentation", products: ["InsightOfficeSheet", "InsightSlide"], priceRange: "¥400K–900K/year" },
+        { category: "Slides & Documentation", products: ["InsightOfficeSheet", "InsightOfficeDoc", "InsightSlide"], priceRange: "¥400K–900K/year" },
         { category: "Content Generation", products: ["InsightMovie", "InsightImageGen"], priceRange: "¥300K–800K/year" },
       ],
       note: "All prices are annual license reference ranges. Final quotes are based on deployment scale and usage requirements.",
@@ -518,7 +518,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     highlights: {
       investment: { value: "¥0", label: "初始投资" },
       discount: { value: "20–40%", label: "批发折扣" },
-      products: { value: "8款", label: "产品数量" },
+      products: { value: "9款", label: "产品数量" },
       quota: { value: "¥0", label: "首年配额" },
     },
     tiers: {
@@ -578,7 +578,7 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
       categories: [
         { category: "自动化・RPA", products: ["InsightBot"], priceRange: "80〜150万日元/年" },
         { category: "调研・需求定义支持", products: ["InsightNoCodeAnalyzer", "InsightPy", "InterviewInsight"], priceRange: "50〜120万日元/年" },
-        { category: "幻灯片／文档效率化", products: ["InsightOfficeSheet", "InsightSlide"], priceRange: "40〜90万日元/年" },
+        { category: "幻灯片／文档效率化", products: ["InsightOfficeSheet", "InsightOfficeDoc", "InsightSlide"], priceRange: "40〜90万日元/年" },
         { category: "内容生成", products: ["InsightMovie", "InsightImageGen"], priceRange: "30〜80万日元/年" },
       ],
       note: "以上均为年度许可参考价格区间。最终报价根据部署规模和使用需求确定。",
