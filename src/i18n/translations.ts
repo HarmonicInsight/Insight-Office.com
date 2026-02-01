@@ -16,8 +16,20 @@ type TranslationSet = {
     solutions: string;
     partners: string;
     pricing: string;
+    downloads: string;
     contact: string;
     getStarted: string;
+  };
+  downloads: {
+    title: string;
+    subtitle: string;
+    version: string;
+    releaseDate: string;
+    download: string;
+    systemReq: string;
+    systemReqItems: string[];
+    notes: string;
+    notesItems: string[];
   };
   hero: {
     title: string;
@@ -69,8 +81,28 @@ export const translations: Record<Locale, TranslationSet> = {
       solutions: "Solutions",
       partners: "Partner Program",
       pricing: "Pricing",
+      downloads: "Downloads",
       contact: "Contact",
       getStarted: "Contact Us",
+    },
+    downloads: {
+      title: "Downloads",
+      subtitle: "Download the latest versions of HARMONIC insight products",
+      version: "Version",
+      releaseDate: "Release Date",
+      download: "Download",
+      systemReq: "System Requirements",
+      systemReqItems: [
+        "Windows 10 / 11 (64-bit)",
+        "8 GB RAM or more",
+        "2 GB available disk space",
+        "Internet connection required for activation",
+      ],
+      notes: "Notes",
+      notesItems: [
+        "A license key is required after the trial period. Contact your partner or our sales team.",
+        "Please review the release notes before updating from a previous version.",
+      ],
     },
     hero: {
       title: "Built by Consultants, for Consultants — AI Tools for Every Phase of Your Engagement",
@@ -124,8 +156,28 @@ export const translations: Record<Locale, TranslationSet> = {
       solutions: "ソリューション",
       partners: "パートナープログラム",
       pricing: "料金",
+      downloads: "ダウンロード",
       contact: "お問い合わせ",
       getStarted: "お問い合わせ",
+    },
+    downloads: {
+      title: "ダウンロード",
+      subtitle: "HARMONIC insight 製品の最新バージョンをダウンロードいただけます",
+      version: "バージョン",
+      releaseDate: "リリース日",
+      download: "ダウンロード",
+      systemReq: "システム要件",
+      systemReqItems: [
+        "Windows 10 / 11（64ビット）",
+        "8 GB 以上のRAM",
+        "2 GB 以上の空きディスク容量",
+        "アクティベーションにインターネット接続が必要",
+      ],
+      notes: "ご注意",
+      notesItems: [
+        "トライアル期間終了後はライセンスキーが必要です。パートナー様または弊社営業担当までお問い合わせください。",
+        "旧バージョンからアップデートされる場合は、リリースノートをご確認ください。",
+      ],
     },
     hero: {
       title: "コンサルタントが作った、コンサルタントのためのツール群",
@@ -179,8 +231,28 @@ export const translations: Record<Locale, TranslationSet> = {
       solutions: "解决方案",
       partners: "合作伙伴计划",
       pricing: "价格",
+      downloads: "下载",
       contact: "联系我们",
       getStarted: "联系我们",
+    },
+    downloads: {
+      title: "下载",
+      subtitle: "下载HARMONIC insight产品的最新版本",
+      version: "版本",
+      releaseDate: "发布日期",
+      download: "下载",
+      systemReq: "系统要求",
+      systemReqItems: [
+        "Windows 10 / 11（64位）",
+        "8 GB以上RAM",
+        "2 GB以上可用磁盘空间",
+        "激活需要互联网连接",
+      ],
+      notes: "注意事项",
+      notesItems: [
+        "试用期结束后需要许可证密钥。请联系您的合作伙伴或我们的销售团队。",
+        "从旧版本更新前，请查阅发布说明。",
+      ],
     },
     hero: {
       title: "咨询师打造，为咨询师而生的AI工具套件",

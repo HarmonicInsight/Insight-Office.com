@@ -43,6 +43,12 @@ export default function Header({ locale }: { locale: Locale }) {
               {t.nav.solutions}
             </Link>
             <Link
+              href={`/${locale}/downloads`}
+              className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
+            >
+              {t.nav.downloads}
+            </Link>
+            <Link
               href={`/${locale}#cta`}
               className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
             >
@@ -132,6 +138,12 @@ export default function Header({ locale }: { locale: Locale }) {
                 className="text-sm font-medium text-gray-600 hover:text-primary-600"
               >
                 {t.nav.solutions}
+              </Link>
+              <Link
+                href={`/${locale}/downloads`}
+                className="text-sm font-medium text-gray-600 hover:text-primary-600"
+              >
+                {t.nav.downloads}
               </Link>
               {/* Partner Program — distinct section */}
               <div className="mt-2 pt-3 border-t border-ivory-300">
