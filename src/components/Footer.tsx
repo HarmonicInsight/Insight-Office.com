@@ -70,6 +70,14 @@ export default function Footer({ locale }: { locale: Locale }) {
                   {t.footer.support}
                 </span>
               </li>
+              <li>
+                <a
+                  href="mailto:info@h-insight.jp"
+                  className="text-sm hover:text-primary-50 transition-colors"
+                >
+                  {t.nav.contact}: info@h-insight.jp
+                </a>
+              </li>
             </ul>
           </div>
 
