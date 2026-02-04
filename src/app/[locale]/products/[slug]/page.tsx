@@ -175,52 +175,126 @@ export default async function ProductDetailPage({
             {t.pricing.title}
           </h2>
           <p className="text-gray-600 mb-8">{t.pricing.subtitle}</p>
-          <div className="grid md:grid-cols-3 gap-6">
+
+          {/* Software License Section */}
+          <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <svg className="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            {t.pricing.licenseSectionTitle}
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
             {/* Trial */}
-            <div className="border border-gray-200 rounded-xl p-8 hover:border-primary-200 hover:shadow-md transition-all">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{t.pricing.trialLabel}</h3>
-              <p className="text-3xl font-bold text-primary-700 mb-4">
-                ¥0
-              </p>
-              <p className="text-gray-600 text-sm mb-6">{t.pricing.trialDesc}</p>
-              <a
-                href={`/${locale}/downloads`}
-                className="block text-center btn-primary w-full"
-              >
+            <div className="border border-gray-200 rounded-xl p-6 hover:border-primary-200 hover:shadow-md transition-all">
+              <h4 className="text-base font-bold text-gray-900 mb-2">{t.pricing.trialLabel}</h4>
+              <p className="text-3xl font-bold text-primary-700 mb-1">{t.pricing.trialPrice}</p>
+              <p className="text-gray-600 text-sm mb-4">{t.pricing.trialDesc}</p>
+              <ul className="space-y-2 mb-6">
+                {t.pricing.trialFeatures.map((f) => (
+                  <li key={f} className="flex items-start gap-2 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a href={`/${locale}/downloads`} className="block text-center btn-primary w-full text-sm">
                 {t.pricing.startTrial}
               </a>
             </div>
             {/* Standard */}
-            <div className="border-2 border-primary-300 rounded-xl p-8 relative shadow-md">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{t.pricing.standardLabel}</h3>
-              <p className="text-3xl font-bold text-primary-700 mb-1">
+            <div className="border-2 border-primary-300 rounded-xl p-6 relative shadow-md">
+              <h4 className="text-base font-bold text-gray-900 mb-2">{t.pricing.standardLabel}</h4>
+              <p className="text-3xl font-bold text-primary-700 mb-0">
                 {t.pricing.standardPrice}
-                <span className="text-base font-normal text-gray-500">{t.pricing.perMonth}</span>
               </p>
-              <p className="text-gray-600 text-sm mb-6">{t.pricing.standardDesc}</p>
-              <a
-                href={`/${locale}/contact`}
-                className="block text-center btn-primary w-full"
-              >
+              <p className="text-xs text-gray-500 mb-4">{t.pricing.standardUnit}</p>
+              <p className="text-gray-600 text-sm mb-4">{t.pricing.standardDesc}</p>
+              <ul className="space-y-2 mb-6">
+                {t.pricing.standardFeatures.map((f) => (
+                  <li key={f} className="flex items-start gap-2 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a href={`/${locale}/contact`} className="block text-center btn-primary w-full text-sm">
                 {t.pricing.contactSales}
               </a>
             </div>
-            {/* Enterprise */}
-            <div className="border border-gray-200 rounded-xl p-8 hover:border-primary-200 hover:shadow-md transition-all">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{t.pricing.enterpriseLabel}</h3>
-              <p className="text-3xl font-bold text-primary-700 mb-4">
-                {t.pricing.contactSales}
+            {/* Team 5 */}
+            <div className="border border-gray-200 rounded-xl p-6 hover:border-primary-200 hover:shadow-md transition-all relative">
+              <span className="absolute -top-3 right-4 bg-accent-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                {t.pricing.team5Discount}
+              </span>
+              <h4 className="text-base font-bold text-gray-900 mb-2">{t.pricing.team5Label}</h4>
+              <p className="text-3xl font-bold text-primary-700 mb-0">
+                {t.pricing.team5Price}
               </p>
-              <p className="text-gray-600 text-sm mb-6">{t.pricing.enterpriseDesc}</p>
-              <a
-                href={`/${locale}/contact`}
-                className="block text-center btn-secondary w-full"
-              >
+              <p className="text-xs text-gray-500 mb-4">{t.pricing.team5Unit}</p>
+              <p className="text-gray-600 text-sm mb-6">{t.pricing.team5Desc}</p>
+              <a href={`/${locale}/contact`} className="block text-center btn-secondary w-full text-sm">
+                {t.pricing.contactSales}
+              </a>
+            </div>
+            {/* Team 10 */}
+            <div className="border border-gray-200 rounded-xl p-6 hover:border-primary-200 hover:shadow-md transition-all relative">
+              <span className="absolute -top-3 right-4 bg-accent-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                {t.pricing.team10Discount}
+              </span>
+              <h4 className="text-base font-bold text-gray-900 mb-2">{t.pricing.team10Label}</h4>
+              <p className="text-3xl font-bold text-primary-700 mb-0">
+                {t.pricing.team10Price}
+              </p>
+              <p className="text-xs text-gray-500 mb-4">{t.pricing.team10Unit}</p>
+              <p className="text-gray-600 text-sm mb-6">{t.pricing.team10Desc}</p>
+              <a href={`/${locale}/contact`} className="block text-center btn-secondary w-full text-sm">
                 {t.pricing.contactSales}
               </a>
             </div>
           </div>
-          <p className="text-xs text-gray-400 mt-4">{t.pricing.taxNote}</p>
+
+          {/* AI Ticket Section */}
+          <h3 className="text-lg font-semibold text-gray-800 mb-2 flex items-center gap-2">
+            <svg className="w-5 h-5 text-accent-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+            {t.pricing.aiSectionTitle}
+          </h3>
+          <p className="text-gray-500 text-sm mb-5">{t.pricing.aiSectionSubtitle}</p>
+          <div className="grid md:grid-cols-3 gap-5 mb-4">
+            {t.pricing.aiTickets.map((ticket, i) => (
+              <div
+                key={ticket.name}
+                className={`rounded-xl p-6 transition-all ${
+                  i === 1
+                    ? "border-2 border-accent-300 shadow-md relative"
+                    : "border border-gray-200 hover:border-accent-200 hover:shadow-md"
+                }`}
+              >
+                {i === 1 && (
+                  <span className="absolute -top-3 left-4 bg-accent-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    {t.pricing.recommended}
+                  </span>
+                )}
+                <h4 className="text-base font-bold text-gray-900 mb-1">{ticket.name}</h4>
+                <p className="text-3xl font-bold text-primary-700 mb-0">{ticket.price}</p>
+                <p className="text-xs text-gray-500 mb-1">{ticket.queries}{t.pricing.perQuery}</p>
+                <p className="text-sm font-medium text-accent-600 mb-3">
+                  1{t.pricing.perQuery} {ticket.perQuery}
+                </p>
+                <p className="text-gray-600 text-sm mb-5">{ticket.desc}</p>
+                <a href={`/${locale}/contact`} className="block text-center btn-secondary w-full text-sm">
+                  {t.pricing.contactSales}
+                </a>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs text-gray-400 mb-1">{t.pricing.aiModelNote}</p>
+          <p className="text-xs text-gray-400">{t.pricing.taxNote}</p>
         </div>
 
         {/* CTA */}
