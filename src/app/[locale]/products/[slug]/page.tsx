@@ -194,13 +194,12 @@ export default async function ProductDetailPage({
             <div className="border-2 border-primary-300 rounded-xl p-8 relative shadow-md">
               <h3 className="text-lg font-bold text-gray-900 mb-2">{t.pricing.standardLabel}</h3>
               <p className="text-3xl font-bold text-primary-700 mb-1">
-                ¥5,000
+                {t.pricing.standardPrice}
                 <span className="text-base font-normal text-gray-500">{t.pricing.perMonth}</span>
               </p>
-              <p className="text-sm text-gray-400 mb-4">¥50,000{t.pricing.perYear}</p>
               <p className="text-gray-600 text-sm mb-6">{t.pricing.standardDesc}</p>
               <a
-                href="mailto:info@h-insight.jp"
+                href={`/${locale}/contact`}
                 className="block text-center btn-primary w-full"
               >
                 {t.pricing.contactSales}
@@ -214,7 +213,7 @@ export default async function ProductDetailPage({
               </p>
               <p className="text-gray-600 text-sm mb-6">{t.pricing.enterpriseDesc}</p>
               <a
-                href="mailto:info@h-insight.jp"
+                href={`/${locale}/contact`}
                 className="block text-center btn-secondary w-full"
               >
                 {t.pricing.contactSales}

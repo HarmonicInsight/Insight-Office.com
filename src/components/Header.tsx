@@ -48,12 +48,12 @@ export default function Header({ locale }: { locale: Locale }) {
             >
               {t.nav.downloads}
             </Link>
-            <a
-              href="mailto:info@h-insight.jp"
+            <Link
+              href={`/${locale}/contact`}
               className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
             >
               {t.nav.contact}
-            </a>
+            </Link>
           </nav>
 
           {/* Right side */}
@@ -82,9 +82,9 @@ export default function Header({ locale }: { locale: Locale }) {
                 </Link>
               ))}
             </div>
-            <a href="mailto:info@h-insight.jp" className="btn-primary text-sm">
+            <Link href={`/${locale}/contact`} className="btn-primary text-sm">
               {t.nav.getStarted}
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -172,12 +172,12 @@ export default function Header({ locale }: { locale: Locale }) {
                   </Link>
                 ))}
               </div>
-              <a
-                href="mailto:info@h-insight.jp"
+              <Link
+                href={`/${locale}/contact`}
                 className="btn-primary text-sm mt-2"
               >
                 {t.nav.getStarted}
-              </a>
+              </Link>
             </nav>
           </div>
         )}

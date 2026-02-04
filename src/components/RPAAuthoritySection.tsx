@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { translations, type Locale } from "@/i18n/translations";
 
 export default function RPAAuthoritySection({ locale }: { locale: Locale }) {
@@ -48,12 +49,12 @@ export default function RPAAuthoritySection({ locale }: { locale: Locale }) {
         </div>
 
         <div className="text-center mt-10">
-          <a
-            href="mailto:info@h-insight.jp"
+          <Link
+            href={`/${locale}/contact`}
             className="btn-secondary"
           >
             {t.rpaAuthority.cta}
-          </a>
+          </Link>
         </div>
       </div>
     </section>

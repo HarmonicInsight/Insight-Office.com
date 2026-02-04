@@ -98,12 +98,36 @@ type TranslationSet = {
     trialLabel: string;
     trialDesc: string;
     standardLabel: string;
+    standardPrice: string;
     standardDesc: string;
     enterpriseLabel: string;
     enterpriseDesc: string;
     contactSales: string;
     startTrial: string;
     taxNote: string;
+  };
+  contact: {
+    title: string;
+    subtitle: string;
+    nameLabel: string;
+    namePlaceholder: string;
+    emailLabel: string;
+    emailPlaceholder: string;
+    companyLabel: string;
+    companyPlaceholder: string;
+    subjectLabel: string;
+    subjectOptions: string[];
+    messageLabel: string;
+    messagePlaceholder: string;
+    submit: string;
+    successTitle: string;
+    successMessage: string;
+  };
+  socialProof: {
+    title: string;
+    subtitle: string;
+    industries: { name: string; icon: string }[];
+    stats: { value: string; label: string }[];
   };
   footer: {
     products: string;
@@ -154,90 +178,90 @@ export const translations: Record<Locale, TranslationSet> = {
       ],
     },
     hero: {
-      title: "Reduce Project Delivery Time and Cost with AI-Powered Tools",
+      title: "Ship Projects Faster with AI-Powered Consulting Tools",
       subtitle:
-        "Excel sprawl, RPA maintenance costs, knowledge loss from staff turnover — solve the challenges that slow down your business with purpose-built tools born from 28 years of consulting and system development experience.",
-      cta: "Contact Us",
-      ctaSecondary: "View Products",
+        "Scattered Excel files. Ballooning RPA costs. Knowledge walking out the door. We built 9 tools over 28 years of consulting to fix exactly these problems.",
+      cta: "Talk to Our Team",
+      ctaSecondary: "Explore Products",
     },
     solutions: {
-      title: "What Challenge Are You Facing?",
-      subtitle: "Select your challenge to see how HARMONIC insight can help",
+      title: "What's Slowing You Down?",
+      subtitle: "Pick your biggest pain point — we probably built a tool for it",
       cards: [
         {
-          title: "Excel files are scattered and unmanageable",
-          description: "InsightOffice brings version control, AI-assisted analysis, and structured management to your Excel-based operations — without changing your workflow.",
+          title: "Excel chaos across the organization",
+          description: "Version control, AI-assisted analysis, and structured management for Excel-heavy operations — without forcing anyone to change how they work.",
           link: "/products/insight-office",
         },
         {
-          title: "RPA costs keep rising with no clear ROI",
-          description: "Migrate from expensive UiPath licenses to cost-effective alternatives, or modernize your automation with AI-powered InsightBot.",
+          title: "RPA costs spiraling out of control",
+          description: "Cut UiPath licensing costs by up to 70% with migration support, or leapfrog to AI-powered automation with InsightBot.",
           link: "/products/insight-bot",
         },
         {
-          title: "Key knowledge disappears when people leave",
-          description: "Automatically convert business processes, system documentation, and expert knowledge into structured training content and videos.",
+          title: "Tribal knowledge walking out the door",
+          description: "Turn business processes, system docs, and expert know-how into structured training materials and walkthrough videos — automatically.",
           link: "/products/insight-movie",
         },
         {
-          title: "Consulting deliverables take too long to produce",
-          description: "Accelerate business surveys, requirements definition, and proposal creation with AI tools designed for consultants by consultants.",
+          title: "Deliverables taking forever to produce",
+          description: "Speed up business surveys, requirements docs, and proposals with AI tools built by consultants who've been in your shoes.",
           link: "/products/insight-survey",
         },
       ],
     },
     rpaAuthority: {
-      title: "From the Early Days of RPA in Japan",
-      subtitle: "Our founder has been involved in the Japanese RPA market since its inception — advising on UiPath deployments, building automation centers of excellence, and delivering BPO transformation projects.",
-      uipathTitle: "UiPath Migration Support",
-      uipathDesc: "Enterprise UiPath licenses can exceed $20,000/year. We help you evaluate alternatives, migrate existing workflows, and reduce automation costs by up to 70% — without losing functionality.",
-      bpoTitle: "BPO + AI Transformation",
-      bpoDesc: "The BPO industry is undergoing rapid AI transformation. We help BPO operators modernize their service delivery with AI-powered automation that reduces manual processing while maintaining quality.",
-      cta: "Discuss Your RPA Strategy",
+      title: "RPA Expertise Since Day One",
+      subtitle: "We've been in the Japanese RPA market from the beginning — advising on UiPath rollouts, standing up automation CoEs, and delivering BPO transformation at scale.",
+      uipathTitle: "UiPath Migration",
+      uipathDesc: "Enterprise UiPath licenses can top $20K/year. We help you evaluate alternatives, migrate workflows, and cut automation costs by up to 70% — without losing what works.",
+      bpoTitle: "BPO Meets AI",
+      bpoDesc: "BPO is being reshaped by AI. We help operators modernize service delivery with intelligent automation that reduces manual work while keeping quality high.",
+      cta: "Let's Talk RPA Strategy",
     },
     outcomes: {
-      title: "Expected Impact",
-      subtitle: "Theoretical estimates based on typical consulting and system development projects",
-      disclaimer: "These are theoretical projections based on our experience across 100+ projects. Actual results vary depending on project scope, team composition, and organizational readiness.",
+      title: "What You Can Expect",
+      subtitle: "Estimates based on 100+ consulting and system development engagements",
+      disclaimer: "These are projections drawn from our experience. Actual results depend on project scope, team makeup, and organizational readiness.",
       cards: [
         {
-          title: "Business Survey Phase",
-          metric: "40-60%",
-          description: "Reduction in time spent on As-Is analysis through AI-assisted document analysis and interview structuring",
+          title: "As-Is Analysis",
+          metric: "40–60%",
+          description: "Less time on business surveys through AI-assisted document analysis and structured interview capture",
         },
         {
-          title: "Requirements Definition",
-          metric: "50-70%",
-          description: "Fewer revision cycles through visual walkthrough generation that improves stakeholder alignment",
+          title: "Requirements & Alignment",
+          metric: "50–70%",
+          description: "Fewer revision rounds thanks to visual walkthroughs that get stakeholders on the same page faster",
         },
         {
-          title: "Training Content Creation",
+          title: "Training & Onboarding",
           metric: "80%+",
-          description: "Reduction in manual effort for producing user education materials through automated video and document generation",
+          description: "Less manual effort producing user education materials via automated video and document generation",
         },
       ],
     },
     products: {
-      title: "Solution Lineup",
+      title: "Our Product Suite",
       subtitle:
-        "9 tools covering every consulting phase — from automation and delivery to business analysis, requirements, proposals, strategy simulation, and content creation",
-      viewAll: "View All Solutions",
+        "9 purpose-built tools spanning the full consulting lifecycle — from analysis and automation to proposals, training content, and delivery",
+      viewAll: "See All Products",
       learnMore: "Learn More",
       features: "Features",
       keyFeatures: "Key Features",
-      useCases: "Client Delivery Scenarios",
-      backToProducts: "Back to Solutions",
+      useCases: "Real-World Use Cases",
+      backToProducts: "Back to Products",
     },
     features: {
-      title: "Why Consultants & SIers Choose HARMONIC insight",
+      title: "Built for Consulting Teams",
       subtitle:
-        "Estimate the effort for your next business improvement or system development project with your current team — junior members, offshore members, and all. Then estimate how much our tools can streamline that work. Those who get it, get it.",
+        "Whether your team is onshore, offshore, senior, or junior — our tools meet people where they are and make the whole team more effective.",
     },
     cta: {
-      title: "Accelerate Your Consulting Engagements with HARMONIC insight",
+      title: "Ready to Deliver Faster?",
       subtitle:
-        "Purpose-built by consultants who've delivered accounting systems, customer platforms, and enterprise solutions. Join our partner network to transform your delivery.",
-      button: "Request Partner Consultation",
+        "Built by consultants who've shipped accounting systems, CRM platforms, and enterprise solutions. Let's see what we can do for your next engagement.",
+      button: "Get in Touch",
       noCreditCard: "No commitment required",
     },
     pricing: {
@@ -248,12 +272,47 @@ export const translations: Record<Locale, TranslationSet> = {
       trialLabel: "Free Trial",
       trialDesc: "30-day full-featured trial. No credit card required.",
       standardLabel: "Standard",
+      standardPrice: "$35",
       standardDesc: "Per-user license for teams. Volume discounts available.",
       enterpriseLabel: "Enterprise",
       enterpriseDesc: "Unlimited users, dedicated support, and custom integrations.",
       contactSales: "Contact Sales",
       startTrial: "Start Free Trial",
       taxNote: "All prices exclude tax. Contact us for volume pricing and annual discounts.",
+    },
+    contact: {
+      title: "Contact Us",
+      subtitle: "Tell us about your project and we'll get back to you within 1 business day.",
+      nameLabel: "Name",
+      namePlaceholder: "Your name",
+      emailLabel: "Email",
+      emailPlaceholder: "you@company.com",
+      companyLabel: "Company",
+      companyPlaceholder: "Your company name",
+      subjectLabel: "What can we help with?",
+      subjectOptions: ["Product inquiry", "Free trial request", "RPA migration consultation", "Partnership inquiry", "Other"],
+      messageLabel: "Message",
+      messagePlaceholder: "Tell us about your project or challenge...",
+      submit: "Send Message",
+      successTitle: "Message sent!",
+      successMessage: "Thank you for reaching out. We'll get back to you within 1 business day.",
+    },
+    socialProof: {
+      title: "Trusted Across Industries",
+      subtitle: "Deployed by consulting firms, system integrators, and enterprises across Japan and Asia",
+      industries: [
+        { name: "Financial Services", icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+        { name: "Manufacturing", icon: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" },
+        { name: "Retail & Distribution", icon: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" },
+        { name: "IT & System Integration", icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" },
+        { name: "BPO & Shared Services", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" },
+        { name: "Public Sector", icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" },
+      ],
+      stats: [
+        { value: "100+", label: "Projects delivered" },
+        { value: "28", label: "Years of experience" },
+        { value: "9", label: "Purpose-built tools" },
+      ],
     },
     footer: {
       products: "Products",
@@ -396,12 +455,47 @@ export const translations: Record<Locale, TranslationSet> = {
       trialLabel: "無料トライアル",
       trialDesc: "30日間の全機能トライアル。クレジットカード不要。",
       standardLabel: "スタンダード",
+      standardPrice: "¥5,000",
       standardDesc: "チーム向けユーザー単位ライセンス。ボリュームディスカウントあり。",
       enterpriseLabel: "エンタープライズ",
       enterpriseDesc: "ユーザー数無制限、専任サポート、カスタム連携。",
       contactSales: "営業に問い合わせる",
       startTrial: "無料トライアルを始める",
       taxNote: "表示価格は税別です。ボリューム価格や年間割引についてはお問い合わせください。",
+    },
+    contact: {
+      title: "お問い合わせ",
+      subtitle: "プロジェクトについてお聞かせください。1営業日以内にご返信いたします。",
+      nameLabel: "お名前",
+      namePlaceholder: "お名前",
+      emailLabel: "メールアドレス",
+      emailPlaceholder: "you@company.com",
+      companyLabel: "会社名",
+      companyPlaceholder: "会社名",
+      subjectLabel: "ご相談内容",
+      subjectOptions: ["製品についてのお問い合わせ", "無料トライアルのお申し込み", "RPA移行のご相談", "パートナーシップのご相談", "その他"],
+      messageLabel: "メッセージ",
+      messagePlaceholder: "プロジェクトや課題についてお聞かせください...",
+      submit: "送信する",
+      successTitle: "送信完了",
+      successMessage: "お問い合わせありがとうございます。1営業日以内にご返信いたします。",
+    },
+    socialProof: {
+      title: "幅広い業種で導入",
+      subtitle: "コンサルティングファーム、SIer、事業会社で活用されています",
+      industries: [
+        { name: "金融・保険", icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+        { name: "製造業", icon: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" },
+        { name: "小売・流通", icon: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" },
+        { name: "IT・システムインテグレーション", icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" },
+        { name: "BPO・シェアードサービス", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" },
+        { name: "公共・行政", icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" },
+      ],
+      stats: [
+        { value: "100+", label: "プロジェクト実績" },
+        { value: "28年", label: "コンサルティング経験" },
+        { value: "9種", label: "専用ツール" },
+      ],
     },
     footer: {
       products: "製品",
@@ -543,11 +637,46 @@ export const translations: Record<Locale, TranslationSet> = {
       trialDesc: "30天全功能试用。无需信用卡。",
       standardLabel: "标准版",
       standardDesc: "按用户许可证，适合团队使用。批量折扣可议。",
+      standardPrice: "¥5,000",
       enterpriseLabel: "企业版",
       enterpriseDesc: "无限用户、专属支持、定制集成。",
       contactSales: "联系销售",
       startTrial: "开始免费试用",
       taxNote: "所有价格不含税。批量价格和年度折扣请联系我们。",
+    },
+    contact: {
+      title: "联系我们",
+      subtitle: "请告诉我们您的项目需求，我们将在1个工作日内回复。",
+      nameLabel: "姓名",
+      namePlaceholder: "您的姓名",
+      emailLabel: "邮箱",
+      emailPlaceholder: "you@company.com",
+      companyLabel: "公司名称",
+      companyPlaceholder: "公司名称",
+      subjectLabel: "咨询内容",
+      subjectOptions: ["产品咨询", "免费试用申请", "RPA迁移咨询", "合作伙伴咨询", "其他"],
+      messageLabel: "留言",
+      messagePlaceholder: "请描述您的项目或需求...",
+      submit: "发送",
+      successTitle: "发送成功",
+      successMessage: "感谢您的咨询。我们将在1个工作日内回复。",
+    },
+    socialProof: {
+      title: "跨行业部署",
+      subtitle: "在日本及亚洲的咨询公司、系统集成商和企业中广泛应用",
+      industries: [
+        { name: "金融服务", icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" },
+        { name: "制造业", icon: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" },
+        { name: "零售与分销", icon: "M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" },
+        { name: "IT与系统集成", icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" },
+        { name: "BPO与共享服务", icon: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" },
+        { name: "公共部门", icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" },
+      ],
+      stats: [
+        { value: "100+", label: "已交付项目" },
+        { value: "28年", label: "咨询经验" },
+        { value: "9款", label: "专用工具" },
+      ],
     },
     footer: {
       products: "产品",

@@ -71,12 +71,12 @@ export default function Footer({ locale }: { locale: Locale }) {
                 </span>
               </li>
               <li>
-                <a
-                  href="mailto:info@h-insight.jp"
+                <Link
+                  href={`/${locale}/contact`}
                   className="text-sm hover:text-primary-50 transition-colors"
                 >
-                  {t.nav.contact}: info@h-insight.jp
-                </a>
+                  {t.nav.contact}
+                </Link>
               </li>
             </ul>
           </div>
