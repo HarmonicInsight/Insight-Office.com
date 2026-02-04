@@ -146,6 +146,19 @@ export default async function PartnersPage({
             <span className="text-lg font-bold text-primary-700">{t.products.licenseNote}</span>
           </div>
 
+          {/* Base license & AI tickets */}
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="bg-white rounded-xl border border-ivory-200 p-6">
+              <h3 className="font-bold text-gray-900 mb-1">{t.products.licenseBase}</h3>
+              <p className="text-xl font-semibold text-primary-600 mb-2">{t.products.licenseBasePrice}</p>
+            </div>
+            <div className="bg-gradient-to-br from-accent-50 to-primary-50 rounded-xl border border-accent-200 p-6">
+              <h3 className="font-bold text-gray-900 mb-1">{t.products.aiTicketLabel}</h3>
+              <p className="text-sm text-gray-600 mb-2">{t.products.aiTicketDesc}</p>
+              <p className="text-base font-semibold text-primary-700">{t.products.aiTicketPrices}</p>
+            </div>
+          </div>
+
           {/* Consulting & Support row */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white rounded-xl border border-ivory-200 p-6">

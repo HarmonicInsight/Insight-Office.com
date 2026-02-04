@@ -123,6 +123,11 @@ type PartnerTranslations = {
     title: string;
     subtitle: string;
     licenseNote: string;
+    licenseBase: string;
+    licenseBasePrice: string;
+    aiTicketLabel: string;
+    aiTicketDesc: string;
+    aiTicketPrices: string;
     consulting: string;
     consultingPrice: string;
     supportLabel: string;
@@ -238,7 +243,12 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     products: {
       title: "価格体系",
       subtitle: "製品単体販売の場合は各レンジの上限目安、コンサルティング支援とセットの場合はご相談に応じて柔軟に対応いたします",
-      licenseNote: "ライセンス費用：要相談",
+      licenseNote: "ライセンス＋AIチケット制で継続収益を構築",
+      licenseBase: "基本ライセンス",
+      licenseBasePrice: "¥39,800/ユーザー/年（チーム割引あり）",
+      aiTicketLabel: "AIアシスタントチケット（追加収益源）",
+      aiTicketDesc: "Claude搭載AIアシスタント — 顧客が使うほどパートナー収益も増加",
+      aiTicketPrices: "200回 ¥10,000 / 500回 ¥20,000 / 2,000回 ¥60,000",
       consulting: "導入前コンサルティング支援＋教育",
       consultingPrice: "1日20万円〜",
       supportLabel: "保守サポート",
@@ -404,7 +414,12 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     products: {
       title: "Pricing Structure",
       subtitle: "Product-only sales are priced at the upper end of each range. Bundled with consulting engagement, pricing is flexible.",
-      licenseNote: "License fee: Contact us",
+      licenseNote: "License + AI Ticket model for recurring partner revenue",
+      licenseBase: "Base License",
+      licenseBasePrice: "¥39,800/user/year (team discounts available)",
+      aiTicketLabel: "AI Assistant Tickets (additional revenue stream)",
+      aiTicketDesc: "Claude-powered AI assistant — the more customers use it, the more partners earn",
+      aiTicketPrices: "200 queries ¥10,000 / 500 queries ¥20,000 / 2,000 queries ¥60,000",
       consulting: "Pre-deployment consulting & training",
       consultingPrice: "From ¥200,000/day",
       supportLabel: "Maintenance & Support",
@@ -570,7 +585,12 @@ export const partnerTranslations: Record<Locale, PartnerTranslations> = {
     products: {
       title: "价格体系",
       subtitle: "单独购买产品时按各区间上限定价，配合咨询服务可灵活调整",
-      licenseNote: "许可费用：请咨询",
+      licenseNote: "许可证 + AI工单制，为合作伙伴构建持续收入",
+      licenseBase: "基础许可证",
+      licenseBasePrice: "¥39,800/用户/年（团队折扣可用）",
+      aiTicketLabel: "AI助手工单（额外收入来源）",
+      aiTicketDesc: "搭载Claude的AI助手 — 客户使用越多，合作伙伴收入越高",
+      aiTicketPrices: "200次 ¥10,000 / 500次 ¥20,000 / 2,000次 ¥60,000",
       consulting: "导入前咨询支持及培训",
       consultingPrice: "每日20万日元起",
       supportLabel: "维护支持",

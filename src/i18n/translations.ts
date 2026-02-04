@@ -93,18 +93,42 @@ type TranslationSet = {
   pricing: {
     title: string;
     subtitle: string;
-    perMonth: string;
     perYear: string;
+    perQuery: string;
+    licenseSectionTitle: string;
+    aiSectionTitle: string;
+    aiSectionSubtitle: string;
     trialLabel: string;
+    trialPrice: string;
     trialDesc: string;
+    trialFeatures: string[];
     standardLabel: string;
     standardPrice: string;
+    standardUnit: string;
     standardDesc: string;
-    enterpriseLabel: string;
-    enterpriseDesc: string;
+    standardFeatures: string[];
+    team5Label: string;
+    team5Price: string;
+    team5Unit: string;
+    team5Discount: string;
+    team5Desc: string;
+    team10Label: string;
+    team10Price: string;
+    team10Unit: string;
+    team10Discount: string;
+    team10Desc: string;
+    aiTickets: {
+      name: string;
+      queries: string;
+      price: string;
+      perQuery: string;
+      desc: string;
+    }[];
     contactSales: string;
     startTrial: string;
     taxNote: string;
+    aiModelNote: string;
+    recommended: string;
   };
   contact: {
     title: string;
@@ -299,19 +323,67 @@ export const translations: Record<Locale, TranslationSet> = {
     },
     pricing: {
       title: "Pricing",
-      subtitle: "Simple, transparent pricing",
-      perMonth: "/month",
+      subtitle: "Annual license + AI ticket model — pay only for what you use",
       perYear: "/year",
+      perQuery: "/query",
+      licenseSectionTitle: "Software License",
+      aiSectionTitle: "AI Assistant Tickets",
+      aiSectionSubtitle: "Powered by Claude — get expert AI consulting at ¥30–50 per query",
       trialLabel: "Free Trial",
-      trialDesc: "30-day full-featured trial. No credit card required.",
+      trialPrice: "¥0",
+      trialDesc: "Try all features free for 30 days",
+      trialFeatures: [
+        "30-day full-featured trial",
+        "50 AI assistant queries included",
+        "No credit card required",
+      ],
       standardLabel: "Standard",
-      standardPrice: "$35",
-      standardDesc: "Per-user license for teams. Volume discounts available.",
-      enterpriseLabel: "Custom",
-      enterpriseDesc: "Flexible licensing for larger deployments. Let's discuss your needs.",
-      contactSales: "Contact Me",
+      standardPrice: "¥39,800",
+      standardUnit: "/user/year",
+      standardDesc: "Full-featured license for individual users",
+      standardFeatures: [
+        "All 9 InsightOffice products",
+        "All product updates included",
+        "Email support",
+      ],
+      team5Label: "Team 5",
+      team5Price: "¥149,000",
+      team5Unit: "/5 users/year",
+      team5Discount: "25% OFF",
+      team5Desc: "¥29,800/user — ideal for small teams",
+      team10Label: "Team 10",
+      team10Price: "¥248,000",
+      team10Unit: "/10 users/year",
+      team10Discount: "38% OFF",
+      team10Desc: "¥24,800/user — best value for departments",
+      aiTickets: [
+        {
+          name: "Starter",
+          queries: "200",
+          price: "¥10,000",
+          perQuery: "¥50",
+          desc: "For individuals getting started",
+        },
+        {
+          name: "Business",
+          queries: "500",
+          price: "¥20,000",
+          perQuery: "¥40",
+          desc: "Most popular for active teams",
+        },
+        {
+          name: "Enterprise",
+          queries: "2,000",
+          price: "¥60,000",
+          perQuery: "¥30",
+          desc: "For department-wide deployment",
+        },
+      ],
+      contactSales: "Contact Sales",
       startTrial: "Start Free Trial",
-      taxNote: "All prices exclude tax. Contact me for volume pricing and annual discounts.",
+      taxNote: "All prices exclude tax. Custom pricing available for large deployments.",
+      aiModelNote: "AI queries are powered by Anthropic Claude. Query complexity is automatically optimized to deliver the best results.",
+      recommended: "Most Popular",
     },
     contact: {
       title: "Get in Touch",
@@ -531,19 +603,67 @@ export const translations: Record<Locale, TranslationSet> = {
     },
     pricing: {
       title: "料金プラン",
-      subtitle: "シンプルで分かりやすい料金体系",
-      perMonth: "/月",
+      subtitle: "年間ライセンス + AIチケット制 — 使った分だけお支払い",
       perYear: "/年",
+      perQuery: "/回",
+      licenseSectionTitle: "ソフトウェアライセンス",
+      aiSectionTitle: "AIアシスタントチケット",
+      aiSectionSubtitle: "Claude搭載 — 1回¥30〜50でAIコンサルタントに相談",
       trialLabel: "無料トライアル",
-      trialDesc: "30日間の全機能トライアル。クレジットカード不要。",
+      trialPrice: "¥0",
+      trialDesc: "30日間、全機能を無料でお試し",
+      trialFeatures: [
+        "30日間の全機能トライアル",
+        "AIアシスタント50回分付き",
+        "クレジットカード不要",
+      ],
       standardLabel: "スタンダード",
-      standardPrice: "¥5,000",
-      standardDesc: "チーム向けユーザー単位ライセンス。ボリュームディスカウントあり。",
-      enterpriseLabel: "カスタム",
-      enterpriseDesc: "大規模導入向けの柔軟なライセンス。お気軽にご相談ください。",
-      contactSales: "相談する",
+      standardPrice: "¥39,800",
+      standardUnit: "/ユーザー/年",
+      standardDesc: "全機能を利用できる個人向けライセンス",
+      standardFeatures: [
+        "InsightOffice全9製品利用可能",
+        "製品アップデート込み",
+        "メールサポート",
+      ],
+      team5Label: "チーム5",
+      team5Price: "¥149,000",
+      team5Unit: "/5ユーザー/年",
+      team5Discount: "25% OFF",
+      team5Desc: "1ユーザーあたり¥29,800 — 少人数チームに最適",
+      team10Label: "チーム10",
+      team10Price: "¥248,000",
+      team10Unit: "/10ユーザー/年",
+      team10Discount: "38% OFF",
+      team10Desc: "1ユーザーあたり¥24,800 — 部門導入に最適",
+      aiTickets: [
+        {
+          name: "スターター",
+          queries: "200",
+          price: "¥10,000",
+          perQuery: "¥50",
+          desc: "個人利用・お試しに",
+        },
+        {
+          name: "ビジネス",
+          queries: "500",
+          price: "¥20,000",
+          perQuery: "¥40",
+          desc: "チームでの利用に人気",
+        },
+        {
+          name: "エンタープライズ",
+          queries: "2,000",
+          price: "¥60,000",
+          perQuery: "¥30",
+          desc: "部門全体での大量利用に",
+        },
+      ],
+      contactSales: "営業に問い合わせる",
       startTrial: "無料トライアルを始める",
-      taxNote: "表示価格は税別です。ボリューム価格や年間割引についてはご相談ください。",
+      taxNote: "表示価格は税別です。大規模導入の場合はお見積りいたします。",
+      aiModelNote: "AIアシスタントはAnthropic Claudeで稼働しています。問い合わせ内容に応じて最適なモデルが自動選択されます。",
+      recommended: "人気No.1",
     },
     contact: {
       title: "お問い合わせ",
@@ -761,19 +881,67 @@ export const translations: Record<Locale, TranslationSet> = {
     },
     pricing: {
       title: "价格方案",
-      subtitle: "简单透明的价格体系",
-      perMonth: "/月",
+      subtitle: "年度许可证 + AI工单制 — 按使用量付费",
       perYear: "/年",
+      perQuery: "/次",
+      licenseSectionTitle: "软件许可证",
+      aiSectionTitle: "AI助手工单",
+      aiSectionSubtitle: "搭载Claude — 每次咨询仅需¥30–50即可获得AI专家建议",
       trialLabel: "免费试用",
-      trialDesc: "30天全功能试用。无需信用卡。",
+      trialPrice: "¥0",
+      trialDesc: "30天免费体验全部功能",
+      trialFeatures: [
+        "30天全功能试用",
+        "含50次AI助手查询",
+        "无需信用卡",
+      ],
       standardLabel: "标准版",
-      standardDesc: "按用户许可证，适合团队使用。批量折扣可议。",
-      standardPrice: "¥5,000",
-      enterpriseLabel: "定制",
-      enterpriseDesc: "大规模部署的灵活授权方案。欢迎咨询。",
-      contactSales: "咨询",
+      standardPrice: "¥39,800",
+      standardUnit: "/用户/年",
+      standardDesc: "适用于个人用户的全功能许可",
+      standardFeatures: [
+        "InsightOffice全部9款产品",
+        "包含产品更新",
+        "邮件支持",
+      ],
+      team5Label: "团队5人版",
+      team5Price: "¥149,000",
+      team5Unit: "/5用户/年",
+      team5Discount: "25% OFF",
+      team5Desc: "每用户¥29,800 — 适合小团队",
+      team10Label: "团队10人版",
+      team10Price: "¥248,000",
+      team10Unit: "/10用户/年",
+      team10Discount: "38% OFF",
+      team10Desc: "每用户¥24,800 — 部门导入最优惠",
+      aiTickets: [
+        {
+          name: "入门版",
+          queries: "200",
+          price: "¥10,000",
+          perQuery: "¥50",
+          desc: "适合个人初次使用",
+        },
+        {
+          name: "商务版",
+          queries: "500",
+          price: "¥20,000",
+          perQuery: "¥40",
+          desc: "团队活跃使用最受欢迎",
+        },
+        {
+          name: "企业版",
+          queries: "2,000",
+          price: "¥60,000",
+          perQuery: "¥30",
+          desc: "适合部门级大规模使用",
+        },
+      ],
+      contactSales: "联系销售",
       startTrial: "开始免费试用",
-      taxNote: "所有价格不含税。批量价格和年度折扣请与我联系。",
+      taxNote: "所有价格不含税。大规模部署可提供定制报价。",
+      aiModelNote: "AI助手由Anthropic Claude驱动。系统自动优化查询复杂度以提供最佳结果。",
+      recommended: "最受欢迎",
     },
     contact: {
       title: "联系我",
