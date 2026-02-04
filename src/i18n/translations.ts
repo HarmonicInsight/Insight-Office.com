@@ -73,6 +73,11 @@ type TranslationSet = {
   products: {
     title: string;
     subtitle: string;
+    flagshipTitle: string;
+    flagshipSubtitle: string;
+    flagshipSlideHook: string;
+    flagshipSheetHook: string;
+    otherProducts: string;
     viewAll: string;
     learnMore: string;
     features: string;
@@ -302,6 +307,11 @@ export const translations: Record<Locale, TranslationSet> = {
       title: "Our Product Suite",
       subtitle:
         "9 purpose-built tools spanning the full consulting lifecycle — from analysis and automation to proposals, training content, and delivery",
+      flagshipTitle: "Two Flagship Products",
+      flagshipSubtitle: "Consultants choose Slide. Management chooses Sheet. Both lead to the full suite.",
+      flagshipSlideHook: "\"Are you still reviewing 100-page decks by hand?\"",
+      flagshipSheetHook: "\"Still managing budgets in unversioned Excel files?\"",
+      otherProducts: "Complete Toolkit — 7 More Products",
       viewAll: "See All Products",
       learnMore: "Learn More",
       features: "Features",
@@ -582,6 +592,11 @@ export const translations: Record<Locale, TranslationSet> = {
       title: "ソリューションラインナップ",
       subtitle:
         "自動化・デリバリーから業務調査・要件定義・提案・経営シミュレーション、コンテンツ作成まで — AI活用のノウハウを詰めた9つのツール。これらのパッケージ群を元に、各社の特性・業務に最適なソリューションを構築します。",
+      flagshipTitle: "2つの主力製品",
+      flagshipSubtitle: "コンサルタントはSlideを選ぶ。経営管理層はSheetを選ぶ。どちらからでも全製品へ。",
+      flagshipSlideHook: "「100ページの提案書、まだ目視でレビューしていますか？」",
+      flagshipSheetHook: "「予算管理、まだバージョン管理なしのExcelで回していますか？」",
+      otherProducts: "すべてのツール — 他7製品",
       viewAll: "すべてのソリューションを見る",
       learnMore: "詳しく見る",
       features: "機能",
@@ -861,6 +876,11 @@ export const translations: Record<Locale, TranslationSet> = {
     products: {
       title: "解决方案阵容",
       subtitle: "从自动化交付到业务调研、需求定义、提案、经营模拟和内容创作 — 覆盖咨询全阶段的9款工具",
+      flagshipTitle: "两大旗舰产品",
+      flagshipSubtitle: "咨询师选Slide，管理层选Sheet。无论哪个入口，都通向全套产品。",
+      flagshipSlideHook: "「100页的提案书，还在逐页目视审阅吗？」",
+      flagshipSheetHook: "「预算管理，还在用没有版本控制的Excel吗？」",
+      otherProducts: "完整工具箱 — 其余7款产品",
       viewAll: "查看所有解决方案",
       learnMore: "了解更多",
       features: "功能",
