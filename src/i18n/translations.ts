@@ -129,6 +129,39 @@ type TranslationSet = {
     industries: { name: string; icon: string }[];
     stats: { value: string; label: string }[];
   };
+  sheetLP: {
+    heroTitle: string;
+    heroSubtitle: string;
+    heroCta: string;
+    heroCtaSecondary: string;
+    heroTagline: string;
+    problemTitle: string;
+    problemSubtitle: string;
+    problems: { title: string; desc: string }[];
+    featuresTitle: string;
+    featuresSubtitle: string;
+    features: { title: string; desc: string; icon: string }[];
+    howTitle: string;
+    howSubtitle: string;
+    howSteps: { step: string; title: string; desc: string }[];
+    pricingTitle: string;
+    pricingSubtitle: string;
+    freeLabel: string;
+    freePrice: string;
+    freeDesc: string;
+    freeFeatures: string[];
+    standardLabel: string;
+    standardPrice: string;
+    standardPer: string;
+    standardDesc: string;
+    standardFeatures: string[];
+    downloadCta: string;
+    contactCta: string;
+    ctaTitle: string;
+    ctaSubtitle: string;
+    ctaButton: string;
+    taxNote: string;
+  };
   footer: {
     products: string;
     company: string;
@@ -314,6 +347,55 @@ export const translations: Record<Locale, TranslationSet> = {
         { value: "9", label: "Tools I built" },
       ],
     },
+    sheetLP: {
+      heroTitle: "Stop the Excel Chaos",
+      heroSubtitle: "Version mix-ups, mystery edits, lost formulas — sound familiar? InsightOfficeSheet adds version control, change tracking, and AI-powered review to your existing Excel files. No cloud required.",
+      heroCta: "Download Free Trial",
+      heroCtaSecondary: "See How It Works",
+      heroTagline: "Works with your existing Excel files — nothing to migrate",
+      problemTitle: "Excel Problems Everyone Knows (But Nobody Fixes)",
+      problemSubtitle: "These issues cost teams hours every week. InsightOfficeSheet was built to solve them.",
+      problems: [
+        { title: "\"Which version is the latest?\"", desc: "Multiple copies floating around with names like _final_v3_revised. Nobody knows which one is current." },
+        { title: "\"Who changed this number?\"", desc: "A formula was overwritten, a value was changed — but there's no way to tell who did it or when." },
+        { title: "\"The formula broke again\"", desc: "Complex financial models break silently. By the time you notice, the damage has rippled across dozens of sheets." },
+        { title: "\"We need to collaborate but can't\"", desc: "Emailing Excel files back and forth. Locking. Conflicting edits. The workarounds are painful." },
+      ],
+      featuresTitle: "Everything You Wished Excel Could Do",
+      featuresSubtitle: "Open your existing .xlsx files with InsightOfficeSheet. No migration, no conversion, no re-learning.",
+      features: [
+        { title: "AI Formula Assistant", desc: "AI reviews your formulas and values, catches errors, and suggests corrections — like a senior analyst watching your back.", icon: "sparkles" },
+        { title: "Version Control", desc: "Every save creates a version. Compare any two versions side by side. Roll back with one click.", icon: "clock" },
+        { title: "Cell-Level Change History", desc: "See exactly who changed which cell, when, and what the previous value was. Full audit trail.", icon: "history" },
+        { title: "Built-in Bulletin Board", desc: "Discuss specific cells or ranges right inside the file. No more side-channel emails or chat messages.", icon: "chat" },
+        { title: "AI Chat", desc: "Ask questions about your spreadsheet data in natural language. Get instant analysis and insights.", icon: "message" },
+        { title: "Shared Server Collaboration", desc: "Place the file on a shared drive. Multiple people edit simultaneously. No cloud subscription needed.", icon: "users" },
+      ],
+      howTitle: "Up and Running in 3 Steps",
+      howSubtitle: "No complex setup. No IT department needed.",
+      howSteps: [
+        { step: "1", title: "Install", desc: "Download and install InsightOfficeSheet. Takes under 2 minutes." },
+        { step: "2", title: "Open Your Excel File", desc: "Open any .xlsx file directly. All your data, formulas, and formatting are preserved." },
+        { step: "3", title: "Start Collaborating", desc: "Place on a shared drive for team access. Version control and change tracking are automatic." },
+      ],
+      pricingTitle: "Simple Pricing",
+      pricingSubtitle: "Start free. Upgrade when you're ready.",
+      freeLabel: "Free Trial",
+      freePrice: "¥0",
+      freeDesc: "30-day full-featured trial",
+      freeFeatures: ["All features included", "No credit card required", "Full AI assistant access", "Up to 3 files"],
+      standardLabel: "Standard",
+      standardPrice: "¥2,000",
+      standardPer: "/month per user",
+      standardDesc: "For individuals and teams",
+      standardFeatures: ["Unlimited files", "Full version control", "AI assistant", "Shared collaboration", "Priority support"],
+      downloadCta: "Download Free Trial",
+      contactCta: "Contact Me for Volume Pricing",
+      ctaTitle: "Try InsightOfficeSheet Free for 30 Days",
+      ctaSubtitle: "No credit card. No commitment. Just open your Excel file and see the difference.",
+      ctaButton: "Download Now",
+      taxNote: "Prices exclude tax.",
+    },
     footer: {
       products: "Products",
       company: "Company",
@@ -497,6 +579,55 @@ export const translations: Record<Locale, TranslationSet> = {
         { value: "9種", label: "自作ツール" },
       ],
     },
+    sheetLP: {
+      heroTitle: "Excelの混乱、もう終わりにしませんか",
+      heroSubtitle: "バージョン違い、勝手な編集、壊れた数式 — 心当たりありませんか？InsightOfficeSheetは、今お使いのExcelファイルにバージョン管理・変更履歴・AI校正を追加します。クラウド不要。",
+      heroCta: "無料トライアルをダウンロード",
+      heroCtaSecondary: "使い方を見る",
+      heroTagline: "今のExcelファイルがそのまま使えます — 移行作業は不要",
+      problemTitle: "みんな知ってる。でも誰も解決しないExcelの問題",
+      problemSubtitle: "毎週何時間もムダにしていませんか。InsightOfficeSheetはこの問題を解決するために作りました。",
+      problems: [
+        { title: "「最新版はどれ？」", desc: "_最終版_v3_修正済み...。どれが本物か誰にも分からない。" },
+        { title: "「この数字、誰が変えた？」", desc: "数式が上書きされた、値が変わった。でも誰がいつ変えたか分からない。" },
+        { title: "「また数式が壊れた」", desc: "複雑な財務モデルは気づかないうちに壊れる。気づいた時には被害が広がっている。" },
+        { title: "「共同作業ができない」", desc: "Excelファイルのメール添付。ファイルロック。編集の衝突。どの回避策も辛い。" },
+      ],
+      featuresTitle: "Excelに欲しかった機能、全部入り",
+      featuresSubtitle: "今の.xlsxファイルをInsightOfficeSheetで開くだけ。移行不要、変換不要、学び直し不要。",
+      features: [
+        { title: "AI数式アシスタント", desc: "AIが数式と値をチェックし、エラーを検出、修正を提案。ベテランアナリストが常にチェックしてくれるような安心感。", icon: "sparkles" },
+        { title: "バージョン管理", desc: "保存するたびにバージョンを作成。任意の2バージョンを並べて比較。ワンクリックで巻き戻し。", icon: "clock" },
+        { title: "セル単位の変更履歴", desc: "誰がどのセルをいつ変更したか、変更前の値は何だったか。完全な監査証跡。", icon: "history" },
+        { title: "掲示板機能", desc: "ファイルの中で特定のセルや範囲について議論。メールやチャットでの連絡は不要に。", icon: "chat" },
+        { title: "AIチャット", desc: "スプレッドシートのデータについて自然言語で質問。即座に分析とインサイトを取得。", icon: "message" },
+        { title: "共有サーバーコラボレーション", desc: "共有ドライブに置くだけ。複数人が同時編集。クラウドのサブスクリプション不要。", icon: "users" },
+      ],
+      howTitle: "3ステップですぐ使える",
+      howSubtitle: "複雑な設定は不要。IT部門の手を借りる必要もありません。",
+      howSteps: [
+        { step: "1", title: "インストール", desc: "InsightOfficeSheetをダウンロードしてインストール。2分で完了。" },
+        { step: "2", title: "Excelファイルを開く", desc: "任意の.xlsxファイルをそのまま開く。データ、数式、書式はすべて保持。" },
+        { step: "3", title: "コラボレーション開始", desc: "共有ドライブに置けばチームでアクセス可能に。バージョン管理と変更追跡は自動。" },
+      ],
+      pricingTitle: "シンプルな料金体系",
+      pricingSubtitle: "まずは無料で。準備ができたらアップグレード。",
+      freeLabel: "無料トライアル",
+      freePrice: "¥0",
+      freeDesc: "30日間の全機能トライアル",
+      freeFeatures: ["全機能利用可能", "クレジットカード不要", "AIアシスタント利用可能", "最大3ファイルまで"],
+      standardLabel: "スタンダード",
+      standardPrice: "¥2,000",
+      standardPer: "/月・ユーザーあたり",
+      standardDesc: "個人・チーム向け",
+      standardFeatures: ["ファイル数無制限", "完全なバージョン管理", "AIアシスタント", "共有コラボレーション", "優先サポート"],
+      downloadCta: "無料トライアルをダウンロード",
+      contactCta: "ボリューム価格のお問い合わせ",
+      ctaTitle: "InsightOfficeSheetを30日間無料でお試しください",
+      ctaSubtitle: "クレジットカード不要。お気軽に。今のExcelファイルを開くだけで違いが分かります。",
+      ctaButton: "今すぐダウンロード",
+      taxNote: "表示価格は税別です。",
+    },
     footer: {
       products: "製品",
       company: "会社情報",
@@ -677,6 +808,55 @@ export const translations: Record<Locale, TranslationSet> = {
         { value: "28年", label: "一线经验" },
         { value: "9款", label: "我开发的工具" },
       ],
+    },
+    sheetLP: {
+      heroTitle: "Excel的混乱，该结束了",
+      heroSubtitle: "版本混乱、不明修改、公式损坏 — 是不是很熟悉？InsightOfficeSheet为您现有的Excel文件添加版本控制、变更追踪和AI校审。无需云环境。",
+      heroCta: "下载免费试用",
+      heroCtaSecondary: "了解使用方法",
+      heroTagline: "直接使用现有Excel文件 — 无需迁移",
+      problemTitle: "每个人都知道、却没人解决的Excel问题",
+      problemSubtitle: "每周浪费多少小时？InsightOfficeSheet就是为解决这些问题而生的。",
+      problems: [
+        { title: "\"最新版是哪个？\"", desc: "到处都是_最终版_v3_修改版...。没人知道哪个才是最新的。" },
+        { title: "\"这个数字谁改的？\"", desc: "公式被覆盖了，数值变了。但不知道是谁、什么时候改的。" },
+        { title: "\"公式又坏了\"", desc: "复杂的财务模型悄无声息地出错。等你发现时，影响已经扩散到了几十个工作表。" },
+        { title: "\"没法协作\"", desc: "来回邮件发送Excel文件。文件锁定。编辑冲突。各种变通方案都很痛苦。" },
+      ],
+      featuresTitle: "您一直想要Excel拥有的功能",
+      featuresSubtitle: "用InsightOfficeSheet打开您现有的.xlsx文件即可。无需迁移、无需转换、无需重新学习。",
+      features: [
+        { title: "AI公式助手", desc: "AI审查您的公式和数值，捕捉错误并建议修正 — 如同一位资深分析师时刻把关。", icon: "sparkles" },
+        { title: "版本控制", desc: "每次保存自动创建版本。任意两个版本并排比较。一键回滚。", icon: "clock" },
+        { title: "单元格级变更历史", desc: "精确查看谁在何时更改了哪个单元格，以及之前的值是什么。完整审计跟踪。", icon: "history" },
+        { title: "内置公告板", desc: "在文件内直接讨论特定单元格或区域。不再需要额外的邮件或聊天消息。", icon: "chat" },
+        { title: "AI聊天", desc: "用自然语言询问电子表格数据。即时获取分析和洞察。", icon: "message" },
+        { title: "共享服务器协作", desc: "将文件放在共享驱动器上。多人同时编辑。无需云订阅。", icon: "users" },
+      ],
+      howTitle: "3步即可开始使用",
+      howSubtitle: "无需复杂设置。无需IT部门协助。",
+      howSteps: [
+        { step: "1", title: "安装", desc: "下载并安装InsightOfficeSheet。不到2分钟即可完成。" },
+        { step: "2", title: "打开Excel文件", desc: "直接打开任何.xlsx文件。所有数据、公式和格式完整保留。" },
+        { step: "3", title: "开始协作", desc: "放在共享驱动器上供团队访问。版本控制和变更追踪自动运行。" },
+      ],
+      pricingTitle: "简单定价",
+      pricingSubtitle: "免费开始。准备好了再升级。",
+      freeLabel: "免费试用",
+      freePrice: "¥0",
+      freeDesc: "30天全功能试用",
+      freeFeatures: ["全部功能可用", "无需信用卡", "AI助手全面可用", "最多3个文件"],
+      standardLabel: "标准版",
+      standardPrice: "¥2,000",
+      standardPer: "/月/用户",
+      standardDesc: "适合个人和团队",
+      standardFeatures: ["不限文件数", "完整版本控制", "AI助手", "共享协作", "优先支持"],
+      downloadCta: "下载免费试用",
+      contactCta: "批量价格请联系我",
+      ctaTitle: "免费试用InsightOfficeSheet 30天",
+      ctaSubtitle: "无需信用卡。无需承诺。打开您的Excel文件即可体验差异。",
+      ctaButton: "立即下载",
+      taxNote: "价格不含税。",
     },
     footer: {
       products: "产品",
