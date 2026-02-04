@@ -5,6 +5,7 @@ import RPAAuthoritySection from "@/components/RPAAuthoritySection";
 import OutcomesSection from "@/components/OutcomesSection";
 import ProductsSection from "@/components/ProductsSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import SocialProofSection from "@/components/SocialProofSection";
 import CTASection from "@/components/CTASection";
 
 export function generateStaticParams() {
@@ -27,6 +28,7 @@ export default async function HomePage({
       <SolutionsSection locale={locale} />
       <RPAAuthoritySection locale={locale} />
       <OutcomesSection locale={locale} />
+      <SocialProofSection locale={locale} />
       <ProductsSection locale={locale} />
       <FeaturesSection locale={locale} />
       <CTASection locale={locale} />

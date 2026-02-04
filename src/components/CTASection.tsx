@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { translations, type Locale } from "@/i18n/translations";
 
 export default function CTASection({ locale }: { locale: Locale }) {
@@ -18,9 +19,9 @@ export default function CTASection({ locale }: { locale: Locale }) {
             <p className="text-lg text-primary-100 max-w-2xl mx-auto mb-8">
               {t.cta.subtitle}
             </p>
-            <a href="mailto:info@h-insight.jp" className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-primary-700 font-semibold text-lg hover:bg-primary-50 transition-all duration-200 shadow-lg hover:shadow-xl">
+            <Link href={`/${locale}/contact`} className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-primary-700 font-semibold text-lg hover:bg-primary-50 transition-all duration-200 shadow-lg hover:shadow-xl">
               {t.cta.button}
-            </a>
+            </Link>
             <p className="mt-4 text-sm text-primary-200">
               {t.cta.noCreditCard}
             </p>

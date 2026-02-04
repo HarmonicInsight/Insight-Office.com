@@ -26,9 +26,12 @@ export default function HeroSection({ locale }: { locale: Locale }) {
             >
               {t.hero.ctaSecondary}
             </Link>
-            <a href="mailto:info@h-insight.jp" className="btn-secondary text-lg px-8 py-4">
+            <Link
+              href={`/${locale}/contact`}
+              className="btn-secondary text-lg px-8 py-4"
+            >
               {t.hero.cta}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
