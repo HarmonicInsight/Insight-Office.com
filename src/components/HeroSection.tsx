@@ -20,15 +20,15 @@ export default function HeroSection({ locale }: { locale: Locale }) {
             {t.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="mailto:info@h-insight.jp" className="btn-primary text-lg px-8 py-4">
-              {t.hero.cta}
-            </a>
             <Link
-              href={`/${locale}/products`}
-              className="btn-secondary text-lg px-8 py-4"
+              href={`/${locale}/downloads`}
+              className="btn-primary text-lg px-8 py-4"
             >
               {t.hero.ctaSecondary}
             </Link>
+            <a href="mailto:info@h-insight.jp" className="btn-secondary text-lg px-8 py-4">
+              {t.hero.cta}
+            </a>
           </div>
         </div>
       </div>
