@@ -169,6 +169,61 @@ export default async function ProductDetailPage({
           </div>
         </div>
 
+        {/* Pricing */}
+        <div className="mb-16" id="pricing">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            {t.pricing.title}
+          </h2>
+          <p className="text-gray-600 mb-8">{t.pricing.subtitle}</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Trial */}
+            <div className="border border-gray-200 rounded-xl p-8 hover:border-primary-200 hover:shadow-md transition-all">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">{t.pricing.trialLabel}</h3>
+              <p className="text-3xl font-bold text-primary-700 mb-4">
+                ¥0
+              </p>
+              <p className="text-gray-600 text-sm mb-6">{t.pricing.trialDesc}</p>
+              <a
+                href={`/${locale}/downloads`}
+                className="block text-center btn-primary w-full"
+              >
+                {t.pricing.startTrial}
+              </a>
+            </div>
+            {/* Standard */}
+            <div className="border-2 border-primary-300 rounded-xl p-8 relative shadow-md">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">{t.pricing.standardLabel}</h3>
+              <p className="text-3xl font-bold text-primary-700 mb-1">
+                ¥5,000
+                <span className="text-base font-normal text-gray-500">{t.pricing.perMonth}</span>
+              </p>
+              <p className="text-sm text-gray-400 mb-4">¥50,000{t.pricing.perYear}</p>
+              <p className="text-gray-600 text-sm mb-6">{t.pricing.standardDesc}</p>
+              <a
+                href="mailto:info@h-insight.jp"
+                className="block text-center btn-primary w-full"
+              >
+                {t.pricing.contactSales}
+              </a>
+            </div>
+            {/* Enterprise */}
+            <div className="border border-gray-200 rounded-xl p-8 hover:border-primary-200 hover:shadow-md transition-all">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">{t.pricing.enterpriseLabel}</h3>
+              <p className="text-3xl font-bold text-primary-700 mb-4">
+                {t.pricing.contactSales}
+              </p>
+              <p className="text-gray-600 text-sm mb-6">{t.pricing.enterpriseDesc}</p>
+              <a
+                href="mailto:info@h-insight.jp"
+                className="block text-center btn-secondary w-full"
+              >
+                {t.pricing.contactSales}
+              </a>
+            </div>
+          </div>
+          <p className="text-xs text-gray-400 mt-4">{t.pricing.taxNote}</p>
+        </div>
+
         {/* CTA */}
         <div className={`rounded-2xl bg-gradient-to-br ${product.color} p-12 text-center`}>
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
